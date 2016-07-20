@@ -43,13 +43,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0A3C93481D3F2CF30070E424"
+               BuildableName = "ApplicationExtensionsPracticeUITests.xctest"
+               BlueprintName = "ApplicationExtensionsPracticeUITests"
+               ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0ACE7C2A1D3E5BFC00EB209D"
-            BuildableName = "TodayExtension.appex"
-            BlueprintName = "TodayExtension"
+            BlueprintIdentifier = "0ACE7C111D3E5B1300EB209D"
+            BuildableName = "ApplicationExtensionsPractice.app"
+            BlueprintName = "ApplicationExtensionsPractice"
             ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,8 +77,12 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/Today">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ACE7C111D3E5B1300EB209D"
@@ -76,7 +90,7 @@
             BlueprintName = "ApplicationExtensionsPractice"
             ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

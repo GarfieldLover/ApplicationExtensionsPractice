@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3C93421D3F214D0070E424 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C93411D3F214D0070E424 /* NotificationCenter.framework */; };
 		0ACE7C161D3E5B1300EB209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */; };
 		0ACE7C181D3E5B1300EB209D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C171D3E5B1300EB209D /* ViewController.swift */; };
 		0ACE7C1B1D3E5B1300EB209D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C191D3E5B1300EB209D /* Main.storyboard */; };
 		0ACE7C1D1D3E5B1300EB209D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		0ACE7C201D3E5B1300EB209D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1E1D3E5B1300EB209D /* LaunchScreen.storyboard */; };
-		0ACE7C2E1D3E5BFC00EB209D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACE7C2D1D3E5BFC00EB209D /* NotificationCenter.framework */; };
 		0ACE7C311D3E5BFC00EB209D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C301D3E5BFC00EB209D /* TodayViewController.swift */; };
 		0ACE7C341D3E5BFC00EB209D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C321D3E5BFC00EB209D /* MainInterface.storyboard */; };
 		0ACE7C381D3E5BFC00EB209D /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0ACE7C2B1D3E5BFC00EB209D /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -43,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A3C93411D3F214D0070E424 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		0A3C934B1D3F2CF30070E424 /* ApplicationExtensionsPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationExtensionsPracticeUITests.swift; sourceTree = "<group>"; };
+		0A3C934D1D3F2CF30070E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ACE7C121D3E5B1300EB209D /* ApplicationExtensionsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationExtensionsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACE7C171D3E5B1300EB209D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +54,6 @@
 		0ACE7C1F1D3E5B1300EB209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ACE7C211D3E5B1300EB209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ACE7C2B1D3E5BFC00EB209D /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ACE7C2D1D3E5BFC00EB209D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		0ACE7C301D3E5BFC00EB209D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0ACE7C331D3E5BFC00EB209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0ACE7C351D3E5BFC00EB209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,18 +71,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACE7C2E1D3E5BFC00EB209D /* NotificationCenter.framework in Frameworks */,
+				0A3C93421D3F214D0070E424 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3C934A1D3F2CF30070E424 /* ApplicationExtensionsPracticeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C934B1D3F2CF30070E424 /* ApplicationExtensionsPracticeUITests.swift */,
+				0A3C934D1D3F2CF30070E424 /* Info.plist */,
+			);
+			path = ApplicationExtensionsPracticeUITests;
+			sourceTree = "<group>";
+		};
 		0ACE7C091D3E5B1300EB209D = {
 			isa = PBXGroup;
 			children = (
 				0ACE7C141D3E5B1300EB209D /* ApplicationExtensionsPractice */,
 				0ACE7C2F1D3E5BFC00EB209D /* TodayExtension */,
+				0A3C934A1D3F2CF30070E424 /* ApplicationExtensionsPracticeUITests */,
 				0ACE7C2C1D3E5BFC00EB209D /* Frameworks */,
 				0ACE7C131D3E5B1300EB209D /* Products */,
 			);
@@ -111,7 +123,7 @@
 		0ACE7C2C1D3E5BFC00EB209D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0ACE7C2D1D3E5BFC00EB209D /* NotificationCenter.framework */,
+				0A3C93411D3F214D0070E424 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
