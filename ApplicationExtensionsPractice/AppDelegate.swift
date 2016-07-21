@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let imagePhoto1: UIImage! = UIImage.init(named: "today_top1")
+        let imagePhoto2: UIImage! = UIImage.init(named: "today_top2")
+
+        let imageDic: NSMutableDictionary! = NSMutableDictionary.init()
+        imageDic.setObject(UIImagePNGRepresentation(imagePhoto1)!, forKey: "today_top1")
+        imageDic.setObject(UIImagePNGRepresentation(imagePhoto2)!, forKey: "today_top2")
+        imageDic.setObject("兽人英雄杜隆坦", forKey: "today_top_title1")
+        imageDic.setObject("人类英雄洛萨", forKey: "today_top_title2")
+
+        let userDefault: UserDefaults! = UserDefaults.init(suiteName: "group.gl.ApplicationExtensionsPractice")
+        userDefault.set(imageDic, forKey: "imageDic")
+        userDefault.synchronize()
+        
         return true
     }
 

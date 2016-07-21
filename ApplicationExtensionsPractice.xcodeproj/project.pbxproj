@@ -44,8 +44,6 @@
 
 /* Begin PBXFileReference section */
 		0A3C93411D3F214D0070E424 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		0A3C934B1D3F2CF30070E424 /* ApplicationExtensionsPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationExtensionsPracticeUITests.swift; sourceTree = "<group>"; };
-		0A3C934D1D3F2CF30070E424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ACE7C121D3E5B1300EB209D /* ApplicationExtensionsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationExtensionsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACE7C171D3E5B1300EB209D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		0ACE7C301D3E5BFC00EB209D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0ACE7C331D3E5BFC00EB209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0ACE7C351D3E5BFC00EB209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585CF0AE1D3F786D00C9CD7C /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayExtension.entitlements; sourceTree = "<group>"; };
+		585CF0AF1D3F78A100C9CD7C /* ApplicationExtensionsPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplicationExtensionsPractice.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,21 +78,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A3C934A1D3F2CF30070E424 /* ApplicationExtensionsPracticeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0A3C934B1D3F2CF30070E424 /* ApplicationExtensionsPracticeUITests.swift */,
-				0A3C934D1D3F2CF30070E424 /* Info.plist */,
-			);
-			path = ApplicationExtensionsPracticeUITests;
-			sourceTree = "<group>";
-		};
 		0ACE7C091D3E5B1300EB209D = {
 			isa = PBXGroup;
 			children = (
 				0ACE7C141D3E5B1300EB209D /* ApplicationExtensionsPractice */,
 				0ACE7C2F1D3E5BFC00EB209D /* TodayExtension */,
-				0A3C934A1D3F2CF30070E424 /* ApplicationExtensionsPracticeUITests */,
 				0ACE7C2C1D3E5BFC00EB209D /* Frameworks */,
 				0ACE7C131D3E5B1300EB209D /* Products */,
 			);
@@ -110,6 +100,7 @@
 		0ACE7C141D3E5B1300EB209D /* ApplicationExtensionsPractice */ = {
 			isa = PBXGroup;
 			children = (
+				585CF0AF1D3F78A100C9CD7C /* ApplicationExtensionsPractice.entitlements */,
 				0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */,
 				0ACE7C171D3E5B1300EB209D /* ViewController.swift */,
 				0ACE7C191D3E5B1300EB209D /* Main.storyboard */,
@@ -131,6 +122,7 @@
 		0ACE7C2F1D3E5BFC00EB209D /* TodayExtension */ = {
 			isa = PBXGroup;
 			children = (
+				585CF0AE1D3F786D00C9CD7C /* TodayExtension.entitlements */,
 				0ACE7C301D3E5BFC00EB209D /* TodayViewController.swift */,
 				0ACE7C321D3E5BFC00EB209D /* MainInterface.storyboard */,
 				0ACE7C351D3E5BFC00EB209D /* Info.plist */,
@@ -191,12 +183,22 @@
 						DevelopmentTeam = ZLU2H6WNEP;
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0ACE7C2A1D3E5BFC00EB209D = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -388,6 +390,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplicationExtensionsPractice/ApplicationExtensionsPractice.entitlements;
 				INFOPLIST_FILE = ApplicationExtensionsPractice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -402,6 +405,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ApplicationExtensionsPractice/ApplicationExtensionsPractice.entitlements;
 				INFOPLIST_FILE = ApplicationExtensionsPractice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -414,6 +418,7 @@
 		0ACE7C3A1D3E5BFC00EB209D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -428,6 +433,7 @@
 		0ACE7C3B1D3E5BFC00EB209D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
