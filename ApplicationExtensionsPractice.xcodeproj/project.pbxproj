@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A3C93421D3F214D0070E424 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C93411D3F214D0070E424 /* NotificationCenter.framework */; };
+		0A4FEA0F1D44CB7F0077B33E /* DarwinNotificationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FEA0D1D44CB7F0077B33E /* DarwinNotificationsManager.m */; };
+		0A59D0E91D44BAAA00E3471F /* DarwinNotificationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A59D0E81D44BAAA00E3471F /* DarwinNotificationsManager.m */; };
 		0ACE7C161D3E5B1300EB209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */; };
 		0ACE7C181D3E5B1300EB209D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C171D3E5B1300EB209D /* ViewController.swift */; };
 		0ACE7C1B1D3E5B1300EB209D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C191D3E5B1300EB209D /* Main.storyboard */; };
@@ -46,6 +48,12 @@
 
 /* Begin PBXFileReference section */
 		0A3C93411D3F214D0070E424 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		0A4FEA0C1D44CB7F0077B33E /* DarwinNotificationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarwinNotificationsManager.h; sourceTree = "<group>"; };
+		0A4FEA0D1D44CB7F0077B33E /* DarwinNotificationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarwinNotificationsManager.m; sourceTree = "<group>"; };
+		0A4FEA0E1D44CB7F0077B33E /* TodayExtension-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TodayExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A59D0E61D44BAA900E3471F /* ApplicationExtensionsPractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplicationExtensionsPractice-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A59D0E71D44BAAA00E3471F /* DarwinNotificationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarwinNotificationsManager.h; sourceTree = "<group>"; };
+		0A59D0E81D44BAAA00E3471F /* DarwinNotificationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarwinNotificationsManager.m; sourceTree = "<group>"; };
 		0ACE7C121D3E5B1300EB209D /* ApplicationExtensionsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationExtensionsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACE7C171D3E5B1300EB209D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,9 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A59D0E51D44B69D00E3471F /* DarwinNotificationsManager */ = {
+			isa = PBXGroup;
+			children = (
+				0A59D0E71D44BAAA00E3471F /* DarwinNotificationsManager.h */,
+				0A59D0E81D44BAAA00E3471F /* DarwinNotificationsManager.m */,
+				0A59D0E61D44BAA900E3471F /* ApplicationExtensionsPractice-Bridging-Header.h */,
+			);
+			path = DarwinNotificationsManager;
+			sourceTree = "<group>";
+		};
 		0ACE7C091D3E5B1300EB209D = {
 			isa = PBXGroup;
 			children = (
+				0A59D0E51D44B69D00E3471F /* DarwinNotificationsManager */,
 				0ACE7C141D3E5B1300EB209D /* ApplicationExtensionsPractice */,
 				0ACE7C2F1D3E5BFC00EB209D /* TodayExtension */,
 				0ACE7C2C1D3E5BFC00EB209D /* Frameworks */,
@@ -132,6 +151,9 @@
 				0ACE7C301D3E5BFC00EB209D /* TodayViewController.swift */,
 				0ACE7C321D3E5BFC00EB209D /* MainInterface.storyboard */,
 				0ACE7C351D3E5BFC00EB209D /* Info.plist */,
+				0A4FEA0C1D44CB7F0077B33E /* DarwinNotificationsManager.h */,
+				0A4FEA0D1D44CB7F0077B33E /* DarwinNotificationsManager.m */,
+				0A4FEA0E1D44CB7F0077B33E /* TodayExtension-Bridging-Header.h */,
 			);
 			path = TodayExtension;
 			sourceTree = "<group>";
@@ -188,6 +210,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -255,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58A421671D421CC9000595A6 /* DetailViewController.swift in Sources */,
+				0A59D0E91D44BAAA00E3471F /* DarwinNotificationsManager.m in Sources */,
 				0ACE7C181D3E5B1300EB209D /* ViewController.swift in Sources */,
 				0ACE7C161D3E5B1300EB209D /* AppDelegate.swift in Sources */,
 			);
@@ -265,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACE7C311D3E5BFC00EB209D /* TodayViewController.swift in Sources */,
+				0A4FEA0F1D44CB7F0077B33E /* DarwinNotificationsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,12 +423,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ApplicationExtensionsPractice/ApplicationExtensionsPractice.entitlements;
 				INFOPLIST_FILE = ApplicationExtensionsPractice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DarwinNotificationsManager/ApplicationExtensionsPractice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -413,12 +441,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ApplicationExtensionsPractice/ApplicationExtensionsPractice.entitlements;
 				INFOPLIST_FILE = ApplicationExtensionsPractice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DarwinNotificationsManager/ApplicationExtensionsPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -434,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DarwinNotificationsManager/ApplicationExtensionsPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -449,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DarwinNotificationsManager/ApplicationExtensionsPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

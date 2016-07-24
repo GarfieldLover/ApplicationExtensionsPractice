@@ -89,7 +89,10 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return extensionsArray!.count;
+        if(extensionsArray?.count>0){
+            return (extensionsArray?.count)!
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -131,6 +134,11 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
             
         })
     }
+    
+    @IBAction func buttonSelect(button: UIButton?){
+        DarwinNotificationsManager.sharedInstance().postNotification(withName: "buttonSelect", object: button)
+    }
+
 
 }
 
