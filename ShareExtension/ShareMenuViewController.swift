@@ -8,8 +8,3 @@
 
 import Foundation
 import UIKit
-
-class ShareMenuViewController: UIViewController {
-    
-    
-}

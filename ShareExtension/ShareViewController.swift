@@ -18,11 +18,7 @@ class ShareViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let menu: ShareMenuViewController = ShareMenuViewController.init()
-        self.addChildViewController(menu)
-        self.view.addSubview(menu.view)
-        
+
         for item: AnyObject in (self.extensionContext?.inputItems)! {
             let inputItem = item as! NSExtensionItem
             
@@ -37,12 +33,57 @@ class ShareViewController: UIViewController {
 //                            self.articleDesc = resultDict[NSExtensionJavaScriptPreprocessingResultsKey]!["description"] as! String
                             self.articleImage = resultDict[NSExtensionJavaScriptPreprocessingResultsKey]!["image"] as? String
                             self.articleUrl = resultDict[NSExtensionJavaScriptPreprocessingResultsKey]!["url"] as? String
+                            
+                            self.addShareMenu()
+
                         }
                     })
                 }
             }
         }
         
+        
+    }
+    
+    func addShareMenu(_: Void) -> Void {
+        
+        let storyboard: UIStoryboard = UIStoryboard.init(name: "MainInterface", bundle: Bundle.main())
+        
+        let nav: UINavigationController = storyboard.instantiateViewController(withIdentifier: "ShareMenuNav") as! UINavigationController
+        nav.view.bounds.size = CGSize.init(width: 320, height: 300)
+        nav.view.center = CGPoint.init(x: self.view.center.x, y: self.view.center.y)
+        self.addChildViewController(nav)
+        self.view.addSubview(nav.view)
+        
+//        let url: URL = URL.init(string: articleImage!)!
+//        let task = URLSession.shared().downloadTask(with: url) { location, response, error in
+//            guard location != nil && error == nil else {
+//                print(error)
+//                return
+//            }
+//            
+////            let fileManager = FileManager.default()
+////            let documents = try! fileManager.URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
+////            let fileURL = documents.URLByAppendingPathComponent("test.jpg")
+////            do {
+////                try fileManager.moveItemAtURL(location!, toURL: fileURL)
+////            } catch {
+////                print(error)
+////            }
+//        }
+//
+//        task.resume()
+        
+        let shareMenu: ShareMenuViewController = nav.visibleViewController as! ShareMenuViewController
+//        shareMenu.imageView?.image = UIImage.init(data: <#T##Data#>)
+        shareMenu.titleLabel?.text = articleTitle
+        shareMenu.detailLabel?.text = articleUrl
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "patternDetailSegue" {
+        }
     }
     
 #if false
@@ -64,3 +105,13 @@ class ShareViewController: UIViewController {
     }
 #endif
 }
+
+
+class ShareMenuViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView?
+    @IBOutlet weak var titleLabel: UILabel?
+    @IBOutlet weak var detailLabel: UILabel?
+    @IBOutlet weak var tableView: UITableView?
+    
+}
+
