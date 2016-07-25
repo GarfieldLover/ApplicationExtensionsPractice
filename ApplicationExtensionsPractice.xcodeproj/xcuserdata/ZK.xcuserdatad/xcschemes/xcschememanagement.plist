@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ShareExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>TodayExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>0ACE7C2A1D3E5BFC00EB209D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>581BAD301D46019200E18F5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

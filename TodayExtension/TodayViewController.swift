@@ -53,7 +53,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
         let userDefault: UserDefaults! = UserDefaults.init(suiteName: "group.gl.ApplicationExtensionsPractice")
         
         extensionsArray = userDefault.object(forKey: "extensionsArray") as? NSArray
-        
+         
         if (extensionsArray != nil && extensionsArray?.count>1) {
             
             let dic1: NSDictionary? = extensionsArray?.object(at: 0) as? NSDictionary
@@ -136,7 +136,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
     }
     
     @IBAction func buttonSelect(button: UIButton?){
-        DarwinNotificationsManager.sharedInstance().postNotification(withName: "buttonSelect", object: button)
+        //DarwinNotificationsManager.sharedInstance().postNotification(withName: "buttonSelect", object: button)
     }
 
 

@@ -25,7 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dataArray = NSMutableArray.init(contentsOfFile: Bundle.main().pathForResource("data", ofType: "plist")!)
+        dataArray = NSMutableArray.init(contentsOfFile: Bundle.main.pathForResource("data", ofType: "plist")!)
         extensionsArray = NSMutableArray.init()
         
         //CFNotificationCenter 利用传值，实现app和extension，watch＊＊＊＊即时通信＊＊＊，
@@ -33,9 +33,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //回调的时候再读出
         //只适用于2个都开启状态，如果extension没开启，只能在didload时候读下数据
         //UserDefaults.init(suiteName: 基本够用，可能比较适用于手表，  再研究手表的传递吧
-        DarwinNotificationsManager.sharedInstance().register(forNotificationName: "buttonSelect") { ( objcet: AnyObject?) in
+        //DarwinNotificationsManager.sharedInstance().register(forNotificationName: "buttonSelect") { ( objcet: AnyObject?) in
             
-        }
+        //}
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
@@ -44,7 +44,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let cell: PhotoCollectionViewCell! = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCollectionViewCell", for: indexPath) as? PhotoCollectionViewCell
-        let dataDic: NSDictionary = dataArray?.object(at: indexPath.item!) as! NSDictionary
+        let dataDic: NSDictionary = dataArray?.object(at: indexPath.item) as! NSDictionary
         
         let imageName: NSString = dataDic.object(forKey: "imageName") as! NSString
 
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
         
-        let dataDic: NSMutableDictionary = dataArray?.object(at: indexPath.item!) as! NSMutableDictionary
+        let dataDic: NSMutableDictionary = dataArray?.object(at: indexPath.item) as! NSMutableDictionary
         let imageName: NSString = dataDic.object(forKey: "imageName") as! NSString
 
         let image: UIImage = UIImage.init(named: imageName as String)!
