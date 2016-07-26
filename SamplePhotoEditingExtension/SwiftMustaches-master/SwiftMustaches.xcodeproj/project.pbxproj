@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		310636CC19CF2D0900B04125 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310636CB19CF2D0900B04125 /* FaceDetector.swift */; };
+		31A7DB4519CEFACA0081C234 /* MustacheAdjustmentFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A7DB3119CEFACA0081C234 /* MustacheAdjustmentFramework.framework */; };
+		31A7DB4619CEFACA0081C234 /* MustacheAdjustmentFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31A7DB3119CEFACA0081C234 /* MustacheAdjustmentFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31A7DB5219CEFB8F0081C234 /* MustachePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A7DB5119CEFB8F0081C234 /* MustachePosition.swift */; };
+		31A7DB5419CEFB980081C234 /* MustacheAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A7DB5319CEFB980081C234 /* MustacheAdjustment.swift */; };
+		31A7DB5819CEFC510081C234 /* UIImage+ImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A7DB5619CEFC510081C234 /* UIImage+ImageOrientation.swift */; };
+		31A7DB5919CEFC510081C234 /* UIImage+RotatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A7DB5719CEFC510081C234 /* UIImage+RotatedImage.swift */; };
+		31A7DB5A19CEFC8B0081C234 /* MustacheAdjustmentFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A7DB3119CEFACA0081C234 /* MustacheAdjustmentFramework.framework */; };
+		31AE5EB119CB7E9400364087 /* PhotoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE5EB019CB7E9400364087 /* PhotoEditorViewController.swift */; };
+		31AE5EB319CB7ECA00364087 /* PhotoEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AE5EB219CB7ECA00364087 /* PhotoEditor.storyboard */; };
+		31E6414D19CAD4C10041421D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6414C19CAD4C10041421D /* AppDelegate.swift */; };
+		31E6415419CAD4C10041421D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E6415319CAD4C10041421D /* Images.xcassets */; };
+		31E6415719CAD4C10041421D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E6415519CAD4C10041421D /* LaunchScreen.xib */; };
+		31E6417619CADC100041421D /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E6417519CADC100041421D /* PhotosUI.framework */; };
+		31E6417819CADC100041421D /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E6417719CADC100041421D /* Photos.framework */; };
+		31E6417D19CADC100041421D /* PhotoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6417C19CADC100041421D /* PhotoEditorViewController.swift */; };
+		31E6417F19CADC100041421D /* PhotoEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E6417E19CADC100041421D /* PhotoEditor.storyboard */; };
+		31E6418219CADC100041421D /* MustachePhotoEditingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 31E6417319CADC100041421D /* MustachePhotoEditingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		31ED765F19CB1CA7007365DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E6415319CAD4C10041421D /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31A7DB4319CEFACA0081C234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31E6413F19CAD4C10041421D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31A7DB3019CEFACA0081C234;
+			remoteInfo = MustacheAdjustment;
+		};
+		31A7DB4719CEFACA0081C234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31E6413F19CAD4C10041421D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31A7DB3019CEFACA0081C234;
+			remoteInfo = MustacheAdjustment;
+		};
+		31E6418019CADC100041421D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31E6413F19CAD4C10041421D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E6417219CADC100041421D;
+			remoteInfo = PhotoEditingExtension;
+		};
+		31E6418319CADC110041421D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31E6413F19CAD4C10041421D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E6417219CADC100041421D;
+			remoteInfo = PhotoEditingExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31A7DB4E19CEFACA0081C234 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31A7DB4619CEFACA0081C234 /* MustacheAdjustmentFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E6418819CADC110041421D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				31E6418219CADC100041421D /* MustachePhotoEditingExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		310636CB19CF2D0900B04125 /* FaceDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
+		31A7DB3119CEFACA0081C234 /* MustacheAdjustmentFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MustacheAdjustmentFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A7DB3419CEFACA0081C234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31A7DB5119CEFB8F0081C234 /* MustachePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MustachePosition.swift; sourceTree = "<group>"; };
+		31A7DB5319CEFB980081C234 /* MustacheAdjustment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MustacheAdjustment.swift; sourceTree = "<group>"; };
+		31A7DB5619CEFC510081C234 /* UIImage+ImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageOrientation.swift"; sourceTree = "<group>"; };
+		31A7DB5719CEFC510081C234 /* UIImage+RotatedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RotatedImage.swift"; sourceTree = "<group>"; };
+		31AE5EB019CB7E9400364087 /* PhotoEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewController.swift; sourceTree = "<group>"; };
+		31AE5EB219CB7ECA00364087 /* PhotoEditor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoEditor.storyboard; sourceTree = "<group>"; };
+		31E6414719CAD4C10041421D /* SwiftMustaches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMustaches.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E6414B19CAD4C10041421D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E6414C19CAD4C10041421D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31E6415319CAD4C10041421D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		31E6415619CAD4C10041421D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		31E6417319CADC100041421D /* MustachePhotoEditingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MustachePhotoEditingExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E6417519CADC100041421D /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		31E6417719CADC100041421D /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		31E6417B19CADC100041421D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E6417C19CADC100041421D /* PhotoEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PhotoEditorViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		31E6417E19CADC100041421D /* PhotoEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoEditor.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31A7DB2D19CEFACA0081C234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E6414419CAD4C10041421D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A7DB4519CEFACA0081C234 /* MustacheAdjustmentFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E6417019CADC100041421D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A7DB5A19CEFC8B0081C234 /* MustacheAdjustmentFramework.framework in Frameworks */,
+				31E6417619CADC100041421D /* PhotosUI.framework in Frameworks */,
+				31E6417819CADC100041421D /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310636CD19CF2DF000B04125 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				310636CB19CF2D0900B04125 /* FaceDetector.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		31A7DB3219CEFACA0081C234 /* MustacheAdjustmentFramework */ = {
+			isa = PBXGroup;
+			children = (
+				31A7DB5519CEFC510081C234 /* Extensions */,
+				310636CD19CF2DF000B04125 /* Helpers */,
+				31A7DB5019CEFB800081C234 /* Models */,
+				31A7DB5319CEFB980081C234 /* MustacheAdjustment.swift */,
+				31A7DB3319CEFACA0081C234 /* Supporting Files */,
+			);
+			path = MustacheAdjustmentFramework;
+			sourceTree = "<group>";
+		};
+		31A7DB3319CEFACA0081C234 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31A7DB3419CEFACA0081C234 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31A7DB5019CEFB800081C234 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31A7DB5119CEFB8F0081C234 /* MustachePosition.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31A7DB5519CEFC510081C234 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31A7DB5619CEFC510081C234 /* UIImage+ImageOrientation.swift */,
+				31A7DB5719CEFC510081C234 /* UIImage+RotatedImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		31AE5EB419CB7ED000364087 /* PhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				31AE5EB219CB7ECA00364087 /* PhotoEditor.storyboard */,
+				31AE5EB019CB7E9400364087 /* PhotoEditorViewController.swift */,
+			);
+			path = PhotoEditor;
+			sourceTree = "<group>";
+		};
+		31E6413E19CAD4C10041421D = {
+			isa = PBXGroup;
+			children = (
+				31E6417419CADC100041421D /* Frameworks */,
+				31A7DB3219CEFACA0081C234 /* MustacheAdjustmentFramework */,
+				31E6417919CADC100041421D /* MustachePhotoEditingExtension */,
+				31E6414819CAD4C10041421D /* Products */,
+				31E6414919CAD4C10041421D /* SwiftMustaches */,
+			);
+			sourceTree = "<group>";
+		};
+		31E6414819CAD4C10041421D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31E6414719CAD4C10041421D /* SwiftMustaches.app */,
+				31E6417319CADC100041421D /* MustachePhotoEditingExtension.appex */,
+				31A7DB3119CEFACA0081C234 /* MustacheAdjustmentFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31E6414919CAD4C10041421D /* SwiftMustaches */ = {
+			isa = PBXGroup;
+			children = (
+				31E6416C19CAD5190041421D /* Delegates */,
+				31E6416D19CAD5320041421D /* Resources */,
+				31E6414A19CAD4C10041421D /* Supporting Files */,
+				31E6416E19CAD5600041421D /* UI */,
+			);
+			path = SwiftMustaches;
+			sourceTree = "<group>";
+		};
+		31E6414A19CAD4C10041421D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31E6414B19CAD4C10041421D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31E6416C19CAD5190041421D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				31E6414C19CAD4C10041421D /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		31E6416D19CAD5320041421D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31E6415319CAD4C10041421D /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		31E6416E19CAD5600041421D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				31E6415519CAD4C10041421D /* LaunchScreen.xib */,
+				31AE5EB419CB7ED000364087 /* PhotoEditor */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		31E6417419CADC100041421D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31E6417519CADC100041421D /* PhotosUI.framework */,
+				31E6417719CADC100041421D /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31E6417919CADC100041421D /* MustachePhotoEditingExtension */ = {
+			isa = PBXGroup;
+			children = (
+				31E6418919CADC560041421D /* UI */,
+				31E6417A19CADC100041421D /* Supporting Files */,
+			);
+			path = MustachePhotoEditingExtension;
+			sourceTree = "<group>";
+		};
+		31E6417A19CADC100041421D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31E6417B19CADC100041421D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31E6418919CADC560041421D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				31E6417C19CADC100041421D /* PhotoEditorViewController.swift */,
+				31E6417E19CADC100041421D /* PhotoEditor.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		31A7DB2E19CEFACA0081C234 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31A7DB3019CEFACA0081C234 /* MustacheAdjustmentFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A7DB4D19CEFACA0081C234 /* Build configuration list for PBXNativeTarget "MustacheAdjustmentFramework" */;
+			buildPhases = (
+				31A7DB2C19CEFACA0081C234 /* Sources */,
+				31A7DB2D19CEFACA0081C234 /* Frameworks */,
+				31A7DB2E19CEFACA0081C234 /* Headers */,
+				31A7DB2F19CEFACA0081C234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MustacheAdjustmentFramework;
+			productName = MustacheAdjustment;
+			productReference = 31A7DB3119CEFACA0081C234 /* MustacheAdjustmentFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31E6414619CAD4C10041421D /* SwiftMustaches */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E6416619CAD4C10041421D /* Build configuration list for PBXNativeTarget "SwiftMustaches" */;
+			buildPhases = (
+				31E6414319CAD4C10041421D /* Sources */,
+				31E6414419CAD4C10041421D /* Frameworks */,
+				31E6414519CAD4C10041421D /* Resources */,
+				31E6418819CADC110041421D /* Embed App Extensions */,
+				31A7DB4E19CEFACA0081C234 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31E6418119CADC100041421D /* PBXTargetDependency */,
+				31E6418419CADC110041421D /* PBXTargetDependency */,
+				31A7DB4419CEFACA0081C234 /* PBXTargetDependency */,
+				31A7DB4819CEFACA0081C234 /* PBXTargetDependency */,
+			);
+			name = SwiftMustaches;
+			productName = SwiftMustaches;
+			productReference = 31E6414719CAD4C10041421D /* SwiftMustaches.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31E6417219CADC100041421D /* MustachePhotoEditingExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E6418719CADC110041421D /* Build configuration list for PBXNativeTarget "MustachePhotoEditingExtension" */;
+			buildPhases = (
+				31E6416F19CADC100041421D /* Sources */,
+				31E6417019CADC100041421D /* Frameworks */,
+				31E6417119CADC100041421D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MustachePhotoEditingExtension;
+			productName = PhotoEditingExtension;
+			productReference = 31E6417319CADC100041421D /* MustachePhotoEditingExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31E6413F19CAD4C10041421D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "EL Passion";
+				TargetAttributes = {
+					31A7DB3019CEFACA0081C234 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					31E6414619CAD4C10041421D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					31E6417219CADC100041421D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 31E6414219CAD4C10041421D /* Build configuration list for PBXProject "SwiftMustaches" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31E6413E19CAD4C10041421D;
+			productRefGroup = 31E6414819CAD4C10041421D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31E6414619CAD4C10041421D /* SwiftMustaches */,
+				31E6417219CADC100041421D /* MustachePhotoEditingExtension */,
+				31A7DB3019CEFACA0081C234 /* MustacheAdjustmentFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31A7DB2F19CEFACA0081C234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E6414519CAD4C10041421D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E6415719CAD4C10041421D /* LaunchScreen.xib in Resources */,
+				31AE5EB319CB7ECA00364087 /* PhotoEditor.storyboard in Resources */,
+				31E6415419CAD4C10041421D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E6417119CADC100041421D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E6417F19CADC100041421D /* PhotoEditor.storyboard in Resources */,
+				31ED765F19CB1CA7007365DC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31A7DB2C19CEFACA0081C234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310636CC19CF2D0900B04125 /* FaceDetector.swift in Sources */,
+				31A7DB5419CEFB980081C234 /* MustacheAdjustment.swift in Sources */,
+				31A7DB5219CEFB8F0081C234 /* MustachePosition.swift in Sources */,
+				31A7DB5819CEFC510081C234 /* UIImage+ImageOrientation.swift in Sources */,
+				31A7DB5919CEFC510081C234 /* UIImage+RotatedImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E6414319CAD4C10041421D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AE5EB119CB7E9400364087 /* PhotoEditorViewController.swift in Sources */,
+				31E6414D19CAD4C10041421D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E6416F19CADC100041421D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E6417D19CADC100041421D /* PhotoEditorViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31A7DB4419CEFACA0081C234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31A7DB3019CEFACA0081C234 /* MustacheAdjustmentFramework */;
+			targetProxy = 31A7DB4319CEFACA0081C234 /* PBXContainerItemProxy */;
+		};
+		31A7DB4819CEFACA0081C234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31A7DB3019CEFACA0081C234 /* MustacheAdjustmentFramework */;
+			targetProxy = 31A7DB4719CEFACA0081C234 /* PBXContainerItemProxy */;
+		};
+		31E6418119CADC100041421D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31E6417219CADC100041421D /* MustachePhotoEditingExtension */;
+			targetProxy = 31E6418019CADC100041421D /* PBXContainerItemProxy */;
+		};
+		31E6418419CADC110041421D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31E6417219CADC100041421D /* MustachePhotoEditingExtension */;
+			targetProxy = 31E6418319CADC110041421D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31E6415519CAD4C10041421D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31E6415619CAD4C10041421D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31A7DB4919CEFACA0081C234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 4;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MustacheAdjustmentFramework/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.SwiftMustaches.MustacheAdjustmentFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31A7DB4A19CEFACA0081C234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 4;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "MustacheAdjustmentFramework/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.SwiftMustaches.MustacheAdjustmentFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		31E6416419CAD4C10041421D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		31E6416519CAD4C10041421D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		31E6416719CAD4C10041421D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "SwiftMustaches/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.SwiftMustaches;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		31E6416819CAD4C10041421D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "SwiftMustaches/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.SwiftMustaches;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5131d531-8712-4f2c-acbb-6406706c3e5a";
+			};
+			name = Release;
+		};
+		31E6418519CADC110041421D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MustachePhotoEditingExtension/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.SwiftMustaches.MustachePhotoEditingExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31E6418619CADC110041421D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "MustachePhotoEditingExtension/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elpassion.SwiftMustaches.MustachePhotoEditingExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "56d5e05a-829f-47db-853c-33a6759b3223";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31A7DB4D19CEFACA0081C234 /* Build configuration list for PBXNativeTarget "MustacheAdjustmentFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A7DB4919CEFACA0081C234 /* Debug */,
+				31A7DB4A19CEFACA0081C234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E6414219CAD4C10041421D /* Build configuration list for PBXProject "SwiftMustaches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E6416419CAD4C10041421D /* Debug */,
+				31E6416519CAD4C10041421D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E6416619CAD4C10041421D /* Build configuration list for PBXNativeTarget "SwiftMustaches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E6416719CAD4C10041421D /* Debug */,
+				31E6416819CAD4C10041421D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E6418719CADC110041421D /* Build configuration list for PBXNativeTarget "MustachePhotoEditingExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E6418519CADC110041421D /* Debug */,
+				31E6418619CADC110041421D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31E6413F19CAD4C10041421D /* Project object */;
+}

@@ -1,0 +1,10 @@
+PODS:
+  - CrashlyticsFramework (2.2.10)
+
+DEPENDENCIES:
+  - CrashlyticsFramework (~> 2.2)
+
+SPEC CHECKSUMS:
+  CrashlyticsFramework: 5b7a9fb3d94124e3c20a9b10f93244706cfdb0f1
+
+COCOAPODS: 0.38.2
