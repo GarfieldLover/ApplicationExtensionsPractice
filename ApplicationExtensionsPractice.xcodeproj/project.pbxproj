@@ -16,6 +16,13 @@
 		0ACE7C311D3E5BFC00EB209D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C301D3E5BFC00EB209D /* TodayViewController.swift */; };
 		0ACE7C341D3E5BFC00EB209D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C321D3E5BFC00EB209D /* MainInterface.storyboard */; };
 		0ACE7C381D3E5BFC00EB209D /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0ACE7C2B1D3E5BFC00EB209D /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		580BD99F1D47673500A2178C /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD101D45FE2800E18F5E /* MMWormhole.m */; };
+		580BD9A01D47673500A2178C /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD121D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.m */; };
+		580BD9A11D47673500A2178C /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD141D45FE2800E18F5E /* MMWormholeFileTransiting.m */; };
+		580BD9A21D47673500A2178C /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD161D45FE2800E18F5E /* MMWormholeSession.m */; };
+		580BD9A31D47673500A2178C /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD181D45FE2800E18F5E /* MMWormholeSessionContextTransiting.m */; };
+		580BD9A41D47673500A2178C /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD1A1D45FE2800E18F5E /* MMWormholeSessionFileTransiting.m */; };
+		580BD9A51D47673500A2178C /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD1C1D45FE2800E18F5E /* MMWormholeSessionMessageTransiting.m */; };
 		581BAD1E1D45FE2800E18F5E /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD101D45FE2800E18F5E /* MMWormhole.m */; };
 		581BAD1F1D45FE2800E18F5E /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD101D45FE2800E18F5E /* MMWormhole.m */; };
 		581BAD201D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD121D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.m */; };
@@ -36,6 +43,9 @@
 		581BAD4D1D46025300E18F5E /* DemoPreprocessor.js in Resources */ = {isa = PBXBuildFile; fileRef = 581BAD4C1D46025300E18F5E /* DemoPreprocessor.js */; };
 		581BAD4F1D46131C00E18F5E /* ShareMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD4E1D46131C00E18F5E /* ShareMenuViewController.swift */; };
 		581BAD511D46133C00E18F5E /* ShareSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD501D46133C00E18F5E /* ShareSelectViewController.swift */; };
+		5870DDC61D4720DE00137F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5870DDC51D4720DE00137F87 /* Assets.xcassets */; };
+		5885D0441D476E1A0061AECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		5885D0451D476E1A0061AECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		58A421671D421CC9000595A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A421661D421CC9000595A6 /* DetailViewController.swift */; };
 		58AA40CA1D41CEF20012F8AC /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58AA40C91D41CEF20012F8AC /* data.plist */; };
 /* End PBXBuildFile section */
@@ -111,6 +121,7 @@
 		581BAD501D46133C00E18F5E /* ShareSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareSelectViewController.swift; sourceTree = "<group>"; };
 		585CF0AE1D3F786D00C9CD7C /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayExtension.entitlements; sourceTree = "<group>"; };
 		585CF0AF1D3F78A100C9CD7C /* ApplicationExtensionsPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplicationExtensionsPractice.entitlements; sourceTree = "<group>"; };
+		5870DDC51D4720DE00137F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A421661D421CC9000595A6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		58AA40C91D41CEF20012F8AC /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +241,7 @@
 				581BAD4E1D46131C00E18F5E /* ShareMenuViewController.swift */,
 				581BAD501D46133C00E18F5E /* ShareSelectViewController.swift */,
 				581BAD351D46019200E18F5E /* MainInterface.storyboard */,
+				5870DDC51D4720DE00137F87 /* Assets.xcassets */,
 				581BAD381D46019200E18F5E /* Info.plist */,
 			);
 			path = ShareExtension;
@@ -373,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5885D0441D476E1A0061AECE /* Assets.xcassets in Resources */,
 				0ACE7C341D3E5BFC00EB209D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +395,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				581BAD4D1D46025300E18F5E /* DemoPreprocessor.js in Resources */,
+				5870DDC61D4720DE00137F87 /* Assets.xcassets in Resources */,
+				5885D0451D476E1A0061AECE /* Assets.xcassets in Resources */,
 				581BAD371D46019200E18F5E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +440,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580BD99F1D47673500A2178C /* MMWormhole.m in Sources */,
+				580BD9A01D47673500A2178C /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				580BD9A11D47673500A2178C /* MMWormholeFileTransiting.m in Sources */,
+				580BD9A21D47673500A2178C /* MMWormholeSession.m in Sources */,
+				580BD9A31D47673500A2178C /* MMWormholeSessionContextTransiting.m in Sources */,
+				580BD9A41D47673500A2178C /* MMWormholeSessionFileTransiting.m in Sources */,
+				580BD9A51D47673500A2178C /* MMWormholeSessionMessageTransiting.m in Sources */,
 				581BAD341D46019200E18F5E /* ShareViewController.swift in Sources */,
 				581BAD511D46133C00E18F5E /* ShareSelectViewController.swift in Sources */,
 				581BAD4F1D46131C00E18F5E /* ShareMenuViewController.swift in Sources */,
@@ -607,6 +629,7 @@
 		0ACE7C3A1D3E5BFC00EB209D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TodayExtension/Info.plist;
@@ -623,6 +646,7 @@
 		0ACE7C3B1D3E5BFC00EB209D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TodayExtension/Info.plist;
@@ -639,12 +663,14 @@
 		581BAD3D1D46019200E18F5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ApplicationExtensionsPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -652,12 +678,14 @@
 		581BAD3E1D46019200E18F5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ApplicationExtensionsPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -699,6 +727,7 @@
 				581BAD3E1D46019200E18F5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -158,6 +158,7 @@ void wormholeNotificationCallback(CFNotificationCenterRef center,
                                        NULL);
 }
 
+//active Callback
 void wormholeNotificationCallback(CFNotificationCenterRef center,
                                void * observer,
                                CFStringRef name,

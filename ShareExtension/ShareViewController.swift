@@ -12,12 +12,12 @@ import MobileCoreServices
 
 class ShareViewController: UIViewController {
     
-    var articleTitle: String?
-    var articleImage: String?
-    var articleUrl: String?
+    var shareMenu: ShareMenuViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.addShareMenu()
 
         for item: AnyObject in (self.extensionContext?.inputItems)! {
             let inputItem = item as! NSExtensionItem
@@ -28,13 +28,8 @@ class ShareViewController: UIViewController {
                 if itemProvider.hasItemConformingToTypeIdentifier(kUTTypePropertyList as String) {
                     itemProvider.loadItem(forTypeIdentifier: kUTTypePropertyList as String, options: nil, completionHandler: { (result: NSSecureCoding?, error: NSError!) -> Void in
                         if let resultDict = result as? NSDictionary {
-                            self.articleTitle = resultDict[NSExtensionJavaScriptPreprocessingResultsKey]!["title"] as? String
-//                            self.articleHost = resultDict[NSExtensionJavaScriptPreprocessingResultsKey]!["host"] as! String
-//                            self.articleDesc = resultDict[NSExtensionJavaScriptPreprocessingResultsKey]!["description"] as! String
-                            self.articleImage = resultDict[NSExtensionJavaScriptPreprocessingResultsKey]!["image"] as? String
-                            self.articleUrl = resultDict[NSExtensionJavaScriptPreprocessingResultsKey]!["url"] as? String
                             
-                            self.addShareMenu()
+                            self.shareMenu?.setResult(resultDict: resultDict)
 
                         }
                     })
@@ -42,45 +37,31 @@ class ShareViewController: UIViewController {
             }
         }
         
-        
     }
     
     func addShareMenu(_: Void) -> Void {
         
-        let storyboard: UIStoryboard = UIStoryboard.init(name: "MainInterface", bundle: Bundle.main())
+        let storyboard: UIStoryboard = UIStoryboard.init(name: "MainInterface", bundle: Bundle.main)
         
-        let nav: UINavigationController = storyboard.instantiateViewController(withIdentifier: "ShareMenuNav") as! UINavigationController
-        nav.view.bounds.size = CGSize.init(width: 320, height: 300)
-        nav.view.center = CGPoint.init(x: self.view.center.x, y: self.view.center.y)
+        shareMenu = storyboard.instantiateViewController(withIdentifier: "ShareMenu") as? ShareMenuViewController
+        let nav: UINavigationController = UINavigationController.init(rootViewController: shareMenu!)
+        shareMenu?.shareVC = self
+        
+        nav.view.bounds.size = CGSize.init(width: 320, height: 250)
         self.addChildViewController(nav)
         self.view.addSubview(nav.view)
         
-//        let url: URL = URL.init(string: articleImage!)!
-//        let task = URLSession.shared().downloadTask(with: url) { location, response, error in
-//            guard location != nil && error == nil else {
-//                print(error)
-//                return
-//            }
-//            
-////            let fileManager = FileManager.default()
-////            let documents = try! fileManager.URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
-////            let fileURL = documents.URLByAppendingPathComponent("test.jpg")
-////            do {
-////                try fileManager.moveItemAtURL(location!, toURL: fileURL)
-////            } catch {
-////                print(error)
-////            }
-//        }
-//
-//        task.resume()
+        nav.view.layer.cornerRadius = 10
+        nav.view.layer.masksToBounds = true
         
-        let shareMenu: ShareMenuViewController = nav.visibleViewController as! ShareMenuViewController
-//        shareMenu.imageView?.image = UIImage.init(data: <#T##Data#>)
-        shareMenu.titleLabel?.text = articleTitle
-        shareMenu.detailLabel?.text = articleUrl
+        nav.view.center = CGPoint.init(x: self.view.center.x, y: self.view.bounds.size.height+250.0/2)
+
+        UIView.animate(withDuration: 0.25) { 
+            nav.view.center = CGPoint.init(x: self.view.center.x, y: self.view.center.y)
+        }
 
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "patternDetailSegue" {
         }
@@ -106,12 +87,4 @@ class ShareViewController: UIViewController {
 #endif
 }
 
-
-class ShareMenuViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView?
-    @IBOutlet weak var titleLabel: UILabel?
-    @IBOutlet weak var detailLabel: UILabel?
-    @IBOutlet weak var tableView: UITableView?
-    
-}
 

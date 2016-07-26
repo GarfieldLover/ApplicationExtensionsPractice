@@ -42,10 +42,14 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
     @IBOutlet weak var dataView: UIView?
     
     var extensionsArray: NSArray?
+    
+    var wormhole: MMWormhole?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        wormhole = MMWormhole.init(applicationGroupIdentifier: "group.gl.ApplicationExtensionsPractice", optionalDirectory: "wormhole")
+
         //UI适配还的靠屏幕宽度计算得来
         
         waitingTitle?.isHidden = false
@@ -128,6 +132,8 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
     }
     
     @IBAction func xxxx(){
+        wormhole?.passMessageObject(title, identifier: "ShareExtension")
+
         //    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"demonote:%ld", (long)indexPath.row]];
         let url: URL! = URL.init(string: "ApplicationExtensionsPractice:xxx");
         self.extensionContext?.open(url, completionHandler: { (Bool) in
