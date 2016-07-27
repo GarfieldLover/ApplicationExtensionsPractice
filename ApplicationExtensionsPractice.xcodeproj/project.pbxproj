@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3736251D48F13700EB80B5 /* Logo_WWDC2016.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3736241D48F13700EB80B5 /* Logo_WWDC2016.png */; };
 		0A3C93421D3F214D0070E424 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C93411D3F214D0070E424 /* NotificationCenter.framework */; };
 		0ACE7C161D3E5B1300EB209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */; };
 		0ACE7C181D3E5B1300EB209D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C171D3E5B1300EB209D /* ViewController.swift */; };
@@ -55,7 +56,6 @@
 		584EAA951D48B48E00259DF7 /* PhotoEditingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 584EAA871D48B48E00259DF7 /* PhotoEditingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		584EAAA11D48B8BE00259DF7 /* ContentEditingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584EAAA01D48B8BE00259DF7 /* ContentEditingController.swift */; };
 		584EAAA21D48BB0F00259DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
-		584EAAA41D48BBF400259DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584EAAA31D48BBF400259DF7 /* Assets.xcassets */; };
 		5870DDC61D4720DE00137F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5870DDC51D4720DE00137F87 /* Assets.xcassets */; };
 		5885D0441D476E1A0061AECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		5885D0451D476E1A0061AECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
@@ -104,6 +104,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A3736241D48F13700EB80B5 /* Logo_WWDC2016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_WWDC2016.png; sourceTree = "<group>"; };
 		0A3C93411D3F214D0070E424 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		0ACE7C121D3E5B1300EB209D /* ApplicationExtensionsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationExtensionsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,7 +153,6 @@
 		584EAA901D48B48E00259DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		584EAA921D48B48E00259DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		584EAAA01D48B8BE00259DF7 /* ContentEditingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentEditingController.swift; sourceTree = "<group>"; };
-		584EAAA31D48BBF400259DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		585CF0AE1D3F786D00C9CD7C /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayExtension.entitlements; sourceTree = "<group>"; };
 		585CF0AF1D3F78A100C9CD7C /* ApplicationExtensionsPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplicationExtensionsPractice.entitlements; sourceTree = "<group>"; };
 		5870DDC51D4720DE00137F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -337,8 +337,8 @@
 				584EAAA01D48B8BE00259DF7 /* ContentEditingController.swift */,
 				584EAA8D1D48B48E00259DF7 /* PhotoEditingViewController.swift */,
 				584EAA8F1D48B48E00259DF7 /* MainInterface.storyboard */,
-				584EAAA31D48BBF400259DF7 /* Assets.xcassets */,
 				584EAA921D48B48E00259DF7 /* Info.plist */,
+				0A3736241D48F13700EB80B5 /* Logo_WWDC2016.png */,
 			);
 			path = PhotoEditingExtension;
 			sourceTree = "<group>";
@@ -526,8 +526,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3736251D48F13700EB80B5 /* Logo_WWDC2016.png in Resources */,
 				584EAAA21D48BB0F00259DF7 /* Assets.xcassets in Resources */,
-				584EAAA41D48BBF400259DF7 /* Assets.xcassets in Resources */,
 				584EAA911D48B48E00259DF7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -920,6 +920,7 @@
 				584EAA981D48B48E00259DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -62,7 +62,7 @@ class ShareMenuViewController: UIViewController, UITableViewDelegate, UITableVie
         
         
         let imageUrl: URL = URL.init(string: image!)!
-        let session: URLSession = URLSession.shared
+        let session: URLSession = URLSession.shared()
         
         let task =  session.downloadTask(with: imageUrl) { (location, response, error) in
             //            imageView?.image = UIImage.init(data: <#T##Data#>)
@@ -99,7 +99,7 @@ class ShareMenuViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
 
-            let storyboard: UIStoryboard = UIStoryboard.init(name: "MainInterface", bundle: Bundle.main)
+            let storyboard: UIStoryboard = UIStoryboard.init(name: "MainInterface", bundle: Bundle.main())
             let shareSelect: UIViewController = storyboard.instantiateViewController(withIdentifier: "ShareSelect")
             let shareSelectVC: ShareSelectViewController = shareSelect as! ShareSelectViewController
             let nav: UINavigationController = self.navigationController!

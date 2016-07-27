@@ -47,6 +47,8 @@ class ContentEditingController: NSObject {
     var selectedFilterName: String?
     let wwdcFilter = "WWDC16"
     let filterNames = ["WWDC16", "CISepiaTone", "CIPhotoEffectChrome", "CIPhotoEffectInstant", "CIColorInvert", "CIColorPosterize"]
+    
+    //CoreImage数组
     var previewImages: [CIImage]?
 
     // MARK: PHContentEditingController
@@ -61,6 +63,7 @@ class ContentEditingController: NSObject {
 
         // Create preview images for all filters.
         // If adjustment data is compatbile, these start from the last edit's pre-filter image.
+        //取缩略图
         updateImagePreviews()
 
         // Read adjustment data to choose (again) the last chosen filter.
@@ -88,6 +91,7 @@ class ContentEditingController: NSObject {
 
         let output = PHContentEditingOutput(contentEditingInput: input)
 
+        //取得output 的data 从归档拿的？
         // All this extension needs for resuming edits is a filter name, so that's the adjustment data.
         output.adjustmentData = PHAdjustmentData(
             formatIdentifier: formatIdentifier, formatVersion: formatVersion,
@@ -143,9 +147,11 @@ class ContentEditingController: NSObject {
     // MARK: Media processing
 
     func updateImagePreviews() {
+        //处理好图片，直接取得大图
         previewImages = filterNames.map { filterName in
 
             // Load preview-size image to process from input.
+            //获取mediaType 类型，视频截图
             let inputImage: CIImage
             if input.mediaType == .video {
                 guard let avAsset = input.audiovisualAsset
@@ -156,12 +162,14 @@ class ContentEditingController: NSObject {
                     else { fatalError("missing input image") }
                 guard let ciImage = CIImage(image: image)
                     else { fatalError("can't load input image to apply edit") }
+                //取CIImage
                 inputImage = ciImage
             }
 
             // Define output image with Core Image edits.
             if filterName == wwdcFilter {
-                return inputImage.applyingWWDCDemoEffect(shouldWatermark: false)
+                //需要水印
+                return inputImage.applyingWWDCDemoEffect(shouldWatermark: true)
             } else {
                 return inputImage.applyingFilter(filterName, withInputParameters: nil)
             }
@@ -312,7 +320,8 @@ class ContentEditingController: NSObject {
 private extension CIImage {
 
     func applyingWWDCDemoEffect(time: CGFloat = 0, scale: CGFloat = 1, shouldWatermark: Bool = true) -> CIImage {
-
+        
+        //coreimage的，没看懂
         // Demo step 1: Crop to square, animating crop position.
         let length = min(extent.width, extent.height)
         let cropOrigin = CGPoint(x: (1 + time) * (extent.width - length) / 2,
@@ -339,13 +348,13 @@ private extension CIImage {
         if shouldWatermark {
             // Scale logo to rendering resolution and position it for compositing.
             let logoWidth = ContentEditingController.wwdcLogo.extent.width
-            let logoScale = screened.extent.width * 0.7 / logoWidth
+            let logoScale = self.extent.width * 0.7 / logoWidth
             let scaledLogo = ContentEditingController.wwdcLogo
                 .applying(CGAffineTransform(scaleX: logoScale, y: logoScale))
             let logo = scaledLogo
-                .applying(CGAffineTransform(translationX: screened.extent.minX + (screened.extent.width - scaledLogo.extent.width) / 2, y: screened.extent.minY + scaledLogo.extent.height))
+                .applying(CGAffineTransform(translationX: self.extent.minX + (self.extent.width - scaledLogo.extent.width) / 2, y: self.extent.minY + scaledLogo.extent.height))
             // Composite logo over the main image.
-            return logo.applyingFilter("CILinearDodgeBlendMode", withInputParameters: [kCIInputBackgroundImageKey: screened])
+            return logo.applyingFilter("CILinearDodgeBlendMode", withInputParameters: [kCIInputBackgroundImageKey: self])
         } else {
             return screened
         }

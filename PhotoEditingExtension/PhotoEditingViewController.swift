@@ -49,91 +49,92 @@ class PhotoEditingViewController: UIViewController, ContentEditingDelegate {
 
 // MARK: PHContentEditingController
 extension PhotoEditingViewController: PHContentEditingController {
-    
-//    // Forward all methods to shared implementation for both platforms.
-//    
-//    // Query whether the receiver can handle (i.e. can decode and render) the given adjustment data.
-//    func canHandle(_ adjustmentData: PHAdjustmentData) -> Bool{
-//        return editController.canHandle(adjustmentData)
-//    }
-//    
-//    
-//    // Provides the input for the editing session. The placeholder image represents the current version of the asset (with adjustments baked in), and can be used as UI placeholder, in case rendering the adjustments from the input cannot be done in a timely fashion.
-//    func startContentEditing(with contentEditingInput: PHContentEditingInput, placeholderImage: UIImage){
-//        // Except here: show the image preview before forwarding.
-//        previewImageView.image = placeholderImage
-//        backgroundImageView.image = placeholderImage
-//        collectionView.reloadData()
-//        
-//        editController.startContentEditing(with: contentEditingInput)
-//    }
-//    
-//    
-//    // Called when the user finishes the editing session. The receiver should prevent the user from editing the asset further. Also, it should create the editing output and call the completion handler. The completion handler returns after the output has been consumed, so it is safe to perform clean up after it returns. The completion handler can (and should best) be called on a background queue.
-//    func finishContentEditing(completionHandler: (PHContentEditingOutput) -> Swift.Void){
-//        editController.finishContentEditing { (editingOutput) in
-//            
-//        }
-//    }
-//    
-//    
-//    // Called if the user cancels the editing session. (Can be called while the receiver is producing the editing output.)
-//    func cancelContentEditing(){
-//        editController.cancelContentEditing()
-//        
-//    }
-//    
-//    
-//    // Returns whether the user should be prompted when canceling the editing session.
-//    var shouldShowCancelConfirmation: Bool {
-//        return editController.shouldShowCancelConfirmation
-//        
-//    }
-    
-    func canHandle(_ adjustmentData: PHAdjustmentData) -> Bool {
+
+    //能不能处理
+    func canHandle(_ adjustmentData: PHAdjustmentData) -> Bool{
         return editController.canHandle(adjustmentData)
     }
     
-    func startContentEditing(with contentEditingInput: PHContentEditingInput, placeholderImage: UIImage) {
-                // Except here: show the image preview before forwarding.
-                previewImageView.image = placeholderImage
-                backgroundImageView.image = placeholderImage
-                collectionView.reloadData()
-        
-                editController.startContentEditing(with: contentEditingInput)
+    
+    //开始编辑，调起extension，给PHContentEditingInput和image
+    func startContentEditing(with contentEditingInput: PHContentEditingInput, placeholderImage: UIImage){
+                        // Except here: show the image preview before forwarding.
+                        previewImageView.image = placeholderImage
+                        backgroundImageView.image = placeholderImage
+                        collectionView.reloadData()
+                //input.displaySizeImage
+                        editController.startContentEditing(with: contentEditingInput)
     }
     
-    func finishContentEditing(completionHandler: ((PHContentEditingOutput?) -> Void)) {
-        // Update UI to reflect that editing has finished and output is being rendered.
-                editController.finishContentEditing { (editingOutput) in
+    
+    //点击完成
+    func finishContentEditing(completionHandler: (PHContentEditingOutput) -> Swift.Void){
+                        editController.finishContentEditing { (editingOutput) in
         
-                }
-//        // Render and provide output on a background queue.
-//        DispatchQueue.global(attributes: [.qosDefault]).async {
-//            // Create editing output from the editing input.
-//            let output = PHContentEditingOutput(contentEditingInput: self.input!)
-//            
-//            // Provide new adjustments and render output to given location.
-//            // output.adjustmentData = <#new adjustment data#>
-//            // let renderedJPEGData = <#output JPEG#>
-//            // renderedJPEGData.writeToURL(output.renderedContentURL, atomically: true)
-//            
-//            // Call completion handler to commit edit to Photos.
-//            completionHandler(output)
-//            
-//            // Clean up temporary files, etc.
-//        }
+                        }
     }
     
+    
+    // 取消编辑
+    func cancelContentEditing(){
+                    editController.cancelContentEditing()
+
+    }
+    
+    
+    // 是否有取消确认
     var shouldShowCancelConfirmation: Bool {
-                return editController.shouldShowCancelConfirmation
+        return editController.shouldShowCancelConfirmation
 
     }
+
     
-    func cancelContentEditing() {
-            editController.cancelContentEditing()
-
-    }
+    
+    
+//    func canHandle(_ adjustmentData: PHAdjustmentData) -> Bool {
+//        return editController.canHandle(adjustmentData)
+//    }
+//    
+//    func startContentEditing(with contentEditingInput: PHContentEditingInput, placeholderImage: UIImage) {
+//                // Except here: show the image preview before forwarding.
+//                previewImageView.image = placeholderImage
+//                backgroundImageView.image = placeholderImage
+//                collectionView.reloadData()
+//        
+//                editController.startContentEditing(with: contentEditingInput)
+//    }
+//    
+//    func finishContentEditing(completionHandler: ((PHContentEditingOutput?) -> Void)) {
+//        // Update UI to reflect that editing has finished and output is being rendered.
+//                editController.finishContentEditing { (editingOutput) in
+//        
+//                }
+////        // Render and provide output on a background queue.
+////        DispatchQueue.global(attributes: [.qosDefault]).async {
+////            // Create editing output from the editing input.
+////            let output = PHContentEditingOutput(contentEditingInput: self.input!)
+////            
+////            // Provide new adjustments and render output to given location.
+////            // output.adjustmentData = <#new adjustment data#>
+////            // let renderedJPEGData = <#output JPEG#>
+////            // renderedJPEGData.writeToURL(output.renderedContentURL, atomically: true)
+////            
+////            // Call completion handler to commit edit to Photos.
+////            completionHandler(output)
+////            
+////            // Clean up temporary files, etc.
+////        }
+//    }
+//    
+//    var shouldShowCancelConfirmation: Bool {
+//                return editController.shouldShowCancelConfirmation
+//
+//    }
+//    
+//    func cancelContentEditing() {
+//            editController.cancelContentEditing()
+//
+//    }
 
 }
 
@@ -155,7 +156,7 @@ extension PhotoEditingViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(PhotoFilterCell.self), for: indexPath) as? PhotoFilterCell
             else { fatalError("unexpected cell in storyboard") }
 
-        let filterName = editController.filterNames[indexPath.item]
+        let filterName = editController.filterNames[indexPath.item!]
         if filterName == editController.wwdcFilter {
             cell.filterNameLabel.text = editController.wwdcFilter
         } else {
@@ -165,8 +166,9 @@ extension PhotoEditingViewController: UICollectionViewDataSource {
             cell.filterNameLabel.text = filterDisplayName
         }
         // Show the preview image defined by the editing controller.
+        //缩略图
         if let images = editController.previewImages {
-            cell.imageView.image = UIImage(ciImage: images[indexPath.item])
+            cell.imageView.image = UIImage(ciImage: images[indexPath.item!])
         }
 
         return cell
@@ -179,13 +181,13 @@ extension PhotoEditingViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         updateSelection(for: collectionView.cellForItem(at: indexPath)!)
 
-        let filterName = editController.filterNames[indexPath.item]
+        let filterName = editController.filterNames[indexPath.item!]
         editController.selectedFilterName = filterName
 
         // Edit controller has already defined preview images for all filters,
         // so just switch the big preview to the right one.
         if let images = editController.previewImages {
-            previewImage = images[indexPath.item]
+            previewImage = images[indexPath.item!]
             previewImageView.image = UIImage(ciImage: previewImage!)
         }
 
