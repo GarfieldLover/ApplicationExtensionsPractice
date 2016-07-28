@@ -41,7 +41,7 @@ class ShareViewController: UIViewController {
     
     func addShareMenu(_: Void) -> Void {
         
-        let storyboard: UIStoryboard = UIStoryboard.init(name: "MainInterface", bundle: Bundle.main())
+        let storyboard: UIStoryboard = UIStoryboard.init(name: "MainInterface", bundle: Bundle.main)
         
         shareMenu = storyboard.instantiateViewController(withIdentifier: "ShareMenu") as? ShareMenuViewController
         let nav: UINavigationController = UINavigationController.init(rootViewController: shareMenu!)

@@ -176,6 +176,7 @@ class ContentEditingController: NSObject {
         }
     }
 
+    //LivePhoto, 6s的，拍一张照片是1.5s视频
     @available(OSXApplicationExtension 10.12, iOSApplicationExtension 10.0, *)
     func updateLivePhotoIfNeeded() {
         if input.livePhoto != nil {
@@ -228,9 +229,11 @@ class ContentEditingController: NSObject {
                 shouldWatermark: frame.type == .photo)
         }
     }
-
+    
+    //处理图片
     func processImage(to output: PHContentEditingOutput, completionHandler: ((PHContentEditingOutput?) -> Void)) {
-
+        
+        //取得大图，再按选择类型处理，保存
         // Load full-size image to process from input.
         guard let url = input.fullSizeImageURL
             else { fatalError("missing input image url") }
@@ -279,8 +282,10 @@ class ContentEditingController: NSObject {
 
     }
 
+    //没成功，1s的视频，每帧太耗时了？
     func processVideo(to output: PHContentEditingOutput, completionHandler: ((PHContentEditingOutput?) -> Void)) {
 
+        //取得视频
         // Load AVAsset to process from input.
         guard let avAsset = input.audiovisualAsset
             else { fatalError("can't get input AV asset") }
@@ -293,6 +298,7 @@ class ContentEditingController: NSObject {
                 let filtered: CIImage
                 switch self.selectedFilterName {
                     case .some(self.wwdcFilter):
+                        //难道是取得每一帧，看来是，对AVFoundation没啥研究
                         let frameTime = CGFloat(CMTimeGetSeconds(request.compositionTime) / duration)
                         filtered = request.sourceImage.applyingWWDCDemoEffect(time: frameTime)
                     case .some(let filterName):
@@ -303,6 +309,7 @@ class ContentEditingController: NSObject {
                 request.finish(with: filtered, context: nil)
         })
 
+        //变完输出
         // Write the processed asset to the output URL.
         guard let export = AVAssetExportSession(asset: avAsset, presetName: AVAssetExportPresetHighestQuality)
             else { fatalError("can't set up AV export session") }

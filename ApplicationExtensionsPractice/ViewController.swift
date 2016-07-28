@@ -27,7 +27,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dataArray = NSMutableArray.init(contentsOfFile: Bundle.main().pathForResource("data", ofType: "plist")!)
+        dataArray = NSMutableArray.init(contentsOfFile: Bundle.main.pathForResource("data", ofType: "plist")!)
         extensionsArray = NSMutableArray.init()
         
         wormhole = MMWormhole.init(applicationGroupIdentifier: "group.gl.ApplicationExtensionsPractice", optionalDirectory: "wormhole")
@@ -43,7 +43,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let cell: PhotoCollectionViewCell! = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCollectionViewCell", for: indexPath) as? PhotoCollectionViewCell
-        let dataDic: NSDictionary = dataArray?.object(at: indexPath.item!) as! NSDictionary
+        let dataDic: NSDictionary = dataArray?.object(at: indexPath.item) as! NSDictionary
         
         let imageName: NSString = dataDic.object(forKey: "imageName") as! NSString
 
@@ -74,7 +74,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
         
-        let dataDic: NSMutableDictionary = dataArray?.object(at: indexPath.item!) as! NSMutableDictionary
+        let dataDic: NSMutableDictionary = dataArray?.object(at: indexPath.item) as! NSMutableDictionary
         let imageName: NSString = dataDic.object(forKey: "imageName") as! NSString
 
         let image: UIImage = UIImage.init(named: imageName as String)!

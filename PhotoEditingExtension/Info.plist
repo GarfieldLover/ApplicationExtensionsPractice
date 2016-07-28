@@ -27,6 +27,8 @@
 			<key>PHSupportedMediaTypes</key>
 			<array>
 				<string>Image</string>
+				<string>LivePhoto</string>
+				<string>Video</string>
 			</array>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
