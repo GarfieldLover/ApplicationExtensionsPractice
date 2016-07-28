@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>SpotlightExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>TodayExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +53,11 @@
 			<true/>
 		</dict>
 		<key>584EAA861D48B48E00259DF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58FE568F1D49F02E002C9F56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
