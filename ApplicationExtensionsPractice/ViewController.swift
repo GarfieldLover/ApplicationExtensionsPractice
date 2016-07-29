@@ -28,14 +28,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if CourseList.loadSaved() != nil {
-            print("loaded Save CourseList")
-        } else {
-            // Create a new Course List
-            let courseLs: CourseList = CourseList()
-            courseLs.populateCourses()
-            courseLs.save()
-        }
 
         
         let array: NSArray = NSArray.init(contentsOfFile: Bundle.main.pathForResource("data", ofType: "plist")!)!
@@ -43,7 +35,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let hero: Hero = Hero()
             hero.update(dic as! Dictionary<String, AnyObject>)
             dataArray.add(hero)
-            
             self.saveSpotlightItem(hero: hero)
         }
         

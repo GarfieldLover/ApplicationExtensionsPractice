@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A3736251D48F13700EB80B5 /* Logo_WWDC2016.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3736241D48F13700EB80B5 /* Logo_WWDC2016.png */; };
 		0A3C93421D3F214D0070E424 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C93411D3F214D0070E424 /* NotificationCenter.framework */; };
-		0AAF4CF11D4A5297003D3B78 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF4CF01D4A5297003D3B78 /* CourseList.swift */; };
 		0ACE7C161D3E5B1300EB209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */; };
 		0ACE7C181D3E5B1300EB209D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C171D3E5B1300EB209D /* ViewController.swift */; };
 		0ACE7C1B1D3E5B1300EB209D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C191D3E5B1300EB209D /* Main.storyboard */; };
@@ -52,6 +51,10 @@
 		584EAA951D48B48E00259DF7 /* PhotoEditingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 584EAA871D48B48E00259DF7 /* PhotoEditingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		584EAAA11D48B8BE00259DF7 /* ContentEditingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584EAAA01D48B8BE00259DF7 /* ContentEditingController.swift */; };
 		584EAAA21D48BB0F00259DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		58571F771D4B3D68009B1DE5 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58571F761D4B3D68009B1DE5 /* RequestHandler.swift */; };
+		58571F7B1D4B3D68009B1DE5 /* SharedLinksExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 58571F741D4B3D68009B1DE5 /* SharedLinksExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		58571F7F1D4B3D7C009B1DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		58571F811D4B564C009B1DE5 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58571F801D4B564C009B1DE5 /* appicon.png */; };
 		5870DDC61D4720DE00137F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5870DDC51D4720DE00137F87 /* Assets.xcassets */; };
 		5885D0441D476E1A0061AECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		5885D0451D476E1A0061AECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
@@ -93,6 +96,13 @@
 			remoteGlobalIDString = 584EAA861D48B48E00259DF7;
 			remoteInfo = PhotoEditingExtension;
 		};
+		58571F791D4B3D68009B1DE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58571F731D4B3D68009B1DE5;
+			remoteInfo = SharedLinksExtension;
+		};
 		58FE56951D49F02E002C9F56 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
@@ -111,6 +121,7 @@
 			files = (
 				584EAA951D48B48E00259DF7 /* PhotoEditingExtension.appex in Embed App Extensions */,
 				581BAD3B1D46019200E18F5E /* ShareExtension.appex in Embed App Extensions */,
+				58571F7B1D4B3D68009B1DE5 /* SharedLinksExtension.appex in Embed App Extensions */,
 				0ACE7C381D3E5BFC00EB209D /* TodayExtension.appex in Embed App Extensions */,
 				58FE56971D49F02E002C9F56 /* SpotlightExtension.appex in Embed App Extensions */,
 			);
@@ -122,7 +133,6 @@
 /* Begin PBXFileReference section */
 		0A3736241D48F13700EB80B5 /* Logo_WWDC2016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_WWDC2016.png; sourceTree = "<group>"; };
 		0A3C93411D3F214D0070E424 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		0AAF4CF01D4A5297003D3B78 /* CourseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		0ACE7C121D3E5B1300EB209D /* ApplicationExtensionsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationExtensionsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACE7C171D3E5B1300EB209D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +175,10 @@
 		584EAA901D48B48E00259DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		584EAA921D48B48E00259DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		584EAAA01D48B8BE00259DF7 /* ContentEditingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentEditingController.swift; sourceTree = "<group>"; };
+		58571F741D4B3D68009B1DE5 /* SharedLinksExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharedLinksExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		58571F761D4B3D68009B1DE5 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		58571F781D4B3D68009B1DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58571F801D4B564C009B1DE5 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		585CF0AE1D3F786D00C9CD7C /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayExtension.entitlements; sourceTree = "<group>"; };
 		585CF0AF1D3F78A100C9CD7C /* ApplicationExtensionsPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplicationExtensionsPractice.entitlements; sourceTree = "<group>"; };
 		5870DDC51D4720DE00137F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,6 +222,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58571F711D4B3D68009B1DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FE568D1D49F02E002C9F56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +249,7 @@
 				581BAD321D46019200E18F5E /* ShareExtension */,
 				584EAA8C1D48B48E00259DF7 /* PhotoEditingExtension */,
 				58FE56911D49F02E002C9F56 /* SpotlightExtension */,
+				58571F751D4B3D68009B1DE5 /* SharedLinksExtension */,
 				0ACE7C2C1D3E5BFC00EB209D /* Frameworks */,
 				0ACE7C131D3E5B1300EB209D /* Products */,
 			);
@@ -241,6 +263,7 @@
 				581BAD311D46019200E18F5E /* ShareExtension.appex */,
 				584EAA871D48B48E00259DF7 /* PhotoEditingExtension.appex */,
 				58FE56901D49F02E002C9F56 /* SpotlightExtension.appex */,
+				58571F741D4B3D68009B1DE5 /* SharedLinksExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,7 +276,6 @@
 				0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */,
 				0ACE7C171D3E5B1300EB209D /* ViewController.swift */,
 				58A421661D421CC9000595A6 /* DetailViewController.swift */,
-				0AAF4CF01D4A5297003D3B78 /* CourseList.swift */,
 				0ACE7C191D3E5B1300EB209D /* Main.storyboard */,
 				0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */,
 				0ACE7C1E1D3E5B1300EB209D /* LaunchScreen.storyboard */,
@@ -332,6 +354,16 @@
 			path = PhotoEditingExtension;
 			sourceTree = "<group>";
 		};
+		58571F751D4B3D68009B1DE5 /* SharedLinksExtension */ = {
+			isa = PBXGroup;
+			children = (
+				58571F761D4B3D68009B1DE5 /* RequestHandler.swift */,
+				58571F801D4B564C009B1DE5 /* appicon.png */,
+				58571F781D4B3D68009B1DE5 /* Info.plist */,
+			);
+			path = SharedLinksExtension;
+			sourceTree = "<group>";
+		};
 		58FE56911D49F02E002C9F56 /* SpotlightExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +401,7 @@
 				581BAD3A1D46019200E18F5E /* PBXTargetDependency */,
 				584EAA941D48B48E00259DF7 /* PBXTargetDependency */,
 				58FE56961D49F02E002C9F56 /* PBXTargetDependency */,
+				58571F7A1D4B3D68009B1DE5 /* PBXTargetDependency */,
 			);
 			name = ApplicationExtensionsPractice;
 			productName = ApplicationExtensionsPractice;
@@ -424,6 +457,23 @@
 			name = PhotoEditingExtension;
 			productName = PhotoEditingExtension;
 			productReference = 584EAA871D48B48E00259DF7 /* PhotoEditingExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		58571F731D4B3D68009B1DE5 /* SharedLinksExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58571F7E1D4B3D68009B1DE5 /* Build configuration list for PBXNativeTarget "SharedLinksExtension" */;
+			buildPhases = (
+				58571F701D4B3D68009B1DE5 /* Sources */,
+				58571F711D4B3D68009B1DE5 /* Frameworks */,
+				58571F721D4B3D68009B1DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedLinksExtension;
+			productName = SharedLinksExtension;
+			productReference = 58571F741D4B3D68009B1DE5 /* SharedLinksExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		58FE568F1D49F02E002C9F56 /* SpotlightExtension */ = {
@@ -492,6 +542,12 @@
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
+					58571F731D4B3D68009B1DE5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZLU2H6WNEP;
+						DevelopmentTeamName = "Ke Zhang (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
 					58FE568F1D49F02E002C9F56 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
@@ -518,6 +574,7 @@
 				581BAD301D46019200E18F5E /* ShareExtension */,
 				584EAA861D48B48E00259DF7 /* PhotoEditingExtension */,
 				58FE568F1D49F02E002C9F56 /* SpotlightExtension */,
+				58571F731D4B3D68009B1DE5 /* SharedLinksExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -567,6 +624,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58571F721D4B3D68009B1DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58571F811D4B564C009B1DE5 /* appicon.png in Resources */,
+				58571F7F1D4B3D7C009B1DE5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FE568E1D49F02E002C9F56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -587,7 +653,6 @@
 				58A421671D421CC9000595A6 /* DetailViewController.swift in Sources */,
 				581BAD221D45FE2800E18F5E /* MMWormholeFileTransiting.m in Sources */,
 				581BAD261D45FE2800E18F5E /* MMWormholeSessionContextTransiting.m in Sources */,
-				0AAF4CF11D4A5297003D3B78 /* CourseList.swift in Sources */,
 				0ACE7C181D3E5B1300EB209D /* ViewController.swift in Sources */,
 				581BAD201D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.m in Sources */,
 				58FE56A41D4A0D33002C9F56 /* Hero.swift in Sources */,
@@ -642,6 +707,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58571F701D4B3D68009B1DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58571F771D4B3D68009B1DE5 /* RequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FE568C1D49F02E002C9F56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -668,6 +741,11 @@
 			isa = PBXTargetDependency;
 			target = 584EAA861D48B48E00259DF7 /* PhotoEditingExtension */;
 			targetProxy = 584EAA931D48B48E00259DF7 /* PBXContainerItemProxy */;
+		};
+		58571F7A1D4B3D68009B1DE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58571F731D4B3D68009B1DE5 /* SharedLinksExtension */;
+			targetProxy = 58571F791D4B3D68009B1DE5 /* PBXContainerItemProxy */;
 		};
 		58FE56961D49F02E002C9F56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -932,6 +1010,32 @@
 			};
 			name = Release;
 		};
+		58571F7C1D4B3D68009B1DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SharedLinksExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.SharedLinksExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		58571F7D1D4B3D68009B1DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SharedLinksExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.SharedLinksExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		58FE56991D49F02E002C9F56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1005,6 +1109,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		58571F7E1D4B3D68009B1DE5 /* Build configuration list for PBXNativeTarget "SharedLinksExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58571F7C1D4B3D68009B1DE5 /* Debug */,
+				58571F7D1D4B3D68009B1DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		58FE56981D49F02E002C9F56 /* Build configuration list for PBXNativeTarget "SpotlightExtension" */ = {
 			isa = XCConfigurationList;

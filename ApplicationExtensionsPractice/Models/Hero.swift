@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Hero : AnyObject, NSCoding {
+class Hero : NSObject, NSCoding {
     
     var heroID: String?
     var title: String?
@@ -16,7 +16,7 @@ class Hero : AnyObject, NSCoding {
     var detail: String?
     var star: String?
     
-    init() {
+    override init() {
     
     }
 
