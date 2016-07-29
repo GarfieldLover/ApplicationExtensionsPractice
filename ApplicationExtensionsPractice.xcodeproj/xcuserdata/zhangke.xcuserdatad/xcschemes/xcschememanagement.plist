@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>PhotoEditingExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -19,10 +24,20 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>SharedLinksExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>SpotlightExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>StickerPackExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>TodayExtension.xcscheme</key>
 		<dict>
@@ -32,6 +47,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0A2D81361D4B8E1800E62B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A2D814A1D4B99C900E62B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0A3C93481D3F2CF30070E424</key>
 		<dict>
 			<key>primary</key>
@@ -53,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>584EAA861D48B48E00259DF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58571F731D4B3D68009B1DE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
