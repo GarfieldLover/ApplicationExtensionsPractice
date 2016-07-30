@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NotficationContentExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>NotificationServiceExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>0A2D814A1D4B99C900E62B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A2D81591D4CF23200E62B0D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
