@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.registerNotifications(application)
+        
         return true
     }
     
@@ -33,12 +36,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //取到跳转类型和id，跳转动作
             print("com.apple.corespotlightitem",indentifier)
         }
-        
-        
-        
         return true
     }
- 
+    
+    func registerNotifications(_ application: UIApplication) -> Void {
+        let center = UNUserNotificationCenter.current()
+//        center.delegate = self
+        
+        center.requestAuthorization(options: [UNAuthorizationOptions.alert, UNAuthorizationOptions.sound, UNAuthorizationOptions.badge]) { (done, error) in
+            if done == true {
+                application.registerForRemoteNotifications()
+            }
+        }
+    }
+    
 
 }
 
