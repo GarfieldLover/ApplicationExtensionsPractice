@@ -10,7 +10,7 @@ import UIKit
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
@@ -28,7 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
-        
+    
+        //corespotlight
         if userActivity.activityType == "com.apple.corespotlightitem" {
             let dic: NSDictionary = userActivity.userInfo!
             let indentifier: String = dic.object(forKey: "kCSSearchableItemActivityIdentifier") as! String
@@ -39,9 +40,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    
+    func application(_ application: UIApplication,
+                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+        print("device token = " + deviceToken.description.replacingOccurrences(of: "<", with: "").replacingOccurrences(of: ">", with: "").replacingOccurrences(of: " ", with: ""))
+    }
+    
+    func application(_ application: UIApplication,
+                     didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        
+        print("If want test remote push, please use device");
+    }
+    
+    func application(_ application: UIApplication,
+                     didReceiveRemoteNotification userInfo: [NSObject : AnyObject],
+                     fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+    }
+    
     func registerNotifications(_ application: UIApplication) -> Void {
         let center = UNUserNotificationCenter.current()
-//        center.delegate = self
+        center.delegate = self
         
         center.requestAuthorization(options: [UNAuthorizationOptions.alert, UNAuthorizationOptions.sound, UNAuthorizationOptions.badge]) { (done, error) in
             if done == true {
@@ -50,6 +69,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    //  Notification will present call back
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound, .badge])
+    }
+    
+    //  Notification interaction response call back
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: () -> Void) {
+        
+        let responseNotificationRequestIdentifier = response.notification.request.identifier
+        
+        if responseNotificationRequestIdentifier == String.UNNotificationRequest.NormalLocalPush.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithTrigger.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithCustomUI1.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithCustomUI2.rawValue {
+            
+            let actionIdentifier = response.actionIdentifier
+            switch actionIdentifier {
+            case String.UNNotificationAction.Accept.rawValue:
+                
+                break
+            case String.UNNotificationAction.Reject.rawValue:
+                
+                break
+            case String.UNNotificationAction.Input.rawValue:
+                
+                break
+            case UNNotificationDismissActionIdentifier:
+                
+                break
+            case UNNotificationDefaultActionIdentifier:
+                
+                break
+            default:
+                break
+            }
+        }
+        completionHandler();
+    }
 
 }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreSpotlight
+import UserNotifications
 
 class PhotoCollectionViewCell : UICollectionViewCell {
     
@@ -28,8 +29,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
         let array: NSArray = NSArray.init(contentsOfFile: Bundle.main.pathForResource("data", ofType: "plist")!)!
         for dic in array {
             let hero: Hero = Hero()
@@ -43,7 +42,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let name: String = messageObject as! String
             print(name)
         })
+        
+        
+        self.setNotificationCategories()
     }
+    
     
     //当然包括下载和缓存item
     func saveSpotlightItem(hero aHero: Hero) -> Void {
@@ -146,5 +149,141 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let det: DetailViewController! = segue.destinationViewController as! DetailViewController
         det.dataDic = nil
     }
+    
+    func setNotificationCategories(_: Void) -> Void {
+        let center = UNUserNotificationCenter.current()
+        
+        // create Notification Action
+        let accept = UNNotificationAction(identifier: String.UNNotificationAction.Accept.rawValue,
+                                          title: "Agree",
+                                          options: UNNotificationActionOptions.foreground)
+        
+        let reject = UNNotificationAction(identifier: String.UNNotificationAction.Reject.rawValue,
+                                          title: "DisAgree",
+                                          options: UNNotificationActionOptions.destructive)
+        
+        let comment = UNTextInputNotificationAction(identifier: String.UNNotificationAction.Input.rawValue,
+                                                    title: "Input Someting",
+                                                    options: [],
+                                                    textInputButtonTitle: "Comment",
+                                                    textInputPlaceholder: "Input Someting")
+        
+        let normal =  UNNotificationCategory.init(identifier: String.UNNotificationCategory.Normal.rawValue, actions: [accept, reject], intentIdentifiers: [], options: [])
+        let cheer =  UNNotificationCategory.init(identifier: String.UNNotificationCategory.Image.rawValue, actions: [accept, reject], intentIdentifiers: [], options: [])
+        let cheerText =  UNNotificationCategory.init(identifier: String.UNNotificationCategory.Gif.rawValue, actions: [accept, reject, comment], intentIdentifiers: [], options: [])
+        
+        //  add category to notification center categroies
+        center.setNotificationCategories([normal, cheer, cheerText])
+    }
+    
+    @IBAction func LocalPushNormal(_ sender: AnyObject) {
+        
+        //  1. Create Notification Content
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: "LocalPushNormal",
+                                                                 arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: "安杜因洛萨",
+                                                                arguments: nil)
+        content.sound = UNNotificationSound.default()
+        content.badge = UIApplication.shared().applicationIconBadgeNumber + 1;
+        content.categoryIdentifier = String.UNNotificationCategory.Normal.rawValue   //  设置通知类型标示
+        
+        //  2. Create Notification Attachment
+        //let attachement = try? UNNotificationAttachment(identifier: "attachment", url: URL.resource(type: .Local1), options: nil)
+        //content.attachments = [attachement!]
+        
+        //  3. Create Notification Request
+        let request = UNNotificationRequest.init(identifier: String.UNNotificationRequest.LocalPushNormal.rawValue,
+                                                 content: content, trigger: nil)
+        
+        //  4. Add to NotificationCenter
+        let center = UNUserNotificationCenter.current()
+        center.add(request)
+    }
+    
+    @IBAction func LocalPushWithImage(_ sender: AnyObject) {
+        
+        //  1. Create Notification Content
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: "LocalPushWithImage",
+                                                                 arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: "安杜因洛萨",
+                                                                arguments: nil)
+        content.sound = UNNotificationSound.default()
+        content.badge = UIApplication.shared().applicationIconBadgeNumber + 1;
+        content.categoryIdentifier = String.UNNotificationCategory.Normal.rawValue   //  设置通知类型标示
+        
+        //  2. Create Notification Attachment
+        let attachement = try? UNNotificationAttachment(identifier: "attachment", url: URL.resource(type: .Image), options: nil)
+        content.attachments = [attachement!]
+        
+        //  3. Create Notification Request
+        let request = UNNotificationRequest.init(identifier: String.UNNotificationRequest.LocalPushWithImage.rawValue,
+                                                 content: content, trigger: nil)
+        
+        //  4. Add to NotificationCenter
+        let center = UNUserNotificationCenter.current()
+        center.add(request)
+    }
+    
+    @IBAction func LocalPushWithGif(_ sender: AnyObject) {
+        
+        //  1. Create Notification Content
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: "LocalPushWithGif",
+                                                                 arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: "安杜因洛萨",
+                                                                arguments: nil)
+        content.sound = UNNotificationSound.default()
+        content.badge = UIApplication.shared().applicationIconBadgeNumber + 1;
+        content.categoryIdentifier = String.UNNotificationCategory.Gif.rawValue   //  设置通知类型标示
+        
+        //  2. Create Notification Attachment
+        let attachement = try? UNNotificationAttachment(identifier: "attachment", url: URL.resource(type: .Gif), options: nil)
+        content.attachments = [attachement!]
+        
+        //  3. Create Notification Request
+        let request = UNNotificationRequest.init(identifier: String.UNNotificationRequest.LocalPushWithGif.rawValue,
+                                                 content: content, trigger: nil)
+        
+        //  4. Add to NotificationCenter
+        let center = UNUserNotificationCenter.current()
+        center.add(request)
+    }
+    
+    //  MARK: Push Notification with Trigger
+    @IBAction func localPushWithTrigger(_ sender: AnyObject) {
+        
+        //  1. Create Notification Content
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: "localPushWithTrigger",
+                                                                 arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: "安杜因洛萨",
+                                                                arguments: nil)
+        content.sound = UNNotificationSound.default()
+        content.badge = UIApplication.shared().applicationIconBadgeNumber + 1;
+        content.categoryIdentifier = String.UNNotificationCategory.Normal.rawValue   //  设置通知类型标示
+        
+        //  2. Create trigger
+        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 5, repeats: false)
+        
+        //  3. Create Notification Request，set content and trigger
+        let request = UNNotificationRequest.init(identifier: String.UNNotificationRequest.LocalPushWithTrigger.rawValue,
+                                                 content: content,
+                                                 trigger: trigger)
+        
+        //  4. Add to NotificationCenter
+        let center = UNUserNotificationCenter.current()
+        center.add(request)
+    }
+
+    
+    //  MARK: Remove Notification
+    @IBAction func removeNotify(_ sender: AnyObject) {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        //  remove specified notification
+        //        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [String.UNNotificationRequest.LocalPushWithTrigger.rawValue])
+    }
+
 }
 

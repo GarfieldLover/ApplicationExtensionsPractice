@@ -17,6 +17,10 @@
 		0A2D81611D4CF23200E62B0D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D81601D4CF23200E62B0D /* NotificationViewController.swift */; };
 		0A2D81641D4CF23200E62B0D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D81621D4CF23200E62B0D /* MainInterface.storyboard */; };
 		0A2D81681D4CF23200E62B0D /* NotficationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A2D815A1D4CF23200E62B0D /* NotficationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A2D816D1D4DD9DF00E62B0D /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D816C1D4DD9DF00E62B0D /* NotificationExtension.swift */; };
+		0A2D816E1D4E16F600E62B0D /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D816C1D4DD9DF00E62B0D /* NotificationExtension.swift */; };
+		0A2D816F1D4E16F600E62B0D /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D816C1D4DD9DF00E62B0D /* NotificationExtension.swift */; };
+		0A2D81751D4E221A00E62B0D /* hahaha.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D81731D4E221A00E62B0D /* hahaha.gif */; };
 		0A3736251D48F13700EB80B5 /* Logo_WWDC2016.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3736241D48F13700EB80B5 /* Logo_WWDC2016.png */; };
 		0A3C93421D3F214D0070E424 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C93411D3F214D0070E424 /* NotificationCenter.framework */; };
 		0ACE7C161D3E5B1300EB209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */; };
@@ -177,6 +181,10 @@
 		0A2D81601D4CF23200E62B0D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		0A2D81631D4CF23200E62B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0A2D81651D4CF23200E62B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2D816C1D4DD9DF00E62B0D /* NotificationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		0A2D81731D4E221A00E62B0D /* hahaha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hahaha.gif; sourceTree = "<group>"; };
+		0A2D81761D4E231D00E62B0D /* NotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		0A2D81771D4E232200E62B0D /* NotficationContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotficationContentExtension.entitlements; sourceTree = "<group>"; };
 		0A3736241D48F13700EB80B5 /* Logo_WWDC2016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_WWDC2016.png; sourceTree = "<group>"; };
 		0A3C93411D3F214D0070E424 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		0ACE7C121D3E5B1300EB209D /* ApplicationExtensionsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationExtensionsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -313,6 +321,7 @@
 		0A2D814C1D4B99C900E62B0D /* NotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
+				0A2D81761D4E231D00E62B0D /* NotificationServiceExtension.entitlements */,
 				0A2D814D1D4B99C900E62B0D /* NotificationService.swift */,
 				0A2D814F1D4B99C900E62B0D /* Info.plist */,
 			);
@@ -322,6 +331,7 @@
 		0A2D815F1D4CF23200E62B0D /* NotficationContentExtension */ = {
 			isa = PBXGroup;
 			children = (
+				0A2D81771D4E232200E62B0D /* NotficationContentExtension.entitlements */,
 				0A2D81601D4CF23200E62B0D /* NotificationViewController.swift */,
 				0A2D81621D4CF23200E62B0D /* MainInterface.storyboard */,
 				0A2D81651D4CF23200E62B0D /* Info.plist */,
@@ -372,8 +382,10 @@
 				0ACE7C151D3E5B1300EB209D /* AppDelegate.swift */,
 				0ACE7C171D3E5B1300EB209D /* ViewController.swift */,
 				58A421661D421CC9000595A6 /* DetailViewController.swift */,
+				0A2D816C1D4DD9DF00E62B0D /* NotificationExtension.swift */,
 				0ACE7C191D3E5B1300EB209D /* Main.storyboard */,
 				0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */,
+				0A2D81731D4E221A00E62B0D /* hahaha.gif */,
 				0ACE7C1E1D3E5B1300EB209D /* LaunchScreen.storyboard */,
 				0ACE7C211D3E5B1300EB209D /* Info.plist */,
 			);
@@ -663,12 +675,22 @@
 						DevelopmentTeam = ZLU2H6WNEP;
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0A2D81591D4CF23200E62B0D = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0ACE7C111D3E5B1300EB209D = {
 						CreatedOnToolsVersion = 8.0;
@@ -679,6 +701,9 @@
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
 							};
 						};
 					};
@@ -781,6 +806,7 @@
 			files = (
 				0ACE7C201D3E5B1300EB209D /* LaunchScreen.storyboard in Resources */,
 				0ACE7C1D1D3E5B1300EB209D /* Assets.xcassets in Resources */,
+				0A2D81751D4E221A00E62B0D /* hahaha.gif in Resources */,
 				58FE569E1D4A0D10002C9F56 /* data.plist in Resources */,
 				0ACE7C1B1D3E5B1300EB209D /* Main.storyboard in Resources */,
 			);
@@ -844,6 +870,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2D816F1D4E16F600E62B0D /* NotificationExtension.swift in Sources */,
 				0A2D814E1D4B99C900E62B0D /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -852,6 +879,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2D816E1D4E16F600E62B0D /* NotificationExtension.swift in Sources */,
 				0A2D81611D4CF23200E62B0D /* NotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -866,6 +894,7 @@
 				581BAD261D45FE2800E18F5E /* MMWormholeSessionContextTransiting.m in Sources */,
 				0ACE7C181D3E5B1300EB209D /* ViewController.swift in Sources */,
 				581BAD201D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				0A2D816D1D4DD9DF00E62B0D /* NotificationExtension.swift in Sources */,
 				58FE56A41D4A0D33002C9F56 /* Hero.swift in Sources */,
 				581BAD1E1D45FE2800E18F5E /* MMWormhole.m in Sources */,
 				0ACE7C161D3E5B1300EB209D /* AppDelegate.swift in Sources */,
@@ -1057,6 +1086,7 @@
 		0A2D81541D4B99C900E62B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.NotificationServiceExtension;
@@ -1069,6 +1099,7 @@
 		0A2D81551D4B99C900E62B0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.NotificationServiceExtension;
@@ -1081,6 +1112,7 @@
 		0A2D816A1D4CF23200E62B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotficationContentExtension/NotficationContentExtension.entitlements;
 				INFOPLIST_FILE = NotficationContentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.NotficationContentExtension;
@@ -1093,6 +1125,7 @@
 		0A2D816B1D4CF23200E62B0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotficationContentExtension/NotficationContentExtension.entitlements;
 				INFOPLIST_FILE = NotficationContentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.NotficationContentExtension;
