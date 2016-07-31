@@ -67,7 +67,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="本地通知"/>
                                 <connections>
-                                    <action selector="localPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jkd-LK-zEG"/>
+                                    <action selector="LocalPushNormal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0iK-Af-fvz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpf-VH-OVj">
@@ -78,19 +78,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9W-mC-IFQ">
-                                <frame key="frameInset" minX="145" minY="599" width="121" height="30"/>
+                                <frame key="frameInset" minX="256" minY="646" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="本地Trigger"/>
                                 <connections>
                                     <action selector="localPushWithTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cn-Wu-K6k"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXg-Qh-bu4">
-                                <frame key="frameInset" minX="274" minY="599" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Custom 1"/>
-                                <connections>
-                                    <action selector="localPushWithCustomUI1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lSK-gQ-jPq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBs-Me-S3m" userLabel="本地推送自定义Extension2">
@@ -98,13 +90,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Custom 2"/>
                                 <connections>
-                                    <action selector="localPushWithCustomUI2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4fL-D1-Jag"/>
+                                    <action selector="LocalPushWithGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQu-gS-mYi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzo-V4-tV9">
                                 <frame key="frameInset" minX="140" minY="646" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="远程通知"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXg-Qh-bu4">
+                                <frame key="frameInset" minX="125" minY="598" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Custom image"/>
+                                <connections>
+                                    <action selector="LocalPushWithImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4u-4Y-Urt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

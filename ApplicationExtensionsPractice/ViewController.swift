@@ -211,7 +211,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                                                 arguments: nil)
         content.sound = UNNotificationSound.default()
         content.badge = UIApplication.shared().applicationIconBadgeNumber + 1;
-        content.categoryIdentifier = String.UNNotificationCategory.Normal.rawValue   //  设置通知类型标示
+        content.categoryIdentifier = String.UNNotificationCategory.Image.rawValue   //  设置通知类型标示
         
         //  2. Create Notification Attachment
         let attachement = try? UNNotificationAttachment(identifier: "attachment", url: URL.resource(type: .Image), options: nil)

@@ -41,9 +41,7 @@ extension URL {
     static func resource(type :ResourceType) -> URL {
         switch type {
         case .Image:
-            let path: String = Bundle.main.pathForResource("Assets", ofType: "xcassets")!
-            let bundle: Bundle = Bundle.init(path: path)!
-            return bundle.urlForResource("2016060810591211", withExtension: "png")!
+            return Bundle.main.urlForResource("2016060810591211", withExtension: "jpg")!
         case .Gif:
             return Bundle.main.urlForResource("hahaha", withExtension: "gif")!
         case .Remote:

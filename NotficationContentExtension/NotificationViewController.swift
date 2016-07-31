@@ -35,6 +35,25 @@ extension NotificationViewController : UNNotificationContentExtension {
     func didReceive(_ notification: UNNotification) {
         let content = notification.request.content
         self.label?.text = content.body
+        let imageAbsoluteString = content.userInfo["imageAbsoluteString"] as? String
+        let xxx: UNNotificationAttachment = (content.attachments.first)!
+        let urlxx: URL = xxx.url
+  
+        let data: NSData = try! NSData.init(contentsOf: urlxx)
+        imageView.image = UIImage(data: data as Data)
+
+//        URLSession.downloadImage(atURL: urlxx) { [weak self] (data, error) in
+//            if let _ = error {
+//                return
+//            }
+//            guard let data = data else {
+//                return
+//            }
+//            DispatchQueue.main.async {
+//                self?.imageView.image = UIImage(data: data)
+//                self?.imageView.isHidden = false
+//            }
+//        }
         
         if let imageAbsoluteString = content.userInfo["imageAbsoluteString"] as? String,
             let url = URL(string: imageAbsoluteString) {
@@ -65,10 +84,10 @@ extension NotificationViewController : UNNotificationContentExtension {
         
         let responseNotificationRequestIdentifier = response.notification.request.identifier
     
-        if responseNotificationRequestIdentifier == String.UNNotificationRequest.NormalLocalPush.rawValue ||
-            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithTrigger.rawValue ||
-            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithCustomUI1.rawValue ||
-            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithCustomUI2.rawValue {
+        if responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushNormal.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithImage.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithGif.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithTrigger.rawValue {
             
             let actionIdentifier = response.actionIdentifier
             switch actionIdentifier {

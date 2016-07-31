@@ -81,10 +81,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         let responseNotificationRequestIdentifier = response.notification.request.identifier
         
-        if responseNotificationRequestIdentifier == String.UNNotificationRequest.NormalLocalPush.rawValue ||
-            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithTrigger.rawValue ||
-            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithCustomUI1.rawValue ||
-            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithCustomUI2.rawValue {
+        if responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushNormal.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithImage.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithGif.rawValue ||
+            responseNotificationRequestIdentifier == String.UNNotificationRequest.LocalPushWithTrigger.rawValue {
             
             let actionIdentifier = response.actionIdentifier
             switch actionIdentifier {
