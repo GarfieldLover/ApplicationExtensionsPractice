@@ -169,11 +169,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                                     textInputPlaceholder: "Input Someting")
         
         let normal =  UNNotificationCategory.init(identifier: String.UNNotificationCategory.Normal.rawValue, actions: [accept, reject], intentIdentifiers: [], options: [])
-        let cheer =  UNNotificationCategory.init(identifier: String.UNNotificationCategory.Image.rawValue, actions: [accept, reject], intentIdentifiers: [], options: [])
-        let cheerText =  UNNotificationCategory.init(identifier: String.UNNotificationCategory.Gif.rawValue, actions: [accept, reject, comment], intentIdentifiers: [], options: [])
+        let Image =  UNNotificationCategory.init(identifier: String.UNNotificationCategory.Image.rawValue, actions: [accept, reject], intentIdentifiers: [], options: [])
+        let Gif =  UNNotificationCategory.init(identifier: String.UNNotificationCategory.Gif.rawValue, actions: [accept, reject, comment], intentIdentifiers: [], options: [])
         
+        //注册通知类型
         //  add category to notification center categroies
-        center.setNotificationCategories([normal, cheer, cheerText])
+        center.setNotificationCategories([normal, Image, Gif])
     }
     
     @IBAction func LocalPushNormal(_ sender: AnyObject) {
@@ -187,10 +188,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         content.sound = UNNotificationSound.default()
         content.badge = UIApplication.shared().applicationIconBadgeNumber + 1;
         content.categoryIdentifier = String.UNNotificationCategory.Normal.rawValue   //  设置通知类型标示
-        
-        //  2. Create Notification Attachment
-        //let attachement = try? UNNotificationAttachment(identifier: "attachment", url: URL.resource(type: .Local1), options: nil)
-        //content.attachments = [attachement!]
         
         //  3. Create Notification Request
         let request = UNNotificationRequest.init(identifier: String.UNNotificationRequest.LocalPushNormal.rawValue,
@@ -281,8 +278,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     //  MARK: Remove Notification
     @IBAction func removeNotify(_ sender: AnyObject) {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-        //  remove specified notification
-        //        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [String.UNNotificationRequest.LocalPushWithTrigger.rawValue])
+//          remove specified notification
+                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [String.UNNotificationRequest.LocalPushWithTrigger.rawValue])
     }
 
 }

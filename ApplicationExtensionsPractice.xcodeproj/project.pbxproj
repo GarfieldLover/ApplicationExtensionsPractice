@@ -70,6 +70,14 @@
 		58571F7B1D4B3D68009B1DE5 /* SharedLinksExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 58571F741D4B3D68009B1DE5 /* SharedLinksExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		58571F7F1D4B3D7C009B1DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		58571F811D4B564C009B1DE5 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58571F801D4B564C009B1DE5 /* appicon.png */; };
+		58608D321D4F351900287E6C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 58608D311D4F351900287E6C /* UIImage+GIF.m */; };
+		58608D331D4F351900287E6C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 58608D311D4F351900287E6C /* UIImage+GIF.m */; };
+		58608D341D4F351900287E6C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 58608D311D4F351900287E6C /* UIImage+GIF.m */; };
+		58608D351D4F351900287E6C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 58608D311D4F351900287E6C /* UIImage+GIF.m */; };
+		58608D361D4F351900287E6C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 58608D311D4F351900287E6C /* UIImage+GIF.m */; };
+		58608D371D4F351900287E6C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 58608D311D4F351900287E6C /* UIImage+GIF.m */; };
+		58608D381D4F351900287E6C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 58608D311D4F351900287E6C /* UIImage+GIF.m */; };
+		58608D391D4F351900287E6C /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 58608D311D4F351900287E6C /* UIImage+GIF.m */; };
 		5870DDC61D4720DE00137F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5870DDC51D4720DE00137F87 /* Assets.xcassets */; };
 		5885D0441D476E1A0061AECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		5885D0451D476E1A0061AECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
@@ -237,6 +245,8 @@
 		58571F801D4B564C009B1DE5 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		585CF0AE1D3F786D00C9CD7C /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayExtension.entitlements; sourceTree = "<group>"; };
 		585CF0AF1D3F78A100C9CD7C /* ApplicationExtensionsPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ApplicationExtensionsPractice.entitlements; sourceTree = "<group>"; };
+		58608D301D4F351900287E6C /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		58608D311D4F351900287E6C /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 		5870DDC51D4720DE00137F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A421661D421CC9000595A6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		58FE56901D49F02E002C9F56 /* SpotlightExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpotlightExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -345,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				581BAD2C1D45FF0000E18F5E /* ApplicationExtensionsPractice-Bridging-Header.h */,
+				58608D2F1D4F351900287E6C /* Unit */,
 				581BAD0E1D45FE2800E18F5E /* MMWormhole */,
 				0ACE7C141D3E5B1300EB209D /* ApplicationExtensionsPractice */,
 				0ACE7C2F1D3E5BFC00EB209D /* TodayExtension */,
@@ -475,6 +486,15 @@
 				58571F781D4B3D68009B1DE5 /* Info.plist */,
 			);
 			path = SharedLinksExtension;
+			sourceTree = "<group>";
+		};
+		58608D2F1D4F351900287E6C /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				58608D301D4F351900287E6C /* UIImage+GIF.h */,
+				58608D311D4F351900287E6C /* UIImage+GIF.m */,
+			);
+			path = Unit;
 			sourceTree = "<group>";
 		};
 		58FE56911D49F02E002C9F56 /* SpotlightExtension */ = {
@@ -874,6 +894,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58608D381D4F351900287E6C /* UIImage+GIF.m in Sources */,
 				0A2D816F1D4E16F600E62B0D /* NotificationExtension.swift in Sources */,
 				0A2D814E1D4B99C900E62B0D /* NotificationService.swift in Sources */,
 			);
@@ -883,6 +904,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58608D391D4F351900287E6C /* UIImage+GIF.m in Sources */,
 				0A2D816E1D4E16F600E62B0D /* NotificationExtension.swift in Sources */,
 				0A2D81611D4CF23200E62B0D /* NotificationViewController.swift in Sources */,
 			);
@@ -892,6 +914,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58608D321D4F351900287E6C /* UIImage+GIF.m in Sources */,
 				581BAD281D45FE2800E18F5E /* MMWormholeSessionFileTransiting.m in Sources */,
 				58A421671D421CC9000595A6 /* DetailViewController.swift in Sources */,
 				581BAD221D45FE2800E18F5E /* MMWormholeFileTransiting.m in Sources */,
@@ -919,6 +942,7 @@
 				581BAD1F1D45FE2800E18F5E /* MMWormhole.m in Sources */,
 				0ACE7C311D3E5BFC00EB209D /* TodayViewController.swift in Sources */,
 				581BAD231D45FE2800E18F5E /* MMWormholeFileTransiting.m in Sources */,
+				58608D331D4F351900287E6C /* UIImage+GIF.m in Sources */,
 				581BAD291D45FE2800E18F5E /* MMWormholeSessionFileTransiting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -933,6 +957,7 @@
 				580BD9A21D47673500A2178C /* MMWormholeSession.m in Sources */,
 				580BD9A31D47673500A2178C /* MMWormholeSessionContextTransiting.m in Sources */,
 				580BD9A41D47673500A2178C /* MMWormholeSessionFileTransiting.m in Sources */,
+				58608D341D4F351900287E6C /* UIImage+GIF.m in Sources */,
 				58FE56A61D4A0D33002C9F56 /* Hero.swift in Sources */,
 				580BD9A51D47673500A2178C /* MMWormholeSessionMessageTransiting.m in Sources */,
 				581BAD341D46019200E18F5E /* ShareViewController.swift in Sources */,
@@ -947,6 +972,7 @@
 			files = (
 				584EAAA11D48B8BE00259DF7 /* ContentEditingController.swift in Sources */,
 				584EAA8E1D48B48E00259DF7 /* PhotoEditingViewController.swift in Sources */,
+				58608D351D4F351900287E6C /* UIImage+GIF.m in Sources */,
 				58FE56A71D4A0D33002C9F56 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -955,6 +981,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58608D371D4F351900287E6C /* UIImage+GIF.m in Sources */,
 				58571F771D4B3D68009B1DE5 /* RequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -963,6 +990,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58608D361D4F351900287E6C /* UIImage+GIF.m in Sources */,
 				58FE56931D49F02E002C9F56 /* IndexRequestHandler.swift in Sources */,
 				58FE56A81D4A0D33002C9F56 /* Hero.swift in Sources */,
 			);
@@ -1122,6 +1150,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.NotficationContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ApplicationExtensionsPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1135,6 +1164,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.NotficationContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ApplicationExtensionsPractice-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1413,6 +1443,7 @@
 				0A2D81401D4B8E1800E62B0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2D81531D4B99C900E62B0D /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
 			isa = XCConfigurationList;
@@ -1421,6 +1452,7 @@
 				0A2D81551D4B99C900E62B0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2D81691D4CF23200E62B0D /* Build configuration list for PBXNativeTarget "NotficationContentExtension" */ = {
 			isa = XCConfigurationList;
@@ -1429,6 +1461,7 @@
 				0A2D816B1D4CF23200E62B0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ACE7C0D1D3E5B1300EB209D /* Build configuration list for PBXProject "ApplicationExtensionsPractice" */ = {
 			isa = XCConfigurationList;

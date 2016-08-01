@@ -10,5 +10,6 @@
 #define ApplicationExtensionsPractice_Bridging_Header_h
 
 #import "MMWormhole.h"
+#import "UIImage+GIF.h"
 
 #endif /* ApplicationExtensionsPractice_Bridging_Header_h */

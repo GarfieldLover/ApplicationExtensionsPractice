@@ -3,13 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Notification View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="NotificationContent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="NotficationContentExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
@@ -29,19 +30,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-ql-neg">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-ql-neg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3PI-Q8-HM9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="J0E-ql-neg" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="20" id="8Oe-F2-fhP"/>
                             <constraint firstItem="Hxe-o2-kGk" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="ImY-nY-BZQ"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Hxe-o2-kGk" secondAttribute="bottom" constant="20" id="N2s-M4-RQz"/>
                             <constraint firstItem="Hxe-o2-kGk" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="20" id="Wlq-XZ-gts"/>
+                            <constraint firstItem="J0E-ql-neg" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="71" id="jKN-Hr-Fuf"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="nY1-iQ-xaT"/>
-                            <constraint firstItem="J0E-ql-neg" firstAttribute="centerX" secondItem="GcN-lo-r42" secondAttribute="centerX" id="twJ-eS-OBm"/>
+                            <constraint firstItem="J0E-ql-neg" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="7" id="sBr-36-GFU"/>
+                            <constraint firstItem="J0E-ql-neg" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="ycZ-RE-xwu"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -58,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1097" y="-23"/>
+            <point key="canvasLocation" x="-1098.4000000000001" y="-23.388305847076463"/>
         </scene>
     </scenes>
 </document>

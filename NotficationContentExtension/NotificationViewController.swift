@@ -32,29 +32,12 @@ class NotificationViewController: UIViewController {
 
 extension NotificationViewController : UNNotificationContentExtension {
     
+    //得到通知
     func didReceive(_ notification: UNNotification) {
         let content = notification.request.content
         self.label?.text = content.body
-        let imageAbsoluteString = content.userInfo["imageAbsoluteString"] as? String
-        let xxx: UNNotificationAttachment = (content.attachments.first)!
-        let urlxx: URL = xxx.url
-  
-        let data: NSData = try! NSData.init(contentsOf: urlxx)
-        imageView.image = UIImage(data: data as Data)
-
-//        URLSession.downloadImage(atURL: urlxx) { [weak self] (data, error) in
-//            if let _ = error {
-//                return
-//            }
-//            guard let data = data else {
-//                return
-//            }
-//            DispatchQueue.main.async {
-//                self?.imageView.image = UIImage(data: data)
-//                self?.imageView.isHidden = false
-//            }
-//        }
-        
+ 
+        //有自定义key
         if let imageAbsoluteString = content.userInfo["imageAbsoluteString"] as? String,
             let url = URL(string: imageAbsoluteString) {
             URLSession.downloadImage(atURL: url) { [weak self] (data, error) in
@@ -68,6 +51,17 @@ extension NotificationViewController : UNNotificationContentExtension {
                     self?.imageView.image = UIImage(data: data)
                     self?.imageView.isHidden = false
                 }
+            }
+        }else {
+            //附件形式
+            let attachment: UNNotificationAttachment = (content.attachments.first)!
+            let url: URL = attachment.url
+            let data: NSData = try! NSData.init(contentsOf: url)
+            
+            if url.absoluteString?.hasSuffix("gif") == true {
+                imageView.image = UIImage.sd_animatedGIF(with: data as Data!)
+            } else {
+                imageView.image = UIImage(data: data as Data)
             }
         }
     }
@@ -93,12 +87,15 @@ extension NotificationViewController : UNNotificationContentExtension {
             switch actionIdentifier {
             case String.UNNotificationAction.Accept.rawValue:
                 sublabel.text = "Good"
-                actionCompletion = { completion(.dismiss) }
-                perform(#selector(NotificationViewController.dismissssss), with: nil, afterDelay: 1)
+
+                let url: URL! = URL.init(string: "ApplicationExtensionsPractice:NotifiAccept");
+                self.extensionContext?.open(url, completionHandler: { (Bool) in
+                    completion(.dismiss)
+                })
                 break
             case String.UNNotificationAction.Reject.rawValue:
                 sublabel.text = "Don't allow reject，can't dismiss"
-                completion(.doNotDismiss)
+                completion(.dismiss)
                 break
             case String.UNNotificationAction.Input.rawValue:
                 becomeFirstResponder()
