@@ -65,7 +65,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhE-OO-gie">
                                 <frame key="frameInset" minX="2" minY="597" width="129" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="本地通知"/>
+                                <state key="normal" title="LocalPushNormal"/>
                                 <connections>
                                     <action selector="LocalPushNormal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0iK-Af-fvz"/>
                                 </connections>
@@ -78,17 +78,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9W-mC-IFQ">
-                                <frame key="frameInset" minX="256" minY="646" width="121" height="30"/>
+                                <frame key="frameInset" minX="275" minY="646" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="本地Trigger"/>
+                                <state key="normal" title="localPushWithTrigger"/>
                                 <connections>
                                     <action selector="localPushWithTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cn-Wu-K6k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBs-Me-S3m" userLabel="本地推送自定义Extension2">
-                                <frame key="frameInset" minX="9" minY="647" width="112" height="30"/>
+                                <frame key="frameInset" minX="9" minY="647" width="122" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Custom 2"/>
+                                <state key="normal" title="LocalPushWithGif"/>
                                 <connections>
                                     <action selector="LocalPushWithGif:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQu-gS-mYi"/>
                                 </connections>
@@ -96,12 +96,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzo-V4-tV9">
                                 <frame key="frameInset" minX="140" minY="646" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="远程通知"/>
+                                <state key="normal" title="remotePush"/>
+                                <connections>
+                                    <action selector="remotePush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ont-cW-DCQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXg-Qh-bu4">
-                                <frame key="frameInset" minX="125" minY="598" width="125" height="30"/>
+                                <frame key="frameInset" minX="134" minY="598" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Custom image"/>
+                                <state key="normal" title="LocalPushWithImage"/>
                                 <connections>
                                     <action selector="LocalPushWithImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4u-4Y-Urt"/>
                                 </connections>

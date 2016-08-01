@@ -2,9 +2,6 @@
 //  NotificationViewController.swift
 //  NotificationContent
 //
-//  Created by 马权 on 6/23/16.
-//  Copyright © 2016 马权. All rights reserved.
-//
 
 import UIKit
 import UserNotifications
@@ -36,8 +33,8 @@ extension NotificationViewController : UNNotificationContentExtension {
     func didReceive(_ notification: UNNotification) {
         let content = notification.request.content
         self.label?.text = content.body
- 
-        //有自定义key
+        
+        //有自定义key, 用于远程通知nono，只是用于下载
         if let imageAbsoluteString = content.userInfo["imageAbsoluteString"] as? String,
             let url = URL(string: imageAbsoluteString) {
             URLSession.downloadImage(atURL: url) { [weak self] (data, error) in
@@ -53,15 +50,15 @@ extension NotificationViewController : UNNotificationContentExtension {
                 }
             }
         }else {
-            //附件形式
+            //附件形式, 远程通知下载完了也走这
             let attachment: UNNotificationAttachment = (content.attachments.first)!
             let url: URL = attachment.url
             let data: NSData = try! NSData.init(contentsOf: url)
             
-            if url.absoluteString?.hasSuffix("gif") == true {
-                imageView.image = UIImage.sd_animatedGIF(with: data as Data!)
-            } else {
+            if content.categoryIdentifier == String.UNNotificationCategory.Image.rawValue {
                 imageView.image = UIImage(data: data as Data)
+            } else {
+                imageView.image = UIImage.sd_animatedGIF(with: data as Data!)
             }
         }
     }
@@ -75,6 +72,9 @@ extension NotificationViewController : UNNotificationContentExtension {
             completion(.dismiss)
             return
         }
+        
+        
+        //action跳转处理
         
         let responseNotificationRequestIdentifier = response.notification.request.identifier
     

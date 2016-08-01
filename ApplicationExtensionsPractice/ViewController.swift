@@ -248,7 +248,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         center.add(request)
     }
     
-    //  MARK: Push Notification with Trigger
+    @IBAction func remotePush(_ sender: AnyObject) {
+        
+        //  1. Create Notification Content
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: "remotePush",
+                                                                 arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: "帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅帅",
+                                                                arguments: nil)
+        content.sound = UNNotificationSound.default()
+        content.badge = UIApplication.shared().applicationIconBadgeNumber + 1;
+        content.categoryIdentifier = String.UNNotificationCategory.Image.rawValue   //  设置通知类型标示
+        content.userInfo["imageAbsoluteString"] = URL.resource(type: .Remote).absoluteString
+        
+        let request = UNNotificationRequest.init(identifier: String.UNNotificationRequest.LocalPushNormal.rawValue,
+                                                 content: content,
+                                                 trigger: nil)
+        
+        //  4. Add to NotificationCenter
+        let center = UNUserNotificationCenter.current()
+        center.add(request)
+    }
+    
     @IBAction func localPushWithTrigger(_ sender: AnyObject) {
         
         //  1. Create Notification Content
