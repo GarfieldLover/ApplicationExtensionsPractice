@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NotficationContentExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>NotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>PhotoEditingExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -29,14 +39,44 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>StickerPackExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>TodayExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>iMessageExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0A2D81361D4B8E1800E62B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A2D814A1D4B99C900E62B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A2D81591D4CF23200E62B0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A895F471D4F98E0003304EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0ACE7C111D3E5B1300EB209D</key>
 		<dict>
 			<key>primary</key>
