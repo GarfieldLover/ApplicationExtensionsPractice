@@ -39,7 +39,7 @@
 		0AF31D611D521E0300943A65 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF31D601D521E0300943A65 /* KeyboardViewController.swift */; };
 		0AF31D651D521E0300943A65 /* CustomKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0AF31D6D1D52202900943A65 /* KeyArt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF31D6B1D52202900943A65 /* KeyArt.xcassets */; };
-		0AF31D6E1D52202900943A65 /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF31D6C1D52202900943A65 /* Keyboard.storyboard */; };
+		0AF31D711D52376200943A65 /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF31D701D52376200943A65 /* Keyboard.storyboard */; };
 		580BD99F1D47673500A2178C /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD101D45FE2800E18F5E /* MMWormhole.m */; };
 		580BD9A01D47673500A2178C /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD121D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.m */; };
 		580BD9A11D47673500A2178C /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD141D45FE2800E18F5E /* MMWormholeFileTransiting.m */; };
@@ -250,8 +250,8 @@
 		0AF31D601D521E0300943A65 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		0AF31D621D521E0300943A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF31D6B1D52202900943A65 /* KeyArt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyArt.xcassets; sourceTree = "<group>"; };
-		0AF31D6C1D52202900943A65 /* Keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		0AF31D6F1D52349300943A65 /* CustomKeyboardExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomKeyboardExtension.entitlements; sourceTree = "<group>"; };
+		0AF31D701D52376200943A65 /* Keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		581BAD0F1D45FE2800E18F5E /* MMWormhole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormhole.h; sourceTree = "<group>"; };
 		581BAD101D45FE2800E18F5E /* MMWormhole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWormhole.m; sourceTree = "<group>"; };
 		581BAD111D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormholeCoordinatedFileTransiting.h; sourceTree = "<group>"; };
@@ -524,7 +524,7 @@
 			children = (
 				0AF31D6F1D52349300943A65 /* CustomKeyboardExtension.entitlements */,
 				0AF31D601D521E0300943A65 /* KeyboardViewController.swift */,
-				0AF31D6C1D52202900943A65 /* Keyboard.storyboard */,
+				0AF31D701D52376200943A65 /* Keyboard.storyboard */,
 				0AF31D6B1D52202900943A65 /* KeyArt.xcassets */,
 				0AF31D621D521E0300943A65 /* Info.plist */,
 			);
@@ -1018,7 +1018,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF31D6D1D52202900943A65 /* KeyArt.xcassets in Resources */,
-				0AF31D6E1D52202900943A65 /* Keyboard.storyboard in Resources */,
+				0AF31D711D52376200943A65 /* Keyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

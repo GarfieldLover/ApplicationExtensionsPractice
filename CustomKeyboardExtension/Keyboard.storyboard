@@ -133,8 +133,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="fFP-OZ-OdR"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAi-gg-WbO">
-                                        <frame key="frameInset" minX="299" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAi-gg-WbO">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="O">
@@ -148,8 +147,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="kzF-ST-fGi"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODR-bB-8IB">
-                                        <frame key="frameInset" minX="337" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODR-bB-8IB">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="P">
@@ -210,8 +208,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-Kr-XIF" userLabel="Letters - Row 2">
                                 <subviews>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otf-rH-Dgf">
-                                        <frame key="frameInset" minX="18" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otf-rH-Dgf">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="A">
@@ -225,8 +222,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="4Qi-5C-ZnR"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3a-Vi-IP1">
-                                        <frame key="frameInset" minX="56" width="37" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3a-Vi-IP1">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="S">
@@ -240,8 +236,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="L7f-wh-6dF"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-yF-awh">
-                                        <frame key="frameInset" minX="94" width="37" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-yF-awh">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="D">
@@ -395,8 +390,7 @@
                                             <action selector="shiftKeyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="oYs-5c-3gD"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtl-KP-6Dy">
-                                        <frame key="frameInset" minX="56" width="37" height="166"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtl-KP-6Dy">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Z">
@@ -410,8 +404,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="0It-kL-WVs"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzZ-Tf-NqZ">
-                                        <frame key="frameInset" minX="94" width="37" height="166"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzZ-Tf-NqZ">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="X">
@@ -663,8 +656,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="p7u-bR-F5u"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNm-Ck-x96">
-                                        <frame key="frameInset" minX="299" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNm-Ck-x96">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="9">
@@ -678,8 +670,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="f7z-7Z-LHG"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENx-iU-Zv2">
-                                        <frame key="frameInset" minX="337" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENx-iU-Zv2">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="0">
@@ -852,8 +843,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="iV4-rV-URL"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9l-J0-y4P">
-                                        <frame key="frameInset" minX="299" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9l-J0-y4P">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="@">
@@ -867,8 +857,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="Jq8-gA-IrJ"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-ZN-NvT">
-                                        <frame key="frameInset" minX="337" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-ZN-NvT">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="&quot;">
@@ -1041,8 +1030,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="c76-Bc-x1R"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTd-Zf-Xd6">
-                                        <frame key="frameInset" minX="299" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTd-Zf-Xd6">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="+">
@@ -1056,8 +1044,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="QQY-q0-a4U"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQc-SY-7yp">
-                                        <frame key="frameInset" minX="337" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQc-SY-7yp">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="=">
@@ -1230,8 +1217,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="Tg4-M9-f4e"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZA-Gb-OXm">
-                                        <frame key="frameInset" minX="299" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZA-Gb-OXm">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="¥">
@@ -1245,8 +1231,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="NLP-yG-gDj"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfh-or-Rv1">
-                                        <frame key="frameInset" minX="337" width="38" height="167"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfh-or-Rv1">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="・">
@@ -1320,8 +1305,7 @@
                                             <action selector="switchKeyboardMode:" destination="kiH-9x-JpX" eventType="touchUpInside" id="T2I-8D-eaA"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjg-zF-lCS">
-                                        <frame key="frameInset" minX="94" width="37" height="166"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjg-zF-lCS">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title=".">
@@ -1335,8 +1319,7 @@
                                             <action selector="keyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="vd5-Pj-zLG"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxs-2c-dSe">
-                                        <frame key="frameInset" minX="131" width="38" height="166"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxs-2c-dSe">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title=",">
@@ -1493,21 +1476,6 @@
                                             <action selector="returnKeyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="lg6-RI-0hu"/>
                                         </connections>
                                     </button>
-                                    <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jov-Nr-67L" userLabel="return">
-                                        <frame key="frameInset" minX="256" minY="-1" width="56" height="167"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title=".">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <state key="highlighted" image="returnHL">
-                                            <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="returnKeyPressed:" destination="kiH-9x-JpX" eventType="touchUpInside" id="Ins-S7-btb"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1616,7 +1584,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEO-Au-RRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="276"/>
+            <point key="canvasLocation" x="-134" y="169"/>
         </scene>
     </scenes>
     <resources>
