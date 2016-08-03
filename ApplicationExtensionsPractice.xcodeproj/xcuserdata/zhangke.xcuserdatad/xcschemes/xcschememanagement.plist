@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CustomKeyboardExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>NotficationContentExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -92,7 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0AF31D5D1D521E0300943A65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>581BAD301D46019200E18F5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>581E68A51D50A04C00DA835D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>581E68B31D50A04C00DA835D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

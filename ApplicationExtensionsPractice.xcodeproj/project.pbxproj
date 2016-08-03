@@ -36,6 +36,10 @@
 		0ACE7C311D3E5BFC00EB209D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE7C301D3E5BFC00EB209D /* TodayViewController.swift */; };
 		0ACE7C341D3E5BFC00EB209D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C321D3E5BFC00EB209D /* MainInterface.storyboard */; };
 		0ACE7C381D3E5BFC00EB209D /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0ACE7C2B1D3E5BFC00EB209D /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0AF31D611D521E0300943A65 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF31D601D521E0300943A65 /* KeyboardViewController.swift */; };
+		0AF31D651D521E0300943A65 /* CustomKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0AF31D6D1D52202900943A65 /* KeyArt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF31D6B1D52202900943A65 /* KeyArt.xcassets */; };
+		0AF31D6E1D52202900943A65 /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF31D6C1D52202900943A65 /* Keyboard.storyboard */; };
 		580BD99F1D47673500A2178C /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD101D45FE2800E18F5E /* MMWormhole.m */; };
 		580BD9A01D47673500A2178C /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD121D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.m */; };
 		580BD9A11D47673500A2178C /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BAD141D45FE2800E18F5E /* MMWormholeFileTransiting.m */; };
@@ -72,11 +76,6 @@
 		581E689D1D507FA500DA835D /* ShipLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581E68961D507FA500DA835D /* ShipLocationViewController.swift */; };
 		581E689E1D507FA500DA835D /* UIImage+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581E68971D507FA500DA835D /* UIImage+Snapshot.swift */; };
 		581E68A11D507FCD00DA835D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581E689F1D507FCD00DA835D /* MainInterface.storyboard */; };
-		581E68AB1D50A04C00DA835D /* DocumentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581E68AA1D50A04C00DA835D /* DocumentPickerViewController.swift */; };
-		581E68AE1D50A04C00DA835D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581E68AC1D50A04C00DA835D /* MainInterface.storyboard */; };
-		581E68B91D50A04D00DA835D /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581E68B81D50A04D00DA835D /* FileProvider.swift */; };
-		581E68BD1D50A04D00DA835D /* DocumentProviderExtensionFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 581E68B41D50A04C00DA835D /* DocumentProviderExtensionFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		581E68C01D50A04D00DA835D /* DocumentProviderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 581E68A61D50A04C00DA835D /* DocumentProviderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		584EAA891D48B48E00259DF7 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584EAA881D48B48E00259DF7 /* PhotosUI.framework */; };
 		584EAA8B1D48B48E00259DF7 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584EAA8A1D48B48E00259DF7 /* Photos.framework */; };
 		584EAA8E1D48B48E00259DF7 /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584EAA8D1D48B48E00259DF7 /* PhotoEditingViewController.swift */; };
@@ -151,26 +150,19 @@
 			remoteGlobalIDString = 0ACE7C2A1D3E5BFC00EB209D;
 			remoteInfo = TodayExtension;
 		};
+		0AF31D631D521E0300943A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AF31D5D1D521E0300943A65;
+			remoteInfo = CustomKeyboardExtension;
+		};
 		581BAD391D46019200E18F5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 581BAD301D46019200E18F5E;
 			remoteInfo = ShareExtension;
-		};
-		581E68BB1D50A04D00DA835D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 581E68B31D50A04C00DA835D;
-			remoteInfo = DocumentProviderExtensionFileProvider;
-		};
-		581E68BE1D50A04D00DA835D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 581E68A51D50A04C00DA835D;
-			remoteInfo = DocumentProviderExtension;
 		};
 		584EAA931D48B48E00259DF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -207,11 +199,10 @@
 				581BAD3B1D46019200E18F5E /* ShareExtension.appex in Embed App Extensions */,
 				58571F7B1D4B3D68009B1DE5 /* SharedLinksExtension.appex in Embed App Extensions */,
 				0A2D81521D4B99C900E62B0D /* NotificationServiceExtension.appex in Embed App Extensions */,
-				581E68BD1D50A04D00DA835D /* DocumentProviderExtensionFileProvider.appex in Embed App Extensions */,
-				581E68C01D50A04D00DA835D /* DocumentProviderExtension.appex in Embed App Extensions */,
 				0ACE7C381D3E5BFC00EB209D /* TodayExtension.appex in Embed App Extensions */,
 				0A895F561D4F98E0003304EB /* iMessageExtension.appex in Embed App Extensions */,
 				58FE56971D49F02E002C9F56 /* SpotlightExtension.appex in Embed App Extensions */,
+				0AF31D651D521E0300943A65 /* CustomKeyboardExtension.appex in Embed App Extensions */,
 				0A2D813E1D4B8E1800E62B0D /* StickerPackExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -255,6 +246,12 @@
 		0ACE7C301D3E5BFC00EB209D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0ACE7C331D3E5BFC00EB209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0ACE7C351D3E5BFC00EB209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF31D601D521E0300943A65 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0AF31D621D521E0300943A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF31D6B1D52202900943A65 /* KeyArt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyArt.xcassets; sourceTree = "<group>"; };
+		0AF31D6C1D52202900943A65 /* Keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
+		0AF31D6F1D52349300943A65 /* CustomKeyboardExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomKeyboardExtension.entitlements; sourceTree = "<group>"; };
 		581BAD0F1D45FE2800E18F5E /* MMWormhole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormhole.h; sourceTree = "<group>"; };
 		581BAD101D45FE2800E18F5E /* MMWormhole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWormhole.m; sourceTree = "<group>"; };
 		581BAD111D45FE2800E18F5E /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormholeCoordinatedFileTransiting.h; sourceTree = "<group>"; };
@@ -287,15 +284,6 @@
 		581E68961D507FA500DA835D /* ShipLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipLocationViewController.swift; sourceTree = "<group>"; };
 		581E68971D507FA500DA835D /* UIImage+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Snapshot.swift"; sourceTree = "<group>"; };
 		581E68A01D507FCD00DA835D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		581E68A61D50A04C00DA835D /* DocumentProviderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentProviderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		581E68A91D50A04C00DA835D /* DocumentProviderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DocumentProviderExtension.entitlements; sourceTree = "<group>"; };
-		581E68AA1D50A04C00DA835D /* DocumentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerViewController.swift; sourceTree = "<group>"; };
-		581E68AD1D50A04C00DA835D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		581E68AF1D50A04C00DA835D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		581E68B41D50A04C00DA835D /* DocumentProviderExtensionFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentProviderExtensionFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		581E68B71D50A04D00DA835D /* DocumentProviderExtensionFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DocumentProviderExtensionFileProvider.entitlements; sourceTree = "<group>"; };
-		581E68B81D50A04D00DA835D /* FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
-		581E68BA1D50A04D00DA835D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		584EAA871D48B48E00259DF7 /* PhotoEditingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoEditingExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		584EAA881D48B48E00259DF7 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		584EAA8A1D48B48E00259DF7 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -360,21 +348,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AF31D5B1D521E0300943A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		581BAD2E1D46019200E18F5E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		581E68A31D50A04C00DA835D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		581E68B11D50A04C00DA835D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,8 +452,7 @@
 				0A2D814C1D4B99C900E62B0D /* NotificationServiceExtension */,
 				0A2D815F1D4CF23200E62B0D /* NotficationContentExtension */,
 				0A895F4B1D4F98E0003304EB /* iMessageExtension */,
-				581E68A71D50A04C00DA835D /* DocumentProviderExtension */,
-				581E68B51D50A04C00DA835D /* DocumentProviderExtensionFileProvider */,
+				0AF31D5F1D521E0300943A65 /* CustomKeyboardExtension */,
 				0ACE7C2C1D3E5BFC00EB209D /* Frameworks */,
 				0ACE7C131D3E5B1300EB209D /* Products */,
 			);
@@ -491,8 +471,7 @@
 				0A2D814B1D4B99C900E62B0D /* NotificationServiceExtension.appex */,
 				0A2D815A1D4CF23200E62B0D /* NotficationContentExtension.appex */,
 				0A895F481D4F98E0003304EB /* iMessageExtension.appex */,
-				581E68A61D50A04C00DA835D /* DocumentProviderExtension.appex */,
-				581E68B41D50A04C00DA835D /* DocumentProviderExtensionFileProvider.appex */,
+				0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -540,6 +519,18 @@
 			path = TodayExtension;
 			sourceTree = "<group>";
 		};
+		0AF31D5F1D521E0300943A65 /* CustomKeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0AF31D6F1D52349300943A65 /* CustomKeyboardExtension.entitlements */,
+				0AF31D601D521E0300943A65 /* KeyboardViewController.swift */,
+				0AF31D6C1D52202900943A65 /* Keyboard.storyboard */,
+				0AF31D6B1D52202900943A65 /* KeyArt.xcassets */,
+				0AF31D621D521E0300943A65 /* Info.plist */,
+			);
+			path = CustomKeyboardExtension;
+			sourceTree = "<group>";
+		};
 		581BAD0E1D45FE2800E18F5E /* MMWormhole */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,43 +566,6 @@
 				581BAD381D46019200E18F5E /* Info.plist */,
 			);
 			path = ShareExtension;
-			sourceTree = "<group>";
-		};
-		581E68A71D50A04C00DA835D /* DocumentProviderExtension */ = {
-			isa = PBXGroup;
-			children = (
-				581E68AA1D50A04C00DA835D /* DocumentPickerViewController.swift */,
-				581E68AC1D50A04C00DA835D /* MainInterface.storyboard */,
-				581E68AF1D50A04C00DA835D /* Info.plist */,
-				581E68A81D50A04C00DA835D /* Supporting Files */,
-			);
-			path = DocumentProviderExtension;
-			sourceTree = "<group>";
-		};
-		581E68A81D50A04C00DA835D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				581E68A91D50A04C00DA835D /* DocumentProviderExtension.entitlements */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		581E68B51D50A04C00DA835D /* DocumentProviderExtensionFileProvider */ = {
-			isa = PBXGroup;
-			children = (
-				581E68B81D50A04D00DA835D /* FileProvider.swift */,
-				581E68BA1D50A04D00DA835D /* Info.plist */,
-				581E68B61D50A04D00DA835D /* Supporting Files */,
-			);
-			path = DocumentProviderExtensionFileProvider;
-			sourceTree = "<group>";
-		};
-		581E68B61D50A04D00DA835D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				581E68B71D50A04D00DA835D /* DocumentProviderExtensionFileProvider.entitlements */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		584EAA8C1D48B48E00259DF7 /* PhotoEditingExtension */ = {
@@ -753,8 +707,7 @@
 				0A2D81511D4B99C900E62B0D /* PBXTargetDependency */,
 				0A2D81671D4CF23200E62B0D /* PBXTargetDependency */,
 				0A895F551D4F98E0003304EB /* PBXTargetDependency */,
-				581E68BC1D50A04D00DA835D /* PBXTargetDependency */,
-				581E68BF1D50A04D00DA835D /* PBXTargetDependency */,
+				0AF31D641D521E0300943A65 /* PBXTargetDependency */,
 			);
 			name = ApplicationExtensionsPractice;
 			productName = ApplicationExtensionsPractice;
@@ -778,6 +731,23 @@
 			productReference = 0ACE7C2B1D3E5BFC00EB209D /* TodayExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		0AF31D5D1D521E0300943A65 /* CustomKeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF31D661D521E0300943A65 /* Build configuration list for PBXNativeTarget "CustomKeyboardExtension" */;
+			buildPhases = (
+				0AF31D5A1D521E0300943A65 /* Sources */,
+				0AF31D5B1D521E0300943A65 /* Frameworks */,
+				0AF31D5C1D521E0300943A65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomKeyboardExtension;
+			productName = CustomKeyboardExtension;
+			productReference = 0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		581BAD301D46019200E18F5E /* ShareExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581BAD3C1D46019200E18F5E /* Build configuration list for PBXNativeTarget "ShareExtension" */;
@@ -793,40 +763,6 @@
 			name = ShareExtension;
 			productName = ShareExtension;
 			productReference = 581BAD311D46019200E18F5E /* ShareExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		581E68A51D50A04C00DA835D /* DocumentProviderExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 581E68C61D50A04D00DA835D /* Build configuration list for PBXNativeTarget "DocumentProviderExtension" */;
-			buildPhases = (
-				581E68A21D50A04C00DA835D /* Sources */,
-				581E68A31D50A04C00DA835D /* Frameworks */,
-				581E68A41D50A04C00DA835D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DocumentProviderExtension;
-			productName = DocumentProviderExtension;
-			productReference = 581E68A61D50A04C00DA835D /* DocumentProviderExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		581E68B31D50A04C00DA835D /* DocumentProviderExtensionFileProvider */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 581E68C51D50A04D00DA835D /* Build configuration list for PBXNativeTarget "DocumentProviderExtensionFileProvider" */;
-			buildPhases = (
-				581E68B01D50A04C00DA835D /* Sources */,
-				581E68B11D50A04C00DA835D /* Frameworks */,
-				581E68B21D50A04C00DA835D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DocumentProviderExtensionFileProvider;
-			productName = DocumentProviderExtensionFileProvider;
-			productReference = 581E68B41D50A04C00DA835D /* DocumentProviderExtensionFileProvider.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		584EAA861D48B48E00259DF7 /* PhotoEditingExtension */ = {
@@ -949,7 +885,7 @@
 							};
 						};
 					};
-					581BAD301D46019200E18F5E = {
+					0AF31D5D1D521E0300943A65 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
@@ -960,17 +896,16 @@
 							};
 						};
 					};
-					581E68A51D50A04C00DA835D = {
+					581BAD301D46019200E18F5E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
-					};
-					581E68B31D50A04C00DA835D = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ZLU2H6WNEP;
-						DevelopmentTeamName = "Ke Zhang (Personal Team)";
-						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					584EAA861D48B48E00259DF7 = {
 						CreatedOnToolsVersion = 8.0;
@@ -1015,8 +950,7 @@
 				0A2D814A1D4B99C900E62B0D /* NotificationServiceExtension */,
 				0A2D81591D4CF23200E62B0D /* NotficationContentExtension */,
 				0A895F471D4F98E0003304EB /* iMessageExtension */,
-				581E68A51D50A04C00DA835D /* DocumentProviderExtension */,
-				581E68B31D50A04C00DA835D /* DocumentProviderExtensionFileProvider */,
+				0AF31D5D1D521E0300943A65 /* CustomKeyboardExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -1079,6 +1013,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AF31D5C1D521E0300943A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF31D6D1D52202900943A65 /* KeyArt.xcassets in Resources */,
+				0AF31D6E1D52202900943A65 /* Keyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		581BAD2F1D46019200E18F5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1088,21 +1031,6 @@
 				5885D0451D476E1A0061AECE /* Assets.xcassets in Resources */,
 				58FE56A01D4A0D10002C9F56 /* data.plist in Resources */,
 				581BAD371D46019200E18F5E /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		581E68A41D50A04C00DA835D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				581E68AE1D50A04C00DA835D /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		581E68B21D50A04C00DA835D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1210,6 +1138,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AF31D5A1D521E0300943A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF31D611D521E0300943A65 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		581BAD2D1D46019200E18F5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1226,22 +1162,6 @@
 				581BAD341D46019200E18F5E /* ShareViewController.swift in Sources */,
 				581BAD511D46133C00E18F5E /* ShareSelectViewController.swift in Sources */,
 				581BAD4F1D46131C00E18F5E /* ShareMenuViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		581E68A21D50A04C00DA835D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				581E68AB1D50A04C00DA835D /* DocumentPickerViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		581E68B01D50A04C00DA835D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				581E68B91D50A04D00DA835D /* FileProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1303,20 +1223,15 @@
 			target = 0ACE7C2A1D3E5BFC00EB209D /* TodayExtension */;
 			targetProxy = 0ACE7C361D3E5BFC00EB209D /* PBXContainerItemProxy */;
 		};
+		0AF31D641D521E0300943A65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AF31D5D1D521E0300943A65 /* CustomKeyboardExtension */;
+			targetProxy = 0AF31D631D521E0300943A65 /* PBXContainerItemProxy */;
+		};
 		581BAD3A1D46019200E18F5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 581BAD301D46019200E18F5E /* ShareExtension */;
 			targetProxy = 581BAD391D46019200E18F5E /* PBXContainerItemProxy */;
-		};
-		581E68BC1D50A04D00DA835D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 581E68B31D50A04C00DA835D /* DocumentProviderExtensionFileProvider */;
-			targetProxy = 581E68BB1D50A04D00DA835D /* PBXContainerItemProxy */;
-		};
-		581E68BF1D50A04D00DA835D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 581E68A51D50A04C00DA835D /* DocumentProviderExtension */;
-			targetProxy = 581E68BE1D50A04D00DA835D /* PBXContainerItemProxy */;
 		};
 		584EAA941D48B48E00259DF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1380,14 +1295,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				581E68A01D507FCD00DA835D /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-		581E68AC1D50A04C00DA835D /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				581E68AD1D50A04C00DA835D /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -1661,6 +1568,32 @@
 			};
 			name = Release;
 		};
+		0AF31D671D521E0300943A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CustomKeyboardExtension/CustomKeyboardExtension.entitlements;
+				INFOPLIST_FILE = CustomKeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CustomKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0AF31D681D521E0300943A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CustomKeyboardExtension/CustomKeyboardExtension.entitlements;
+				INFOPLIST_FILE = CustomKeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CustomKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		581BAD3D1D46019200E18F5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1687,58 +1620,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ApplicationExtensionsPractice-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		581E68C11D50A04D00DA835D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtension/DocumentProviderExtension.entitlements;
-				INFOPLIST_FILE = DocumentProviderExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.DocumentProviderExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		581E68C21D50A04D00DA835D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtension/DocumentProviderExtension.entitlements;
-				INFOPLIST_FILE = DocumentProviderExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.DocumentProviderExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		581E68C31D50A04D00DA835D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtensionFileProvider/DocumentProviderExtensionFileProvider.entitlements;
-				INFOPLIST_FILE = DocumentProviderExtensionFileProvider/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.DocumentProviderExtensionFileProvider;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		581E68C41D50A04D00DA835D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtensionFileProvider/DocumentProviderExtensionFileProvider.entitlements;
-				INFOPLIST_FILE = DocumentProviderExtensionFileProvider/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.DocumentProviderExtensionFileProvider;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1887,6 +1768,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0AF31D661D521E0300943A65 /* Build configuration list for PBXNativeTarget "CustomKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF31D671D521E0300943A65 /* Debug */,
+				0AF31D681D521E0300943A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		581BAD3C1D46019200E18F5E /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1895,22 +1784,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		581E68C51D50A04D00DA835D /* Build configuration list for PBXNativeTarget "DocumentProviderExtensionFileProvider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				581E68C31D50A04D00DA835D /* Debug */,
-				581E68C41D50A04D00DA835D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		581E68C61D50A04D00DA835D /* Build configuration list for PBXNativeTarget "DocumentProviderExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				581E68C11D50A04D00DA835D /* Debug */,
-				581E68C21D50A04D00DA835D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 		584EAA961D48B48E00259DF7 /* Build configuration list for PBXNativeTarget "PhotoEditingExtension" */ = {
 			isa = XCConfigurationList;
