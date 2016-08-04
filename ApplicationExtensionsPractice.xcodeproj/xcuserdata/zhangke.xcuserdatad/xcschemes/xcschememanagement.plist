@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BroadcastUIExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>CallDirectoryExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>ContentBlockerExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -103,6 +113,21 @@
 			<true/>
 		</dict>
 		<key>0AD3275F1D53705B0058381F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AD327741D537FB00058381F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AD327891D5386270058381F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AD3279F1D5387230058381F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

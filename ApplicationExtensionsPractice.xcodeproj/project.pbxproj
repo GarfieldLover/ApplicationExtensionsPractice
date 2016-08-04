@@ -39,6 +39,19 @@
 		0AD327631D53705C0058381F /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AD327621D53705C0058381F /* blockerList.json */; };
 		0AD327651D53705C0058381F /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD327641D53705C0058381F /* ContentBlockerRequestHandler.swift */; };
 		0AD327691D53705C0058381F /* ContentBlockerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AD327601D53705B0058381F /* ContentBlockerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0AD327781D537FB00058381F /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD327771D537FB00058381F /* CallDirectoryHandler.swift */; };
+		0AD3277C1D537FB00058381F /* CallDirectoryExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AD327751D537FB00058381F /* CallDirectoryExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0AD327801D5382BA0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		0AD327811D5382BB0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		0AD327821D5382BB0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		0AD327831D5382BC0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		0AD327841D5382BC0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		0AD327851D5382BC0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		0AD327A11D5387230058381F /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3278B1D5386280058381F /* ReplayKit.framework */; };
+		0AD327A21D5387230058381F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3278D1D5386280058381F /* UIKit.framework */; };
+		0AD327A51D5387230058381F /* BroadcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD327A41D5387230058381F /* BroadcastViewController.swift */; };
+		0AD327A81D5387230058381F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD327A61D5387230058381F /* MainInterface.storyboard */; };
+		0AD327AC1D5387230058381F /* BroadcastUIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AD327A01D5387230058381F /* BroadcastUIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0AF31D611D521E0300943A65 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF31D601D521E0300943A65 /* KeyboardViewController.swift */; };
 		0AF31D651D521E0300943A65 /* CustomKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0AF31D6D1D52202900943A65 /* KeyArt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF31D6B1D52202900943A65 /* KeyArt.xcassets */; };
@@ -160,6 +173,20 @@
 			remoteGlobalIDString = 0AD3275F1D53705B0058381F;
 			remoteInfo = ContentBlockerExtension;
 		};
+		0AD3277A1D537FB00058381F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AD327741D537FB00058381F;
+			remoteInfo = CallDirectoryExtension;
+		};
+		0AD327AA1D5387230058381F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AD3279F1D5387230058381F;
+			remoteInfo = BroadcastUIExtension;
+		};
 		0AF31D631D521E0300943A65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
@@ -242,7 +269,9 @@
 				0A895F561D4F98E0003304EB /* iMessageExtension.appex in Embed App Extensions */,
 				58FE56971D49F02E002C9F56 /* SpotlightExtension.appex in Embed App Extensions */,
 				0AF31D651D521E0300943A65 /* CustomKeyboardExtension.appex in Embed App Extensions */,
+				0AD3277C1D537FB00058381F /* CallDirectoryExtension.appex in Embed App Extensions */,
 				0A2D813E1D4B8E1800E62B0D /* StickerPackExtension.appex in Embed App Extensions */,
+				0AD327AC1D5387230058381F /* BroadcastUIExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +318,15 @@
 		0AD327621D53705C0058381F /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		0AD327641D53705C0058381F /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
 		0AD327661D53705C0058381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD327751D537FB00058381F /* CallDirectoryExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectoryExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD327771D537FB00058381F /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		0AD327791D537FB00058381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD3278B1D5386280058381F /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		0AD3278D1D5386280058381F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0AD327A01D5387230058381F /* BroadcastUIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD327A41D5387230058381F /* BroadcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastViewController.swift; sourceTree = "<group>"; };
+		0AD327A71D5387230058381F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0AD327A91D5387230058381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF31D601D521E0300943A65 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		0AF31D621D521E0300943A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -430,6 +468,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AD327721D537FB00058381F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD3279D1D5387230058381F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD327A11D5387230058381F /* ReplayKit.framework in Frameworks */,
+				0AD327A21D5387230058381F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AF31D5B1D521E0300943A65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,6 +591,8 @@
 				0A895F4B1D4F98E0003304EB /* iMessageExtension */,
 				0AF31D5F1D521E0300943A65 /* CustomKeyboardExtension */,
 				0AD327611D53705C0058381F /* ContentBlockerExtension */,
+				0AD327761D537FB00058381F /* CallDirectoryExtension */,
+				0AD327A31D5387230058381F /* BroadcastUIExtension */,
 				0ACE7C2C1D3E5BFC00EB209D /* Frameworks */,
 				0ACE7C131D3E5B1300EB209D /* Products */,
 			);
@@ -557,6 +613,8 @@
 				0A895F481D4F98E0003304EB /* iMessageExtension.appex */,
 				0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */,
 				0AD327601D53705B0058381F /* ContentBlockerExtension.appex */,
+				0AD327751D537FB00058381F /* CallDirectoryExtension.appex */,
+				0AD327A01D5387230058381F /* BroadcastUIExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -589,6 +647,8 @@
 				0A2D815B1D4CF23200E62B0D /* UserNotifications.framework */,
 				0A2D815D1D4CF23200E62B0D /* UserNotificationsUI.framework */,
 				0A895F491D4F98E0003304EB /* Messages.framework */,
+				0AD3278B1D5386280058381F /* ReplayKit.framework */,
+				0AD3278D1D5386280058381F /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -612,6 +672,25 @@
 				0AD327661D53705C0058381F /* Info.plist */,
 			);
 			path = ContentBlockerExtension;
+			sourceTree = "<group>";
+		};
+		0AD327761D537FB00058381F /* CallDirectoryExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0AD327771D537FB00058381F /* CallDirectoryHandler.swift */,
+				0AD327791D537FB00058381F /* Info.plist */,
+			);
+			path = CallDirectoryExtension;
+			sourceTree = "<group>";
+		};
+		0AD327A31D5387230058381F /* BroadcastUIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0AD327A41D5387230058381F /* BroadcastViewController.swift */,
+				0AD327A61D5387230058381F /* MainInterface.storyboard */,
+				0AD327A91D5387230058381F /* Info.plist */,
+			);
+			path = BroadcastUIExtension;
 			sourceTree = "<group>";
 		};
 		0AF31D5F1D521E0300943A65 /* CustomKeyboardExtension */ = {
@@ -917,6 +996,8 @@
 				0A895F551D4F98E0003304EB /* PBXTargetDependency */,
 				0AF31D641D521E0300943A65 /* PBXTargetDependency */,
 				0AD327681D53705C0058381F /* PBXTargetDependency */,
+				0AD3277B1D537FB00058381F /* PBXTargetDependency */,
+				0AD327AB1D5387230058381F /* PBXTargetDependency */,
 			);
 			name = ApplicationExtensionsPractice;
 			productName = ApplicationExtensionsPractice;
@@ -955,6 +1036,40 @@
 			name = ContentBlockerExtension;
 			productName = ContentBlockerExtension;
 			productReference = 0AD327601D53705B0058381F /* ContentBlockerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0AD327741D537FB00058381F /* CallDirectoryExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD3277D1D537FB00058381F /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */;
+			buildPhases = (
+				0AD327711D537FB00058381F /* Sources */,
+				0AD327721D537FB00058381F /* Frameworks */,
+				0AD327731D537FB00058381F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallDirectoryExtension;
+			productName = CallDirectoryExtension;
+			productReference = 0AD327751D537FB00058381F /* CallDirectoryExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0AD3279F1D5387230058381F /* BroadcastUIExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AD327AD1D5387230058381F /* Build configuration list for PBXNativeTarget "BroadcastUIExtension" */;
+			buildPhases = (
+				0AD3279C1D5387230058381F /* Sources */,
+				0AD3279D1D5387230058381F /* Frameworks */,
+				0AD3279E1D5387230058381F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastUIExtension;
+			productName = BroadcastUIExtension;
+			productReference = 0AD327A01D5387230058381F /* BroadcastUIExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		0AF31D5D1D521E0300943A65 /* CustomKeyboardExtension */ = {
@@ -1117,6 +1232,18 @@
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
+					0AD327741D537FB00058381F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZLU2H6WNEP;
+						DevelopmentTeamName = "Ke Zhang (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					0AD3279F1D5387230058381F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZLU2H6WNEP;
+						DevelopmentTeamName = "Ke Zhang (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
 					0AF31D5D1D521E0300943A65 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
@@ -1194,6 +1321,8 @@
 				0A895F471D4F98E0003304EB /* iMessageExtension */,
 				0AF31D5D1D521E0300943A65 /* CustomKeyboardExtension */,
 				0AD3275F1D53705B0058381F /* ContentBlockerExtension */,
+				0AD327741D537FB00058381F /* CallDirectoryExtension */,
+				0AD3279F1D5387230058381F /* BroadcastUIExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -1243,6 +1372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD327801D5382BA0058381F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1250,6 +1380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD327811D5382BB0058381F /* Assets.xcassets in Resources */,
 				0A2D81641D4CF23200E62B0D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1260,6 +1391,7 @@
 			files = (
 				0A895F521D4F98E0003304EB /* Assets.xcassets in Resources */,
 				581E68A11D507FCD00DA835D /* MainInterface.storyboard in Resources */,
+				0AD327821D5382BB0058381F /* Assets.xcassets in Resources */,
 				581E68901D507A9900DA835D /* Stickers.xcstickers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1291,7 +1423,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD327841D5382BC0058381F /* Assets.xcassets in Resources */,
 				0AD327631D53705C0058381F /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD327731D537FB00058381F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD327851D5382BC0058381F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD3279E1D5387230058381F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD327A81D5387230058381F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1300,6 +1449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF31D6D1D52202900943A65 /* KeyArt.xcassets in Resources */,
+				0AD327831D5382BC0058381F /* Assets.xcassets in Resources */,
 				0AF31D711D52376200943A65 /* Keyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1428,6 +1578,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AD327711D537FB00058381F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD327781D537FB00058381F /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AD3279C1D5387230058381F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD327A51D5387230058381F /* BroadcastViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AF31D5A1D521E0300943A65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1518,6 +1684,16 @@
 			target = 0AD3275F1D53705B0058381F /* ContentBlockerExtension */;
 			targetProxy = 0AD327671D53705C0058381F /* PBXContainerItemProxy */;
 		};
+		0AD3277B1D537FB00058381F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AD327741D537FB00058381F /* CallDirectoryExtension */;
+			targetProxy = 0AD3277A1D537FB00058381F /* PBXContainerItemProxy */;
+		};
+		0AD327AB1D5387230058381F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AD3279F1D5387230058381F /* BroadcastUIExtension */;
+			targetProxy = 0AD327AA1D5387230058381F /* PBXContainerItemProxy */;
+		};
 		0AF31D641D521E0300943A65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0AF31D5D1D521E0300943A65 /* CustomKeyboardExtension */;
@@ -1574,6 +1750,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				0ACE7C331D3E5BFC00EB209D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		0AD327A61D5387230058381F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AD327A71D5387230058381F /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -1670,6 +1854,7 @@
 		0A2D81541D4B99C900E62B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1683,6 +1868,7 @@
 		0A2D81551D4B99C900E62B0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1696,6 +1882,7 @@
 		0A2D816A1D4CF23200E62B0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NotficationContentExtension/NotficationContentExtension.entitlements;
 				INFOPLIST_FILE = NotficationContentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1710,6 +1897,7 @@
 		0A2D816B1D4CF23200E62B0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NotficationContentExtension/NotficationContentExtension.entitlements;
 				INFOPLIST_FILE = NotficationContentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1907,6 +2095,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ContentBlockerExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.ContentBlockerExtension;
@@ -1920,6 +2109,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ContentBlockerExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.ContentBlockerExtension;
@@ -1929,9 +2119,62 @@
 			};
 			name = Release;
 		};
+		0AD3277E1D537FB00058381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CallDirectoryExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0AD3277F1D537FB00058381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CallDirectoryExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0AD327AE1D5387230058381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BroadcastUIExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.BroadcastUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0AD327AF1D5387230058381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BroadcastUIExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.BroadcastUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		0AF31D671D521E0300943A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomKeyboardExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CustomKeyboardExtension;
@@ -1944,6 +2187,7 @@
 		0AF31D681D521E0300943A65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomKeyboardExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CustomKeyboardExtension;
@@ -2132,6 +2376,22 @@
 			buildConfigurations = (
 				0AD3276A1D53705C0058381F /* Debug */,
 				0AD3276B1D53705C0058381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0AD3277D1D537FB00058381F /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD3277E1D537FB00058381F /* Debug */,
+				0AD3277F1D537FB00058381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0AD327AD1D5387230058381F /* Build configuration list for PBXNativeTarget "BroadcastUIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD327AE1D5387230058381F /* Debug */,
+				0AD327AF1D5387230058381F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
