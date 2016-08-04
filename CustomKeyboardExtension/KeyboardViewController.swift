@@ -6,6 +6,12 @@
 //
 //
 
+
+/*
+    运行不了，因为加了storyboard，beta版bug
+    加emoji
+ */
+
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
@@ -41,21 +47,14 @@ class KeyboardViewController: UIInputViewController {
         // Dispose of any resources that can be recreated
     }
     
+    //键盘即将出现
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
     }
     
+    //键盘出现
     override func textDidChange(_ textInput: UITextInput?) {
         // The app has just changed the document's contents, the document context has been updated.
-        
-//        var textColor: UIColor
-//        let proxy = self.textDocumentProxy
-//        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-//            textColor = UIColor.white()
-//        } else {
-//            textColor = UIColor.black()
-//        }
-//        self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
     
     
@@ -80,6 +79,7 @@ class KeyboardViewController: UIInputViewController {
         self.advanceToNextInputMode()
     }
     
+    //a..z 0..9 [..=
     @IBAction func keyPressed(sender: UIButton) -> Void {
         self.textDocumentProxy.insertText((sender.titleLabel?.text)!)
         
@@ -96,12 +96,14 @@ class KeyboardViewController: UIInputViewController {
         self.textDocumentProxy.insertText(" ")
     }
 
+    //大写
     @IBAction func shiftKeyDoubleTapped(sender: UIButton) -> Void {
         _shiftStatus = 2;
         
         self.shiftKeys()
     }
     
+    //单次大写，或按3下小写
     @IBAction func shiftKeyPressed(sender: UIButton) -> Void {
         _shiftStatus = _shiftStatus > 0 ? 0 : 1;
         
@@ -112,6 +114,7 @@ class KeyboardViewController: UIInputViewController {
         self.textDocumentProxy.insertText("\n")
     }
     
+    //变字母
     func shiftKeys() -> Void {
         
         if _shiftStatus == 0 {
@@ -135,7 +138,6 @@ class KeyboardViewController: UIInputViewController {
         shiftButton.setImage(shiftButtonHLImage, for: UIControlState.highlighted)
     }
     
-    
     @IBAction func switchKeyboardMode(sender: UIButton) -> Void {
         numbersRow1View.isHidden = true
         numbersRow2View.isHidden = true
@@ -145,6 +147,7 @@ class KeyboardViewController: UIInputViewController {
         
         switch sender.tag {
         case 1:
+            //4行数字键 ，展示数字，符号第3
             numbersRow1View.isHidden = false
             numbersRow2View.isHidden = false
             numbersSymbolsRow3View.isHidden = false
@@ -160,9 +163,10 @@ class KeyboardViewController: UIInputViewController {
             break
             
         case 2:
-            symbolsRow1View.isHidden = true
-            symbolsRow2View.isHidden = true
-            numbersSymbolsRow3View.isHidden = true
+            //3行符号键，
+            symbolsRow1View.isHidden = false
+            symbolsRow2View.isHidden = false
+            numbersSymbolsRow3View.isHidden = false
             
             switchModeRow3Button.tag = 0
             switchModeRow3Button.setImage(UIImage.init(named: "numbers.png"), for: UIControlState.normal)
