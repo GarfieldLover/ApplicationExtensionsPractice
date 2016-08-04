@@ -278,7 +278,6 @@
 		0AF31D601D521E0300943A65 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		0AF31D621D521E0300943A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF31D6B1D52202900943A65 /* KeyArt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyArt.xcassets; sourceTree = "<group>"; };
-		0AF31D6F1D52349300943A65 /* CustomKeyboardExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomKeyboardExtension.entitlements; sourceTree = "<group>"; };
 		0AF31D701D52376200943A65 /* Keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		581BAD0F1D45FE2800E18F5E /* MMWormhole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormhole.h; sourceTree = "<group>"; };
 		581BAD101D45FE2800E18F5E /* MMWormhole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWormhole.m; sourceTree = "<group>"; };
@@ -584,7 +583,6 @@
 		0AF31D5F1D521E0300943A65 /* CustomKeyboardExtension */ = {
 			isa = PBXGroup;
 			children = (
-				0AF31D6F1D52349300943A65 /* CustomKeyboardExtension.entitlements */,
 				0AF31D601D521E0300943A65 /* KeyboardViewController.swift */,
 				0AF31D701D52376200943A65 /* Keyboard.storyboard */,
 				0AF31D6B1D52202900943A65 /* KeyArt.xcassets */,
@@ -1068,7 +1066,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1828,7 +1826,6 @@
 		0AF31D671D521E0300943A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CustomKeyboardExtension/CustomKeyboardExtension.entitlements;
 				INFOPLIST_FILE = CustomKeyboardExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CustomKeyboardExtension;
@@ -1841,7 +1838,6 @@
 		0AF31D681D521E0300943A65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CustomKeyboardExtension/CustomKeyboardExtension.entitlements;
 				INFOPLIST_FILE = CustomKeyboardExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CustomKeyboardExtension;
