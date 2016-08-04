@@ -1,0 +1,29 @@
+[
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector":"div.ec_wise_ad"
+        },
+        "trigger": {
+            "url-filter": "baidu.*"
+        }
+    },
+ {
+ "action": {
+ "type": "css-display-none", 
+ "selector":"div#tg_arc_bottom"
+ },
+ "trigger": {
+ "url-filter": "wow.178.com"
+ }
+ },
+ 
+ {
+ "action": {
+ "type": "block"
+ },
+ "trigger": {
+"url-filter": "baidu.*"
+ }
+ }
+]
