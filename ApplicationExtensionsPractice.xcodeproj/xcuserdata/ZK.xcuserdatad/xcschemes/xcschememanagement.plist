@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CustomKeyboardExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
 		<key>DocumentProviderExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -93,6 +98,11 @@
 			<true/>
 		</dict>
 		<key>0ACE7C2A1D3E5BFC00EB209D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AF31D5D1D521E0300943A65</key>
 		<dict>
 			<key>primary</key>
 			<true/>

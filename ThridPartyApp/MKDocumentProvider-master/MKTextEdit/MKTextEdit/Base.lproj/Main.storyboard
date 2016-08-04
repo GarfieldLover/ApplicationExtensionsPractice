@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uYm-Tu-dO5">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9My-Ng-81o">
+            <objects>
+                <viewController id="uYm-Tu-dO5" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9NT-pZ-lJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GK1-D8-XSL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cGm-YJ-d2J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0N-ly-9UI">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6UU-jG-dhw"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="新建" id="z7Q-HD-Uwo">
+                                        <connections>
+                                            <action selector="newFile:" destination="uYm-Tu-dO5" id="SxJ-Hg-jF9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0GC-m5-C6S"/>
+                                    <barButtonItem title="打开" id="EhM-5d-juB">
+                                        <connections>
+                                            <action selector="open:" destination="uYm-Tu-dO5" id="hxL-bU-2zH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2k8-bP-jgH"/>
+                                    <barButtonItem title="导入" id="M83-CF-eb1">
+                                        <connections>
+                                            <action selector="import:" destination="uYm-Tu-dO5" id="1Vx-4R-Fge"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Eb0-Iw-OuT"/>
+                                    <barButtonItem enabled="NO" title="移动" id="TAW-Mu-eV9">
+                                        <connections>
+                                            <action selector="move:" destination="uYm-Tu-dO5" id="MOM-mR-MFX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SoL-X1-evF"/>
+                                    <barButtonItem enabled="NO" title="导出" id="ERp-Qj-9zU">
+                                        <connections>
+                                            <action selector="export:" destination="uYm-Tu-dO5" id="PJ9-qe-p54"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lx1-xU-sI7"/>
+                                    <barButtonItem enabled="NO" title="保存" id="cyv-WZ-26D">
+                                        <connections>
+                                            <action selector="modify:" destination="uYm-Tu-dO5" id="pBx-zd-Gib"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DfG-em-aBD">
+                                <rect key="frame" x="0.0" y="110" width="600" height="186"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="zvy-FW-EIr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfL-0f-ukM">
+                                <rect key="frame" x="0.0" y="72" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-Kz-jAL">
+                                <rect key="frame" x="290" y="193" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Pa1-LP-Xrb"/>
+                                    <constraint firstAttribute="width" constant="20" id="Web-TJ-Pxa"/>
+                                </constraints>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bkU-Kz-jAL" firstAttribute="centerY" secondItem="DfG-em-aBD" secondAttribute="centerY" id="4L7-1J-Q68"/>
+                            <constraint firstAttribute="trailing" secondItem="DfG-em-aBD" secondAttribute="trailing" id="4Sv-kO-ZhN"/>
+                            <constraint firstItem="N0N-ly-9UI" firstAttribute="leading" secondItem="cGm-YJ-d2J" secondAttribute="leading" id="6XH-jp-bA8"/>
+                            <constraint firstItem="DfG-em-aBD" firstAttribute="top" secondItem="WfL-0f-ukM" secondAttribute="bottom" constant="8" id="7gg-g4-pYo"/>
+                            <constraint firstItem="DfG-em-aBD" firstAttribute="leading" secondItem="cGm-YJ-d2J" secondAttribute="leading" id="9Yo-PU-wnR"/>
+                            <constraint firstAttribute="trailing" secondItem="N0N-ly-9UI" secondAttribute="trailing" id="Ape-3C-XFi"/>
+                            <constraint firstAttribute="trailing" secondItem="WfL-0f-ukM" secondAttribute="trailing" id="ReG-f8-0kt"/>
+                            <constraint firstItem="bkU-Kz-jAL" firstAttribute="centerX" secondItem="DfG-em-aBD" secondAttribute="centerX" id="iit-qs-DgP"/>
+                            <constraint firstItem="WfL-0f-ukM" firstAttribute="leading" secondItem="cGm-YJ-d2J" secondAttribute="leading" id="kS0-CH-9nR"/>
+                            <constraint firstItem="WfL-0f-ukM" firstAttribute="top" secondItem="N0N-ly-9UI" secondAttribute="bottom" constant="8" id="r89-DX-jGb"/>
+                            <constraint firstItem="N0N-ly-9UI" firstAttribute="top" secondItem="cGm-YJ-d2J" secondAttribute="top" constant="20" id="tUN-xp-yUu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityView" destination="bkU-Kz-jAL" id="J8F-GQ-h3Y"/>
+                        <outlet property="contTextView" destination="DfG-em-aBD" id="LCv-SB-ywP"/>
+                        <outlet property="exportBtnItem" destination="ERp-Qj-9zU" id="r6C-lT-vMy"/>
+                        <outlet property="moveBtnItem" destination="TAW-Mu-eV9" id="1Vd-Lp-HbH"/>
+                        <outlet property="saveBtnItem" destination="cyv-WZ-26D" id="lds-CH-s9U"/>
+                        <outlet property="titleTextField" destination="WfL-0f-ukM" id="ric-jR-cXk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOz-wp-1FL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144" y="376"/>
+        </scene>
+    </scenes>
+</document>

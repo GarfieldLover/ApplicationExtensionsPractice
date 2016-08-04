@@ -164,6 +164,34 @@
 			remoteGlobalIDString = 581BAD301D46019200E18F5E;
 			remoteInfo = ShareExtension;
 		};
+		582339E11D5339F6009577B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582339BC1D5339F6009577B3 /* MKDocumentProvider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB0C9DB31D22512500E5DBF4;
+			remoteInfo = MKDocumentProvider;
+		};
+		582339E31D5339F6009577B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582339BC1D5339F6009577B3 /* MKDocumentProvider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB0C9DD11D22517F00E5DBF4;
+			remoteInfo = MKDocumentProviderDemo;
+		};
+		582339E51D5339F6009577B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582339BC1D5339F6009577B3 /* MKDocumentProvider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB0C9DE01D22517F00E5DBF4;
+			remoteInfo = MKDocumentProviderDemoFileProvider;
+		};
+		582339E81D5339F6009577B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582339DA1D5339F6009577B3 /* MKTextEdit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB0C9E011D23CA9600E5DBF4;
+			remoteInfo = MKTextEdit;
+		};
 		584EAA931D48B48E00259DF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
@@ -284,6 +312,39 @@
 		581E68961D507FA500DA835D /* ShipLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipLocationViewController.swift; sourceTree = "<group>"; };
 		581E68971D507FA500DA835D /* UIImage+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Snapshot.swift"; sourceTree = "<group>"; };
 		581E68A01D507FCD00DA835D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		582339AD1D5339F6009577B3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		582339B01D5339F6009577B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		582339B11D5339F6009577B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		582339B21D5339F6009577B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		582339B41D5339F6009577B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		582339B61D5339F6009577B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		582339B71D5339F6009577B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582339B81D5339F6009577B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		582339B91D5339F6009577B3 /* MKDocumentProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MKDocumentProvider.entitlements; sourceTree = "<group>"; };
+		582339BA1D5339F6009577B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		582339BB1D5339F6009577B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		582339BC1D5339F6009577B3 /* MKDocumentProvider.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MKDocumentProvider.xcodeproj; sourceTree = "<group>"; };
+		582339C21D5339F6009577B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		582339C31D5339F6009577B3 /* DocumentPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentPickerViewController.h; sourceTree = "<group>"; };
+		582339C41D5339F6009577B3 /* DocumentPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentPickerViewController.m; sourceTree = "<group>"; };
+		582339C51D5339F6009577B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582339C61D5339F6009577B3 /* MKDocumentProviderDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MKDocumentProviderDemo.entitlements; sourceTree = "<group>"; };
+		582339C81D5339F6009577B3 /* FileProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProvider.h; sourceTree = "<group>"; };
+		582339C91D5339F6009577B3 /* FileProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProvider.m; sourceTree = "<group>"; };
+		582339CA1D5339F6009577B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582339CB1D5339F6009577B3 /* MKDocumentProviderDemoFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MKDocumentProviderDemoFileProvider.entitlements; sourceTree = "<group>"; };
+		582339CE1D5339F6009577B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		582339CF1D5339F6009577B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		582339D01D5339F6009577B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		582339D21D5339F6009577B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		582339D41D5339F6009577B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		582339D51D5339F6009577B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582339D61D5339F6009577B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		582339D71D5339F6009577B3 /* MKTextEdit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MKTextEdit.entitlements; sourceTree = "<group>"; };
+		582339D81D5339F6009577B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		582339D91D5339F6009577B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		582339DA1D5339F6009577B3 /* MKTextEdit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MKTextEdit.xcodeproj; sourceTree = "<group>"; };
+		582339DD1D5339F6009577B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		584EAA871D48B48E00259DF7 /* PhotoEditingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoEditingExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		584EAA881D48B48E00259DF7 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		584EAA8A1D48B48E00259DF7 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -440,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				581BAD2C1D45FF0000E18F5E /* ApplicationExtensionsPractice-Bridging-Header.h */,
+				582339AB1D5339F6009577B3 /* ThridPartyApp */,
 				58608D2F1D4F351900287E6C /* Unit */,
 				581BAD0E1D45FE2800E18F5E /* MMWormhole */,
 				0ACE7C141D3E5B1300EB209D /* ApplicationExtensionsPractice */,
@@ -566,6 +628,120 @@
 				581BAD381D46019200E18F5E /* Info.plist */,
 			);
 			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		582339AB1D5339F6009577B3 /* ThridPartyApp */ = {
+			isa = PBXGroup;
+			children = (
+				582339AC1D5339F6009577B3 /* MKDocumentProvider-master */,
+			);
+			path = ThridPartyApp;
+			sourceTree = "<group>";
+		};
+		582339AC1D5339F6009577B3 /* MKDocumentProvider-master */ = {
+			isa = PBXGroup;
+			children = (
+				582339AD1D5339F6009577B3 /* .gitignore */,
+				582339AE1D5339F6009577B3 /* MKDocumentProvider */,
+				582339CC1D5339F6009577B3 /* MKTextEdit */,
+				582339DD1D5339F6009577B3 /* README.md */,
+			);
+			path = "MKDocumentProvider-master";
+			sourceTree = "<group>";
+		};
+		582339AE1D5339F6009577B3 /* MKDocumentProvider */ = {
+			isa = PBXGroup;
+			children = (
+				582339AF1D5339F6009577B3 /* MKDocumentProvider */,
+				582339BC1D5339F6009577B3 /* MKDocumentProvider.xcodeproj */,
+				582339C01D5339F6009577B3 /* MKDocumentProviderDemo */,
+				582339C71D5339F6009577B3 /* MKDocumentProviderDemoFileProvider */,
+			);
+			path = MKDocumentProvider;
+			sourceTree = "<group>";
+		};
+		582339AF1D5339F6009577B3 /* MKDocumentProvider */ = {
+			isa = PBXGroup;
+			children = (
+				582339B01D5339F6009577B3 /* AppDelegate.h */,
+				582339B11D5339F6009577B3 /* AppDelegate.m */,
+				582339B21D5339F6009577B3 /* Assets.xcassets */,
+				582339B31D5339F6009577B3 /* LaunchScreen.storyboard */,
+				582339B51D5339F6009577B3 /* Main.storyboard */,
+				582339B71D5339F6009577B3 /* Info.plist */,
+				582339B81D5339F6009577B3 /* main.m */,
+				582339B91D5339F6009577B3 /* MKDocumentProvider.entitlements */,
+				582339BA1D5339F6009577B3 /* ViewController.h */,
+				582339BB1D5339F6009577B3 /* ViewController.m */,
+			);
+			path = MKDocumentProvider;
+			sourceTree = "<group>";
+		};
+		582339BD1D5339F6009577B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				582339E21D5339F6009577B3 /* MKDocumentProvider.app */,
+				582339E41D5339F6009577B3 /* MKDocumentProviderDemo.appex */,
+				582339E61D5339F6009577B3 /* MKDocumentProviderDemoFileProvider.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		582339C01D5339F6009577B3 /* MKDocumentProviderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				582339C11D5339F6009577B3 /* MainInterface.storyboard */,
+				582339C31D5339F6009577B3 /* DocumentPickerViewController.h */,
+				582339C41D5339F6009577B3 /* DocumentPickerViewController.m */,
+				582339C51D5339F6009577B3 /* Info.plist */,
+				582339C61D5339F6009577B3 /* MKDocumentProviderDemo.entitlements */,
+			);
+			path = MKDocumentProviderDemo;
+			sourceTree = "<group>";
+		};
+		582339C71D5339F6009577B3 /* MKDocumentProviderDemoFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				582339C81D5339F6009577B3 /* FileProvider.h */,
+				582339C91D5339F6009577B3 /* FileProvider.m */,
+				582339CA1D5339F6009577B3 /* Info.plist */,
+				582339CB1D5339F6009577B3 /* MKDocumentProviderDemoFileProvider.entitlements */,
+			);
+			path = MKDocumentProviderDemoFileProvider;
+			sourceTree = "<group>";
+		};
+		582339CC1D5339F6009577B3 /* MKTextEdit */ = {
+			isa = PBXGroup;
+			children = (
+				582339CD1D5339F6009577B3 /* MKTextEdit */,
+				582339DA1D5339F6009577B3 /* MKTextEdit.xcodeproj */,
+			);
+			path = MKTextEdit;
+			sourceTree = "<group>";
+		};
+		582339CD1D5339F6009577B3 /* MKTextEdit */ = {
+			isa = PBXGroup;
+			children = (
+				582339CE1D5339F6009577B3 /* AppDelegate.h */,
+				582339CF1D5339F6009577B3 /* AppDelegate.m */,
+				582339D01D5339F6009577B3 /* Assets.xcassets */,
+				582339D11D5339F6009577B3 /* LaunchScreen.storyboard */,
+				582339D31D5339F6009577B3 /* Main.storyboard */,
+				582339D51D5339F6009577B3 /* Info.plist */,
+				582339D61D5339F6009577B3 /* main.m */,
+				582339D71D5339F6009577B3 /* MKTextEdit.entitlements */,
+				582339D81D5339F6009577B3 /* ViewController.h */,
+				582339D91D5339F6009577B3 /* ViewController.m */,
+			);
+			path = MKTextEdit;
+			sourceTree = "<group>";
+		};
+		582339DB1D5339F6009577B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				582339E91D5339F6009577B3 /* MKTextEdit.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		584EAA8C1D48B48E00259DF7 /* PhotoEditingExtension */ = {
@@ -938,6 +1114,16 @@
 			mainGroup = 0ACE7C091D3E5B1300EB209D;
 			productRefGroup = 0ACE7C131D3E5B1300EB209D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 582339BD1D5339F6009577B3 /* Products */;
+					ProjectRef = 582339BC1D5339F6009577B3 /* MKDocumentProvider.xcodeproj */;
+				},
+				{
+					ProductGroup = 582339DB1D5339F6009577B3 /* Products */;
+					ProjectRef = 582339DA1D5339F6009577B3 /* MKTextEdit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0ACE7C111D3E5B1300EB209D /* ApplicationExtensionsPractice */,
@@ -954,6 +1140,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		582339E21D5339F6009577B3 /* MKDocumentProvider.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MKDocumentProvider.app;
+			remoteRef = 582339E11D5339F6009577B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		582339E41D5339F6009577B3 /* MKDocumentProviderDemo.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = MKDocumentProviderDemo.appex;
+			remoteRef = 582339E31D5339F6009577B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		582339E61D5339F6009577B3 /* MKDocumentProviderDemoFileProvider.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = MKDocumentProviderDemoFileProvider.appex;
+			remoteRef = 582339E51D5339F6009577B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		582339E91D5339F6009577B3 /* MKTextEdit.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MKTextEdit.app;
+			remoteRef = 582339E81D5339F6009577B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0A2D81351D4B8E1800E62B0D /* Resources */ = {
@@ -1297,6 +1514,46 @@
 				581E68A01D507FCD00DA835D /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		582339B31D5339F6009577B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582339B41D5339F6009577B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		582339B51D5339F6009577B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582339B61D5339F6009577B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		582339C11D5339F6009577B3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582339C21D5339F6009577B3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		582339D11D5339F6009577B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582339D21D5339F6009577B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		582339D31D5339F6009577B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582339D41D5339F6009577B3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		584EAA8F1D48B48E00259DF7 /* MainInterface.storyboard */ = {
@@ -1775,6 +2032,7 @@
 				0AF31D681D521E0300943A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		581BAD3C1D46019200E18F5E /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
 			isa = XCConfigurationList;
