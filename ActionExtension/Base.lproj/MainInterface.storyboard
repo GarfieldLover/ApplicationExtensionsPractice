@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Image-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController title="Image" id="ObA-dk-sSI" customClass="ActionViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Image" id="ObA-dk-sSI" customClass="ActionViewController" customModule="ActionExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
                         <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
@@ -28,28 +29,35 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ga-4F-77Z"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dt-jV-ZYG">
+                                <color key="backgroundColor" red="0.20623742319999999" green="1" blue="0.21510182859999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFr-fe-fIX">
+                                <frame key="frameInset" minX="136" minY="108" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1Dt-jV-ZYG" firstAttribute="trailing" secondItem="NOA-Dm-cuz" secondAttribute="trailing" id="6PX-8q-GVK"/>
                             <constraint firstAttribute="trailing" secondItem="NOA-Dm-cuz" secondAttribute="trailing" id="A05-Pj-hrr"/>
-                            <constraint firstItem="9ga-4F-77Z" firstAttribute="top" secondItem="NOA-Dm-cuz" secondAttribute="bottom" id="Fps-3D-QQW"/>
                             <constraint firstItem="NOA-Dm-cuz" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="HxO-8t-aoh"/>
-                            <constraint firstAttribute="trailing" secondItem="9ga-4F-77Z" secondAttribute="trailing" id="Ozw-Hg-0yh"/>
-                            <constraint firstItem="9ga-4F-77Z" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="XH5-ld-ONA"/>
-                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="9ga-4F-77Z" secondAttribute="bottom" id="eQg-nn-Zy4"/>
+                            <constraint firstItem="1Dt-jV-ZYG" firstAttribute="leading" secondItem="NOA-Dm-cuz" secondAttribute="leading" id="NaF-Jm-KFv"/>
+                            <constraint firstItem="1Dt-jV-ZYG" firstAttribute="bottom" secondItem="n38-gi-rB5" secondAttribute="top" id="RDR-au-ds0"/>
+                            <constraint firstItem="1Dt-jV-ZYG" firstAttribute="top" secondItem="NOA-Dm-cuz" secondAttribute="bottom" id="iVg-Il-z9c"/>
                             <constraint firstItem="NOA-Dm-cuz" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="we0-1t-bgp"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
                     <connections>
-                        <outlet property="imageView" destination="9ga-4F-77Z" id="5y6-5w-9QO"/>
                         <outlet property="view" destination="zMn-AG-sqS" id="Qma-de-2ek"/>
+                        <outlet property="webView" destination="1Dt-jV-ZYG" id="CeO-pP-4L3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.8" y="123.23838080959521"/>
         </scene>
     </scenes>
 </document>

@@ -11,5 +11,6 @@
 
 #import "MMWormhole.h"
 #import "UIImage+GIF.h"
+#import "UIWebView+Screenshot.h"
 
 #endif /* ApplicationExtensionsPractice_Bridging_Header_h */

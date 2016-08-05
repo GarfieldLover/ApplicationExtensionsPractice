@@ -24,18 +24,17 @@
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
-			<key>NSExtensionJavaScriptPreprocessingFile</key>
-			<string>ScreenShotJavaScript</string>
+			<key>NSExtensionJavaScriptPreprocessingFile - 2</key>
+			<string>DemoPreprocessor</string>
 			<key>NSExtensionActivationRule</key>
-			<dict>
-				<key>NSExtensionActivationSupportsWebPageWithMaxCount</key>
-				<string>1</string>
-			</dict>
+			<string>TRUEPREDICATE</string>
 		</dict>
-		<key>NSExtensionPrincipalClass</key>
-		<string>ActionViewController</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.ui-services</string>
+		<key>NSExtensionMainStoryboard</key>
+		<string>MainInterface</string>
 	</dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>但是发生开发</string>
 </dict>
 </plist>

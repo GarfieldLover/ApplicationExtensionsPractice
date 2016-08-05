@@ -6,48 +6,59 @@
 //
 //
 
+/*
+ beta版各种bug，webview加载不了， 
+ */
+
 import UIKit
 import MobileCoreServices
 
-class ActionViewController: UIViewController {
+class ActionViewController: UIViewController,UIWebViewDelegate {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var webView: UIWebView!
+    func webView(_ webView: UIWebView, didFailLoadWithError error: NSError?){
+    
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Get the item[s] we're handling from the extension context.
         
-        // For example, look for an image and place it into an image view.
-        // Replace this with something appropriate for the type[s] your extension supports.
-        var imageFound = false
-        for item: AnyObject in self.extensionContext!.inputItems {
+        OperationQueue.main.addOperation {
+            self.webView.delegate = self
+
+            let url: URL = URL.init(string: "http://wow.178.com/phone.html")!
+            let request: URLRequest = URLRequest.init(url: url)
+            self.webView.loadRequest(request)
+            
+        }
+        
+        UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, true, UIScreen.main().scale)
+        self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext();
+
+//        let image: UIImage? = webView.screenshot()
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+
+        
+        
+        for item: AnyObject in (self.extensionContext?.inputItems)! {
             let inputItem = item as! NSExtensionItem
+            
             for provider: AnyObject in inputItem.attachments! {
                 let itemProvider = provider as! NSItemProvider
-                if itemProvider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
-                    // This is an image. We'll load it, then place it in our image view.
-                    weak var weakImageView = self.imageView
-                    itemProvider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil, completionHandler: { (imageURL, error) in
-                        OperationQueue.main.addOperation {
-                            if let strongImageView = weakImageView {
-                                if let imageURL = imageURL as? URL {
-                                    strongImageView.image = UIImage(data: try! Data(contentsOf: imageURL))
-                                }
-                            }
+                
+                if itemProvider.hasItemConformingToTypeIdentifier(kUTTypeURL as String) {
+                    itemProvider.loadItem(forTypeIdentifier: kUTTypeURL as String, options: nil, completionHandler: { (result: NSSecureCoding?, error: NSError!) -> Void in
+                        if let resultDict = result as? NSDictionary {
+                            
                         }
                     })
-                    
-                    imageFound = true
-                    break
                 }
             }
-            
-            if (imageFound) {
-                // We only handle one image, so stop looking for more.
-                break
-            }
         }
+
     }
 
     override func didReceiveMemoryWarning() {
