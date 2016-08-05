@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0AD3279F1D5387230058381F"
-               BuildableName = "BroadcastUIExtension.appex"
-               BlueprintName = "BroadcastUIExtension"
+               BlueprintIdentifier = "586B72721D542FE20003579F"
+               BuildableName = "BroadcastUploadExtensionUI.appex"
+               BlueprintName = "BroadcastUploadExtensionUI"
                ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0AD3279F1D5387230058381F"
-            BuildableName = "BroadcastUIExtension.appex"
-            BlueprintName = "BroadcastUIExtension"
+            BlueprintIdentifier = "586B72721D542FE20003579F"
+            BuildableName = "BroadcastUploadExtensionUI.appex"
+            BlueprintName = "BroadcastUploadExtensionUI"
             ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

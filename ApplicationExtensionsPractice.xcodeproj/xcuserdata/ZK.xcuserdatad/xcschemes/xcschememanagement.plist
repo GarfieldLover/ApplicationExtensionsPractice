@@ -9,10 +9,15 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>BroadcastUIExtension.xcscheme</key>
+		<key>BroadcastUploadExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>20</integer>
+		</dict>
+		<key>BroadcastUploadExtensionUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
 		</dict>
 		<key>CallDirectoryExtension.xcscheme</key>
 		<dict>
@@ -158,6 +163,16 @@
 			<true/>
 		</dict>
 		<key>58571F731D4B3D68009B1DE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586B72661D542FE20003579F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586B72721D542FE20003579F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
