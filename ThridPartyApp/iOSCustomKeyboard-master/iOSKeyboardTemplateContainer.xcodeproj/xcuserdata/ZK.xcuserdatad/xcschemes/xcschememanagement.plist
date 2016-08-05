@@ -7,12 +7,12 @@
 		<key>iOSKeyboardTemplate.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>36</integer>
 		</dict>
 		<key>iOSKeyboardTemplateContainer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>35</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

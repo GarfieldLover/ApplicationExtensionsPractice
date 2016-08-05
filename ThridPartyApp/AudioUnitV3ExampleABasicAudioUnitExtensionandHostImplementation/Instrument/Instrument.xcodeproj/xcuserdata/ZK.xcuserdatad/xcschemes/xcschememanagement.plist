@@ -7,32 +7,32 @@
 		<key>OSXInstrumentDemoApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>19</integer>
 		</dict>
 		<key>OSXInstrumentDemoAppExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>23</integer>
 		</dict>
 		<key>OSXInstrumentDemoFramework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>21</integer>
 		</dict>
 		<key>iOSInstrumentDemoApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>12</integer>
 		</dict>
 		<key>iOSInstrumentDemoAppExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>16</integer>
 		</dict>
 		<key>iOSInstrumentDemoFramework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>14</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

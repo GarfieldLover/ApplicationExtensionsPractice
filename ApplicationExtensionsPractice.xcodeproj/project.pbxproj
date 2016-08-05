@@ -94,6 +94,12 @@
 		584EAA951D48B48E00259DF7 /* PhotoEditingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 584EAA871D48B48E00259DF7 /* PhotoEditingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		584EAAA11D48B8BE00259DF7 /* ContentEditingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584EAAA01D48B8BE00259DF7 /* ContentEditingController.swift */; };
 		584EAAA21D48BB0F00259DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		5852DA581D5453110008564C /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852DA571D5453110008564C /* ActionViewController.swift */; };
+		5852DA5B1D5453110008564C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5852DA591D5453110008564C /* MainInterface.storyboard */; };
+		5852DA5F1D5453110008564C /* ActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5852DA551D5453110008564C /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5852DA631D54869C0008564C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		5852DA641D54869C0008564C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
+		5852DA651D54869D0008564C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		58571F771D4B3D68009B1DE5 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58571F761D4B3D68009B1DE5 /* RequestHandler.swift */; };
 		58571F7B1D4B3D68009B1DE5 /* SharedLinksExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 58571F741D4B3D68009B1DE5 /* SharedLinksExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		58571F7F1D4B3D7C009B1DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
@@ -352,6 +358,13 @@
 			remoteGlobalIDString = 306CFCE61C5841E40028386F;
 			remoteInfo = OSXInstrumentDemoAppExtension;
 		};
+		5852DA5D1D5453110008564C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5852DA541D5453110008564C;
+			remoteInfo = ActionExtension;
+		};
 		58571F791D4B3D68009B1DE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
@@ -402,6 +415,7 @@
 				58FE56971D49F02E002C9F56 /* SpotlightExtension.appex in Embed App Extensions */,
 				0AF31D651D521E0300943A65 /* CustomKeyboardExtension.appex in Embed App Extensions */,
 				0AD3277C1D537FB00058381F /* CallDirectoryExtension.appex in Embed App Extensions */,
+				5852DA5F1D5453110008564C /* ActionExtension.appex in Embed App Extensions */,
 				0A2D813E1D4B8E1800E62B0D /* StickerPackExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -645,6 +659,10 @@
 		5852DA241D54529B0008564C /* DSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DSPKernel.hpp; sourceTree = "<group>"; };
 		5852DA251D54529B0008564C /* DSPKernel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DSPKernel.mm; sourceTree = "<group>"; };
 		5852DA261D54529B0008564C /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		5852DA551D5453110008564C /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5852DA571D5453110008564C /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		5852DA5A1D5453110008564C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5852DA5C1D5453110008564C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58571F741D4B3D68009B1DE5 /* SharedLinksExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharedLinksExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		58571F761D4B3D68009B1DE5 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		58571F781D4B3D68009B1DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -744,6 +762,13 @@
 			files = (
 				584EAA891D48B48E00259DF7 /* PhotosUI.framework in Frameworks */,
 				584EAA8B1D48B48E00259DF7 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5852DA521D5453110008564C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,6 +876,7 @@
 				0AD327761D537FB00058381F /* CallDirectoryExtension */,
 				586B72691D542FE20003579F /* BroadcastUploadExtension */,
 				586B72761D542FE20003579F /* BroadcastUploadExtensionUI */,
+				5852DA561D5453110008564C /* ActionExtension */,
 				0ACE7C2C1D3E5BFC00EB209D /* Frameworks */,
 				0ACE7C131D3E5B1300EB209D /* Products */,
 			);
@@ -874,6 +900,7 @@
 				0AD327751D537FB00058381F /* CallDirectoryExtension.appex */,
 				586B72671D542FE20003579F /* BroadcastUploadExtension.appex */,
 				586B72731D542FE20003579F /* BroadcastUploadExtensionUI.appex */,
+				5852DA551D5453110008564C /* ActionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1507,6 +1534,16 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		5852DA561D5453110008564C /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5852DA571D5453110008564C /* ActionViewController.swift */,
+				5852DA591D5453110008564C /* MainInterface.storyboard */,
+				5852DA5C1D5453110008564C /* Info.plist */,
+			);
+			path = ActionExtension;
+			sourceTree = "<group>";
+		};
 		58571F751D4B3D68009B1DE5 /* SharedLinksExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -1659,6 +1696,7 @@
 				0AD3277B1D537FB00058381F /* PBXTargetDependency */,
 				586B727E1D542FE20003579F /* PBXTargetDependency */,
 				586B72811D542FE20003579F /* PBXTargetDependency */,
+				5852DA5E1D5453110008564C /* PBXTargetDependency */,
 			);
 			name = ApplicationExtensionsPractice;
 			productName = ApplicationExtensionsPractice;
@@ -1765,6 +1803,23 @@
 			name = PhotoEditingExtension;
 			productName = PhotoEditingExtension;
 			productReference = 584EAA871D48B48E00259DF7 /* PhotoEditingExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5852DA541D5453110008564C /* ActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5852DA601D5453110008564C /* Build configuration list for PBXNativeTarget "ActionExtension" */;
+			buildPhases = (
+				5852DA511D5453110008564C /* Sources */,
+				5852DA521D5453110008564C /* Frameworks */,
+				5852DA531D5453110008564C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExtension;
+			productName = ActionExtension;
+			productReference = 5852DA551D5453110008564C /* ActionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		58571F731D4B3D68009B1DE5 /* SharedLinksExtension */ = {
@@ -1944,6 +1999,12 @@
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
+					5852DA541D5453110008564C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZLU2H6WNEP;
+						DevelopmentTeamName = "Ke Zhang (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
 					58571F731D4B3D68009B1DE5 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
@@ -2024,6 +2085,7 @@
 				0AD327741D537FB00058381F /* CallDirectoryExtension */,
 				586B72661D542FE20003579F /* BroadcastUploadExtension */,
 				586B72721D542FE20003579F /* BroadcastUploadExtensionUI */,
+				5852DA541D5453110008564C /* ActionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -2289,6 +2351,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5852DA531D5453110008564C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5852DA651D54869D0008564C /* Assets.xcassets in Resources */,
+				5852DA5B1D5453110008564C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58571F721D4B3D68009B1DE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2302,6 +2373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5852DA631D54869C0008564C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2309,6 +2381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5852DA641D54869C0008564C /* Assets.xcassets in Resources */,
 				586B727B1D542FE20003579F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2451,6 +2524,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5852DA511D5453110008564C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5852DA581D5453110008564C /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58571F701D4B3D68009B1DE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2539,6 +2620,11 @@
 			isa = PBXTargetDependency;
 			target = 584EAA861D48B48E00259DF7 /* PhotoEditingExtension */;
 			targetProxy = 584EAA931D48B48E00259DF7 /* PBXContainerItemProxy */;
+		};
+		5852DA5E1D5453110008564C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5852DA541D5453110008564C /* ActionExtension */;
+			targetProxy = 5852DA5D1D5453110008564C /* PBXContainerItemProxy */;
 		};
 		58571F7A1D4B3D68009B1DE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2761,6 +2847,14 @@
 				5852DA0B1D54529B0008564C /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5852DA591D5453110008564C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5852DA5A1D5453110008564C /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		586B72791D542FE20003579F /* MainInterface.storyboard */ = {
@@ -3174,6 +3268,32 @@
 			};
 			name = Release;
 		};
+		5852DA611D5453110008564C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.ActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5852DA621D5453110008564C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.ActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		58571F7C1D4B3D68009B1DE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3381,6 +3501,15 @@
 			buildConfigurations = (
 				584EAA971D48B48E00259DF7 /* Debug */,
 				584EAA981D48B48E00259DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5852DA601D5453110008564C /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5852DA611D5453110008564C /* Debug */,
+				5852DA621D5453110008564C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
