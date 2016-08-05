@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ActionExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
 		<key>ApplicationExtensionsPractice.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,16 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>17</integer>
+		</dict>
+		<key>BroadcastUploadExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>BroadcastUploadExtensionUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
 		</dict>
 		<key>CallDirectoryExtension.xcscheme</key>
 		<dict>
@@ -157,7 +172,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5852DA541D5453110008564C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>58571F731D4B3D68009B1DE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586B72661D542FE20003579F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>586B72721D542FE20003579F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
