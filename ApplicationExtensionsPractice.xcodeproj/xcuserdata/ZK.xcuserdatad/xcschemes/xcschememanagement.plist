@@ -12,12 +12,12 @@
 		<key>BroadcastUploadExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>19</integer>
 		</dict>
 		<key>BroadcastUploadExtensionUI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>20</integer>
 		</dict>
 		<key>CallDirectoryExtension.xcscheme</key>
 		<dict>
