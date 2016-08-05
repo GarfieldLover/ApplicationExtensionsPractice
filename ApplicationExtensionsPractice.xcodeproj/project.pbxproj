@@ -2378,6 +2378,7 @@
 				0AD3276B1D53705C0058381F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AD3277D1D537FB00058381F /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */ = {
 			isa = XCConfigurationList;
@@ -2386,6 +2387,7 @@
 				0AD3277F1D537FB00058381F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AD327AD1D5387230058381F /* Build configuration list for PBXNativeTarget "BroadcastUIExtension" */ = {
 			isa = XCConfigurationList;
@@ -2394,6 +2396,7 @@
 				0AD327AF1D5387230058381F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AF31D661D521E0300943A65 /* Build configuration list for PBXNativeTarget "CustomKeyboardExtension" */ = {
 			isa = XCConfigurationList;

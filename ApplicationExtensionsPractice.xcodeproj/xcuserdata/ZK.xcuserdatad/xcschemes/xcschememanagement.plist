@@ -9,6 +9,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BroadcastUIExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>CallDirectoryExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>ContentBlockerExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 		<key>CustomKeyboardExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -98,6 +113,21 @@
 			<true/>
 		</dict>
 		<key>0ACE7C2A1D3E5BFC00EB209D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AD3275F1D53705B0058381F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AD327741D537FB00058381F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AD3279F1D5387230058381F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
