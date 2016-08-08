@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="SiriExtensionUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2016060810573363" translatesAutoresizingMaskIntoConstraints="NO" id="LmJ-fh-Vl2"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LmJ-fh-Vl2" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="24" id="EW0-KD-Ahf"/>
+                            <constraint firstItem="LmJ-fh-Vl2" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="HWc-Yz-jin"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="LmJ-fh-Vl2" secondAttribute="bottom" constant="11" id="kbc-I4-vFc"/>
+                            <constraint firstItem="LmJ-fh-Vl2" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="xff-HO-rii"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2016060810573363" width="600" height="318"/>
+    </resources>
+</document>

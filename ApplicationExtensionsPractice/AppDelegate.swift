@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -16,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        INPreferences.requestSiriAuthorization { status in
+            if status != .authorized {
+                fatalError("Why would you do that? :(")
+            }
+        }
         
         self.registerNotifications(application)
         

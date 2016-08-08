@@ -56,5 +56,7 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>ffffff</string>
+	<key>NSSiriUsageDescription</key>
+	<string>ddddd</string>
 </dict>
 </plist>
