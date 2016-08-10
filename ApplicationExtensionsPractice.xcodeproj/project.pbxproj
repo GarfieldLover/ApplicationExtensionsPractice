@@ -3598,6 +3598,7 @@
 				0ACEA66B1D58B52B00D77A55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ACEA67B1D58B52B00D77A55 /* Build configuration list for PBXNativeTarget "SiriExtension" */ = {
 			isa = XCConfigurationList;
@@ -3606,6 +3607,7 @@
 				0ACEA6691D58B52B00D77A55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AD327701D53705C0058381F /* Build configuration list for PBXNativeTarget "ContentBlockerExtension" */ = {
 			isa = XCConfigurationList;

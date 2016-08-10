@@ -74,6 +74,16 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>SiriExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>38</integer>
+		</dict>
+		<key>SiriExtensionUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>39</integer>
+		</dict>
 		<key>SpotlightExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -123,6 +133,16 @@
 			<true/>
 		</dict>
 		<key>0ACE7C2A1D3E5BFC00EB209D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0ACEA64E1D58B52B00D77A55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0ACEA6571D58B52B00D77A55</key>
 		<dict>
 			<key>primary</key>
 			<true/>
