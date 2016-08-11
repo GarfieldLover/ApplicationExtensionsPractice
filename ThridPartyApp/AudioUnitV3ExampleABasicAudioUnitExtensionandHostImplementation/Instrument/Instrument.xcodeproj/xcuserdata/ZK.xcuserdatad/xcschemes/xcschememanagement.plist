@@ -4,21 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OSXInstrumentDemoApp.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>19</integer>
-		</dict>
-		<key>OSXInstrumentDemoAppExtension.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>23</integer>
-		</dict>
-		<key>OSXInstrumentDemoFramework.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
 		<key>iOSInstrumentDemoApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OSXAUv3Host.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>27</integer>
-		</dict>
 		<key>iOSAUv3Host.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
