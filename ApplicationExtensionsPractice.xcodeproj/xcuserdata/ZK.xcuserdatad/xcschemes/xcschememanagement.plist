@@ -69,16 +69,6 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
-		<key>SiriExtension.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>38</integer>
-		</dict>
-		<key>SiriExtensionUI.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>39</integer>
-		</dict>
 		<key>SpotlightExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

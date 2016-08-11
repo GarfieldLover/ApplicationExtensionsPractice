@@ -2,8 +2,8 @@
 //  IntentViewController.swift
 //  SiriExtensionUI
 //
-//  Created by zhangke on 16/8/8.
-//
+//  Created by ZK on 16/8/11.
+//  Copyright © 2016年 ZK. All rights reserved.
 //
 
 import IntentsUI
@@ -33,9 +33,39 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     func configure(with interaction: INInteraction!, context: INUIHostedViewContext, completion: ((CGSize) -> Void)!) {
         // Do configuration here, including preparing views and calculating a desired size for presentation.
         
-        if let completion = completion {
-            completion(self.desiredSize)
+        var size: CGSize
+        
+        //取得发送内容并展示
+        
+        // Check if the interaction describes a SendMessageIntent.
+        if interaction.representsSendMessageIntent {
+            // If it is, let's set up a view controller.
+            let chatViewController = UCChatViewController()
+            chatViewController.messageContent = interaction.messageContent
+            
+            let contact = UCContact()
+            contact.name = interaction.recipientName
+            chatViewController.recipient = contact
+            
+            switch interaction.intentHandlingStatus {
+            case .unspecified, .inProgress, .ready, .failure:
+                chatViewController.isSent = false
+                
+            case .success, .deferredToApplication:
+                chatViewController.isSent = true
+            }
+            
+            present(chatViewController, animated: false, completion: nil)
+            
+            size = desiredSize
         }
+        else {
+            // Otherwise, we'll tell the host to draw us at zero size.
+            size = CGSize.zero
+        }
+        
+        completion(size)
+
     }
     
     var desiredSize: CGSize {

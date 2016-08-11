@@ -17,9 +17,9 @@ import Intents
 // "<myApp> John saying hello"
 // "Search for messages in <myApp>"
 
-class IntentHandler: INExtension, INSendMessageIntentHandling
-//, INSearchForMessagesIntentHandling, INSetMessageAttributeIntentHandling
-{
+//创建通讯录－> 输入：发送信息给xx－>siri匹配人、内容－>确认匹配->app发送信息，并UI展示
+
+class IntentHandler: INExtension, INSendMessageIntentHandling{
     
     override func handler(for intent: INIntent) -> AnyObject {
         // This is the default implementation.  If you want different objects to handle different intents,
@@ -42,19 +42,27 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
             
             var resolutionResults = [INPersonResolutionResult]()
             for recipient in recipients {
-                let matchingContacts = [recipient] // Implement your contact matching logic here to create an array of matching contacts
+                //对比通讯录得出结果
+                let matchingContacts = UCAddressBookManager().contacts(matchingName: recipient.displayName)
                 switch matchingContacts.count {
                 case 2  ... Int.max:
+                    //返回数组，让siri选一个
                     // We need Siri's help to ask user to pick one from the matches.
-                    resolutionResults += [INPersonResolutionResult.disambiguation(with: matchingContacts)]
+                    let disambiguationOptions: [INPerson] = matchingContacts.map { contact in
+                        return contact.inPerson()
+                    }
+                    
+                    resolutionResults += [.disambiguation(with: disambiguationOptions)]
                     
                 case 1:
+                    //有一个直接返回
                     // We have exactly one matching contact
-                    resolutionResults += [INPersonResolutionResult.success(with: recipient)]
+                    let recipientMatched = matchingContacts[0].inPerson()
+                    resolutionResults += [.success(with: recipientMatched)]
                     
                 case 0:
                     // We have no contacts matching the description provided
-                    resolutionResults += [INPersonResolutionResult.unsupported()]
+                      resolutionResults += [.unsupported()]
                     
                 default:
                     break
@@ -79,9 +87,16 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
     func confirm(sendMessage intent: INSendMessageIntent, completion: (INSendMessageIntentResponse) -> Void) {
         // Verify user is authenticated and your app is ready to send a message.
         
-        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
-        let response = INSendMessageIntentResponse(code: .ready, userActivity: userActivity)
-        completion(response)
+        if UCAccount.shared().hasValidAuthentication {
+            completion(INSendMessageIntentResponse(code: .success, userActivity: nil))
+        }
+        else {
+            // Creating our own user activity to include error information.
+            let userActivity = NSUserActivity(activityType: String(INSendMessageIntent.self))
+            userActivity.userInfo = [NSString(string: "error"):NSString(string: "UserLoggedOut")]
+            
+            completion(INSendMessageIntentResponse(code: .failureRequiringAppLaunch, userActivity: userActivity))
+        }
     }
     
     //在confirm方法执行完成之后，Siri进行最后的处理阶段，生成答复对象，并且向此intent对象确认处理结果然后执显示结果给用户看
@@ -90,39 +105,16 @@ class IntentHandler: INExtension, INSendMessageIntentHandling
     func handle(sendMessage intent: INSendMessageIntent, completion: (INSendMessageIntentResponse) -> Void) {
         // Implement your application logic to send a message here.
         
-        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
-        let response = INSendMessageIntentResponse(code: .success, userActivity: userActivity)
-        completion(response)
+        if intent.recipients != nil && intent.content != nil {
+            // Send the message.
+            //微信发送
+            let success = UCAccount.shared().sendMessage(intent.content, toRecipients: intent.recipients)
+            completion(INSendMessageIntentResponse(code: success ? .success : .failure, userActivity: nil))
+        }
+        else {
+            completion(INSendMessageIntentResponse(code: .failure, userActivity: nil))
+        }
     }
     
-    // Implement handlers for each intent you wish to handle.  As an example for messages, you may wish to also handle searchForMessages and setMessageAttributes.
-    
-    // MARK: - INSearchForMessagesIntentHandling
-    
-    func handle(searchForMessages intent: INSearchForMessagesIntent, completion: (INSearchForMessagesIntentResponse) -> Void) {
-        // Implement your application logic to find a message that matches the information in the intent.
-        
-        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSearchForMessagesIntent.self))
-        let response = INSearchForMessagesIntentResponse(code: .success, userActivity: userActivity)
-        // Initialize with found message's attributes
-        response.messages = [INMessage(
-            identifier: "identifier",
-            content: "I am so excited about SiriKit!",
-            dateSent: Date(),
-            sender: INPerson(personHandle: INPersonHandle(value: "sarah@example.com", type: .emailAddress), nameComponents: nil, displayName: "Sarah", image: nil,  contactIdentifier: nil, customIdentifier: nil),
-            recipients: [INPerson(personHandle: INPersonHandle(value: "+1-415-555-5555", type: .phoneNumber), nameComponents: nil, displayName: "John", image: nil,  contactIdentifier: nil, customIdentifier: nil)]
-            )]
-        completion(response)
-    }
-    
-    // MARK: - INSetMessageAttributeIntentHandling
-    
-    func handle(setMessageAttribute intent: INSetMessageAttributeIntent, completion: (INSetMessageAttributeIntentResponse) -> Void) {
-        // Implement your application logic to set the message attribute here.
-        
-        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSetMessageAttributeIntent.self))
-        let response = INSetMessageAttributeIntentResponse(code: .success, userActivity: userActivity)
-        completion(response)
-    }
 }
 

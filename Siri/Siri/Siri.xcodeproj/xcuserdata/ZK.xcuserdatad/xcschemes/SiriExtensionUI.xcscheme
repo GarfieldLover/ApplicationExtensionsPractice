@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0ACEA64E1D58B52B00D77A55"
-               BuildableName = "SiriExtension.appex"
-               BlueprintName = "SiriExtension"
-               ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
+               BlueprintIdentifier = "58A11E2E1D5C7C38009FF0FD"
+               BuildableName = "SiriExtensionUI.appex"
+               BlueprintName = "SiriExtensionUI"
+               ReferencedContainer = "container:Siri.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,10 +29,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0ACE7C111D3E5B1300EB209D"
-               BuildableName = "ApplicationExtensionsPractice.app"
-               BlueprintName = "ApplicationExtensionsPractice"
-               ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
+               BlueprintIdentifier = "58A11E0C1D5C7C1B009FF0FD"
+               BuildableName = "Siri.app"
+               BlueprintName = "Siri"
+               ReferencedContainer = "container:Siri.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0ACEA64E1D58B52B00D77A55"
-            BuildableName = "SiriExtension.appex"
-            BlueprintName = "SiriExtension"
-            ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
+            BlueprintIdentifier = "58A11E2E1D5C7C38009FF0FD"
+            BuildableName = "SiriExtensionUI.appex"
+            BlueprintName = "SiriExtensionUI"
+            ReferencedContainer = "container:Siri.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0ACE7C111D3E5B1300EB209D"
-            BuildableName = "ApplicationExtensionsPractice.app"
-            BlueprintName = "ApplicationExtensionsPractice"
-            ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
+            BlueprintIdentifier = "58A11E0C1D5C7C1B009FF0FD"
+            BuildableName = "Siri.app"
+            BlueprintName = "Siri"
+            ReferencedContainer = "container:Siri.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -91,10 +91,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0ACE7C111D3E5B1300EB209D"
-            BuildableName = "ApplicationExtensionsPractice.app"
-            BlueprintName = "ApplicationExtensionsPractice"
-            ReferencedContainer = "container:ApplicationExtensionsPractice.xcodeproj">
+            BlueprintIdentifier = "58A11E0C1D5C7C1B009FF0FD"
+            BuildableName = "Siri.app"
+            BlueprintName = "Siri"
+            ReferencedContainer = "container:Siri.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
