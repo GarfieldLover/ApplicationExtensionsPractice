@@ -49,13 +49,11 @@
 		0AD327631D53705C0058381F /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AD327621D53705C0058381F /* blockerList.json */; };
 		0AD327651D53705C0058381F /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD327641D53705C0058381F /* ContentBlockerRequestHandler.swift */; };
 		0AD327691D53705C0058381F /* ContentBlockerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AD327601D53705B0058381F /* ContentBlockerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0AD3277C1D537FB00058381F /* CallDirectoryExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AD327751D537FB00058381F /* CallDirectoryExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0AD327801D5382BA0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		0AD327811D5382BB0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		0AD327821D5382BB0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		0AD327831D5382BC0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		0AD327841D5382BC0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
-		0AD327851D5382BC0058381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE7C1C1D3E5B1300EB209D /* Assets.xcassets */; };
 		0AF31D611D521E0300943A65 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF31D601D521E0300943A65 /* KeyboardViewController.swift */; };
 		0AF31D651D521E0300943A65 /* CustomKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0AF31D6D1D52202900943A65 /* KeyArt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF31D6B1D52202900943A65 /* KeyArt.xcassets */; };
@@ -208,13 +206,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0AD3275F1D53705B0058381F;
 			remoteInfo = ContentBlockerExtension;
-		};
-		0AD3277A1D537FB00058381F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0ACE7C0A1D3E5B1300EB209D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AD327741D537FB00058381F;
-			remoteInfo = CallDirectoryExtension;
 		};
 		0AF31D631D521E0300943A65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -407,7 +398,6 @@
 				58FE56971D49F02E002C9F56 /* SpotlightExtension.appex in Embed App Extensions */,
 				0ACEA6671D58B52B00D77A55 /* SiriExtension.appex in Embed App Extensions */,
 				0AF31D651D521E0300943A65 /* CustomKeyboardExtension.appex in Embed App Extensions */,
-				0AD3277C1D537FB00058381F /* CallDirectoryExtension.appex in Embed App Extensions */,
 				5852DA5F1D5453110008564C /* ActionExtension.appex in Embed App Extensions */,
 				0A2D813E1D4B8E1800E62B0D /* StickerPackExtension.appex in Embed App Extensions */,
 			);
@@ -467,7 +457,6 @@
 		0AD327621D53705C0058381F /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		0AD327641D53705C0058381F /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
 		0AD327661D53705C0058381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AD327751D537FB00058381F /* CallDirectoryExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectoryExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD3278B1D5386280058381F /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		0AD3278D1D5386280058381F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -723,13 +712,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AD327721D537FB00058381F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0AF31D5B1D521E0300943A65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -887,7 +869,6 @@
 				0A895F481D4F98E0003304EB /* iMessageExtension.appex */,
 				0AF31D5E1D521E0300943A65 /* CustomKeyboardExtension.appex */,
 				0AD327601D53705B0058381F /* ContentBlockerExtension.appex */,
-				0AD327751D537FB00058381F /* CallDirectoryExtension.appex */,
 				586B72671D542FE20003579F /* BroadcastUploadExtension.appex */,
 				586B72731D542FE20003579F /* BroadcastUploadExtensionUI.appex */,
 				5852DA551D5453110008564C /* ActionExtension.appex */,
@@ -1631,7 +1612,6 @@
 				0A895F551D4F98E0003304EB /* PBXTargetDependency */,
 				0AF31D641D521E0300943A65 /* PBXTargetDependency */,
 				0AD327681D53705C0058381F /* PBXTargetDependency */,
-				0AD3277B1D537FB00058381F /* PBXTargetDependency */,
 				586B727E1D542FE20003579F /* PBXTargetDependency */,
 				586B72811D542FE20003579F /* PBXTargetDependency */,
 				5852DA5E1D5453110008564C /* PBXTargetDependency */,
@@ -1709,23 +1689,6 @@
 			name = ContentBlockerExtension;
 			productName = ContentBlockerExtension;
 			productReference = 0AD327601D53705B0058381F /* ContentBlockerExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		0AD327741D537FB00058381F /* CallDirectoryExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AD3277D1D537FB00058381F /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */;
-			buildPhases = (
-				0AD327711D537FB00058381F /* Sources */,
-				0AD327721D537FB00058381F /* Frameworks */,
-				0AD327731D537FB00058381F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CallDirectoryExtension;
-			productName = CallDirectoryExtension;
-			productReference = 0AD327751D537FB00058381F /* CallDirectoryExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		0AF31D5D1D521E0300943A65 /* CustomKeyboardExtension */ = {
@@ -1951,12 +1914,6 @@
 						DevelopmentTeamName = "Ke Zhang (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
-					0AD327741D537FB00058381F = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ZLU2H6WNEP;
-						DevelopmentTeamName = "Ke Zhang (Personal Team)";
-						ProvisioningStyle = Automatic;
-					};
 					0AF31D5D1D521E0300943A65 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZLU2H6WNEP;
@@ -2073,7 +2030,6 @@
 				0A895F471D4F98E0003304EB /* iMessageExtension */,
 				0AF31D5D1D521E0300943A65 /* CustomKeyboardExtension */,
 				0AD3275F1D53705B0058381F /* ContentBlockerExtension */,
-				0AD327741D537FB00058381F /* CallDirectoryExtension */,
 				586B72661D542FE20003579F /* BroadcastUploadExtension */,
 				586B72721D542FE20003579F /* BroadcastUploadExtensionUI */,
 				5852DA541D5453110008564C /* ActionExtension */,
@@ -2284,14 +2240,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AD327731D537FB00058381F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AD327851D5382BC0058381F /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0AF31D5C1D521E0300943A65 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2473,13 +2421,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AD327711D537FB00058381F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0AF31D5A1D521E0300943A65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2605,11 +2546,6 @@
 			isa = PBXTargetDependency;
 			target = 0AD3275F1D53705B0058381F /* ContentBlockerExtension */;
 			targetProxy = 0AD327671D53705C0058381F /* PBXContainerItemProxy */;
-		};
-		0AD3277B1D537FB00058381F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AD327741D537FB00058381F /* CallDirectoryExtension */;
-			targetProxy = 0AD3277A1D537FB00058381F /* PBXContainerItemProxy */;
 		};
 		0AF31D641D521E0300943A65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3211,34 +3147,6 @@
 			};
 			name = Release;
 		};
-		0AD3277E1D537FB00058381F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CallDirectoryExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		0AD3277F1D537FB00058381F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CallDirectoryExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gl.ApplicationExtensionsPractice.CallDirectoryExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		0AF31D671D521E0300943A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3541,15 +3449,6 @@
 			buildConfigurations = (
 				0AD3276A1D53705C0058381F /* Debug */,
 				0AD3276B1D53705C0058381F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0AD3277D1D537FB00058381F /* Build configuration list for PBXNativeTarget "CallDirectoryExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AD3277E1D537FB00058381F /* Debug */,
-				0AD3277F1D537FB00058381F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
