@@ -19,7 +19,7 @@ import Intents
 
 //创建通讯录－> 输入：发送信息给xx－>siri匹配人、内容－>确认匹配->app发送信息，并UI展示
 
-class IntentHandler: INExtension, INSendMessageIntentHandling{
+class IntentHandler: INExtension, INSendMessageIntentHandling, INStartVideoCallIntentHandling, INSendPaymentIntentHandling{
     
     override func handler(for intent: INIntent) -> AnyObject {
         // This is the default implementation.  If you want different objects to handle different intents,
@@ -28,6 +28,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling{
         return self
     }
     
+    //给谁
     //在Siri获取到用户的语音输入之后，生成一个INIntent对象，将语音中的关键信息提取出来并且填充对应的属性
     // MARK: - INSendMessageIntentHandling
     
@@ -73,6 +74,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling{
         }
     }
     
+    //发什么
     func resolveContent(forSendMessage intent: INSendMessageIntent, with completion: (INStringResolutionResult) -> Void) {
         if let text = intent.content, !text.isEmpty {
             completion(INStringResolutionResult.success(with: text))
@@ -81,6 +83,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling{
         }
     }
     
+    //询问是否发送
     //依次调用confirm打头的实例方法来判断Siri填充的信息是否完成。匹配的判断结果包括Exactly one match、Two or more matches以及No match三种情况
     // Once resolution is completed, perform validation on the intent and provide confirmation (optional).
     
@@ -116,5 +119,47 @@ class IntentHandler: INExtension, INSendMessageIntentHandling{
         }
     }
     
+    
+    // MARK: - INStartVideoCallIntent
+    //给谁发
+    func resolveContacts(forStartVideoCall intent: INStartVideoCallIntent, with completion: ([INPersonResolutionResult]) -> Swift.Void){
+    }
+
+    //确认发
+    func confirm(startVideoCall intent: INStartVideoCallIntent, completion: (INStartVideoCallIntentResponse) -> Swift.Void){
+    }
+    
+    //发
+    func handle(startVideoCall intent: INStartVideoCallIntent, completion: (INStartVideoCallIntentResponse) -> Swift.Void){
+    }
+    
+    // MARK: - INSendPaymentIntent
+    func handle(sendPayment intent: INSendPaymentIntent, completion: (INSendPaymentIntentResponse) -> Swift.Void){
+    }
+    
+    func confirm(sendPayment intent: INSendPaymentIntent, completion: (INSendPaymentIntentResponse) -> Swift.Void){}
+    
+    //收款人
+    func resolvePayee(forSendPayment intent: INSendPaymentIntent, with completion: (INPersonResolutionResult) -> Swift.Void){}
+    //货币金额
+    func resolveCurrencyAmount(forSendPayment intent: INSendPaymentIntent, with completion: (INCurrencyAmountResolutionResult) -> Swift.Void){}
+    //备注
+    func resolveNote(forSendPayment intent: INSendPaymentIntent, with completion: (INStringResolutionResult) -> Swift.Void){}
+    
+    // MARK: - INSearchForPhotosIntent
+    func handle(searchForPhotos intent: INSearchForPhotosIntent, completion: (INSearchForPhotosIntentResponse) -> Swift.Void){}
+
+    func confirm(searchForPhotos intent: INSearchForPhotosIntent, completion: (INSearchForPhotosIntentResponse) -> Swift.Void){}
+    //创建时间
+    func resolveDateCreated(forSearchForPhotos intent: INSearchForPhotosIntent, with completion: (INDateComponentsRangeResolutionResult) -> Swift.Void){}
+    //创建地点
+    func resolveLocationCreated(forSearchForPhotos intent: INSearchForPhotosIntent, with completion: (INPlacemarkResolutionResult) -> Swift.Void){}
+    //相册
+    func resolveAlbumName(forSearchForPhotos intent: INSearchForPhotosIntent, with completion: (INStringResolutionResult) -> Swift.Void){}
+    //INPerson 人名
+    func resolvePeopleInPhoto(forSearchForPhotos intent: INSearchForPhotosIntent, with completion: ([INPersonResolutionResult]) -> Swift.Void){}
+    
+    // MARK: - INStartWorkoutIntent
+
 }
 

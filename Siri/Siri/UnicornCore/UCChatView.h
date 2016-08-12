@@ -12,6 +12,6 @@
 
 @property (nonatomic, copy) NSString *recipientName;
 @property (nonatomic, copy) NSString *content;
-@property (nonatomic, assign, getter=isSent) BOOL sent;
+@property (nonatomic, assign) BOOL sent;
 
 @end

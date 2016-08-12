@@ -25,12 +25,24 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>IntentsRestrictedWhileLocked</key>
-			<array/>
+			<array>
+				<string>INSendMessageIntent</string>
+				<string>INStartVideoCallIntent</string>
+				<string>INStartAudioCallIntent</string>
+			</array>
 			<key>IntentsSupported</key>
 			<array>
 				<string>INSendMessageIntent</string>
-				<string>INSearchForMessagesIntent</string>
-				<string>INSetMessageAttributeIntent</string>
+				<string>INStartVideoCallIntent</string>
+				<string>INStartAudioCallIntent</string>
+				<string>INSendPaymentIntent</string>
+				<string>INRequestPaymentIntent</string>
+				<string>INSearchForPhotosIntent</string>
+				<string>INStartWorkoutIntent</string>
+				<string>INPauseWorkoutIntent</string>
+				<string>INResumeWorkoutIntent</string>
+				<string>INCancelWorkoutIntent</string>
+				<string>INEndWorkoutIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

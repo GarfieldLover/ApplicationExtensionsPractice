@@ -15,6 +15,6 @@
 
 @property (nonatomic, strong) UCContact *recipient;
 @property (nonatomic, strong) NSString *messageContent;
-@property (nonatomic, assign, getter=isSent) BOOL sent;
+@property (nonatomic, assign) BOOL sent;
 
 @end

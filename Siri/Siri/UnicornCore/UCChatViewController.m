@@ -47,8 +47,8 @@
     [[self view] setSent:sent];
 }
 
-- (BOOL)isSent {
-    return [[self view] isSent];
-}
+//- (BOOL)isSent {
+//    return [[self view] isSent];
+//}
 
 @end

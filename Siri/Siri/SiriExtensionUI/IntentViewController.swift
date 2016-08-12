@@ -47,12 +47,13 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
             contact.name = interaction.recipientName
             chatViewController.recipient = contact
             
+            //发送成功变UI
             switch interaction.intentHandlingStatus {
             case .unspecified, .inProgress, .ready, .failure:
-                chatViewController.isSent = false
+                chatViewController.sent = false
                 
             case .success, .deferredToApplication:
-                chatViewController.isSent = true
+                chatViewController.sent = true
             }
             
             present(chatViewController, animated: false, completion: nil)
