@@ -159,7 +159,61 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INStartVideoCallI
     //INPerson 人名
     func resolvePeopleInPhoto(forSearchForPhotos intent: INSearchForPhotosIntent, with completion: ([INPersonResolutionResult]) -> Swift.Void){}
     
+    
     // MARK: - INStartWorkoutIntent
+    func handle(startWorkout intent: INStartWorkoutIntent, completion: (INStartWorkoutIntentResponse) -> Swift.Void){}
 
+    func confirm(startWorkout intent: INStartWorkoutIntent, completion: (INStartWorkoutIntentResponse) -> Swift.Void){}
+
+    //锻炼名称
+    func resolveWorkoutName(forStartWorkout intent: INStartWorkoutIntent, with completion: (INSpeakableStringResolutionResult) -> Swift.Void){}
+    //目标值
+    func resolveGoalValue(forStartWorkout intent: INStartWorkoutIntent, with completion: (INDoubleResolutionResult) -> Swift.Void){}
+    //锻炼目标单位类型
+    func resolveWorkoutGoalUnitType(forStartWorkout intent: INStartWorkoutIntent, with completion: (INWorkoutGoalUnitTypeResolutionResult) -> Swift.Void){}
+    //锻炼地点类型
+    func resolveWorkoutLocationType(forStartWorkout intent: INStartWorkoutIntent, with completion: (INWorkoutLocationTypeResolutionResult) -> Swift.Void){}
+    //开放式
+    func resolveIsOpenEnded(forStartWorkout intent: INStartWorkoutIntent, with completion: (INBooleanResolutionResult) -> Swift.Void){}
+    
+    // MARK: - INPauseWorkoutIntentHandling
+    //只有resolveWorkoutName
+    
+    // MARK: - INResumeWorkoutIntent
+    //只有resolveWorkoutName
+    
+    // MARK: - INCancelWorkoutIntent
+    //只有resolveWorkoutName
+    
+    // MARK: - INEndWorkoutIntentHandling
+    //只有resolveWorkoutName
+    
+    // MARK: - INRequestRideIntent
+    //发订单
+    func handle(requestRide intent: INRequestRideIntent, completion: (INRequestRideIntentResponse) -> Swift.Void){}
+
+    func confirm(requestRide intent: INRequestRideIntent, completion: (INRequestRideIntentResponse) -> Swift.Void){}
+    //接人地点
+    func resolvePickupLocation(forRequestRide intent: INRequestRideIntent, with completion: (INPlacemarkResolutionResult) -> Swift.Void){}
+    //下车地点
+    func resolveDropOffLocation(forRequestRide intent: INRequestRideIntent, with completion: (INPlacemarkResolutionResult) -> Swift.Void){}
+    //选项。出租车？专车？
+    func resolveRideOptionName(forRequestRide intent: INRequestRideIntent, with completion: (INSpeakableStringResolutionResult) -> Swift.Void){}
+    //几人？
+    func resolvePartySize(forRequestRide intent: INRequestRideIntent, with completion: (INIntegerResolutionResult) -> Swift.Void){}
+    //付款方法
+    func resolvePaymentMethodName(forRequestRide intent: INRequestRideIntent, with completion: (INSpeakableStringResolutionResult) -> Swift.Void){}
+    //
+    func resolveUsesApplePayForPayment(forRequestRide intent: INRequestRideIntent, with completion: (INBooleanResolutionResult) -> Swift.Void){}
+    
+    // MARK: - INGetRideStatusIntent
+    //接单了，询问车到哪了？
+    func startSendingUpdates(forGetRideStatus intent: INGetRideStatusIntent, to observer: INGetRideStatusIntentResponseObserver){}
+    
+    func stopSendingUpdates(forGetRideStatus intent: INGetRideStatusIntent){}
+
+    // MARK: - INListRideOptionsIntent
+    //发一组？
+    
 }
 

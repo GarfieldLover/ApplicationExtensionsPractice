@@ -43,6 +43,9 @@
 				<string>INResumeWorkoutIntent</string>
 				<string>INCancelWorkoutIntent</string>
 				<string>INEndWorkoutIntent</string>
+				<string>INRequestRideIntent</string>
+				<string>INGetRideStatusIntent</string>
+				<string>INListRideOptionsIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
